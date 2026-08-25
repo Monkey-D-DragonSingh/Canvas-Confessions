@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# painting-fetcher (separate tool, not part of the deployed app)
+painting-fetcher/node_modules
+painting-fetcher/output
+painting-fetcher/raw-list.txt
