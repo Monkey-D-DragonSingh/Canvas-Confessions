@@ -1,3 +1,5 @@
+export type Mood = "dread" | "chaos" | "melancholy" | "isolation" | "longing" | "madness";
+
 export type Painting = {
   slug: string;
   title: string;
@@ -5,6 +7,7 @@ export type Painting = {
   year: string;
   image: string;
   excerpt: string;
+  mood: Mood;
   fullConfession?: string[];
   details?: {
     medium?: string;
@@ -20,6 +23,7 @@ export const paintings: Painting[] = [
   artist: "Franz von Stuck",
   year: "1890",
   image: "/paintings/lucifer.jpg",
+  mood: "dread",
   excerpt: `You came looking for darkness.
 
 I was already looking at you.
@@ -58,6 +62,7 @@ Neither am I.`,
   artist: "Alexandre Cabanel",
   year: "1847",
   image: "/paintings/the-fallen-angel-alexandre-cabanel.jpg",
+  mood: "melancholy",
   excerpt: `Do not look at me as though I am broken.
 
 I remember what I was.
@@ -200,6 +205,7 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1798",
     image: "/paintings/the-witches-sabbath-francisco-goya.jpg",
+    mood: "chaos",
     excerpt: `You gathered to watch us because you needed something to fear.
 
 That is the truth nobody says aloud.
@@ -230,6 +236,7 @@ And control, more than anything, is what you have always worshipped.`,
     artist: "Francisco Goya",
     year: "1798",
     image: "/paintings/witches-flight-francisco-goya.jpg",
+    mood: "chaos",
     excerpt: `They said we flew because we made a pact with darkness.
 
 Perhaps we simply wanted to rise above a world that kept us on our knees.
@@ -256,6 +263,7 @@ And smallness was the only shape you would forgive us for.`,
     artist: "Arnold Böcklin",
     year: "1880",
     image: "/paintings/the-isle-of-the-dead-arnold-bocklin.JPG",
+    mood: "melancholy",
     excerpt: `You have arrived somewhere you were never supposed to return from.
 
 The water is still.
@@ -288,6 +296,7 @@ It is simply the place where endings are allowed to rest.`,
     artist: "Francisco Goya",
     year: "1821-1823",
     image: "/paintings/the-great-he-goat-francisco-goya.jpg",
+    mood: "dread",
     excerpt: `Look how easily you gathered.
 
 Look how quickly you knelt.
@@ -318,6 +327,7 @@ Sometimes it is only obedience wearing a kinder name.`,
     artist: "Franz von Stuck",
     year: "1893",
     image: "/paintings/the-sin-franz-von-stuck.jpg",
+    mood: "dread",
     excerpt: `You call me sin because you cannot call me desire without also admitting you feel it.
 
 That is easier, isn't it.
@@ -344,6 +354,7 @@ But disgust does not usually hold your attention this long.`,
     artist: "John William Waterhouse",
     year: "1886",
     image: "/paintings/the-magic-circle-john-william-waterhouse.jpg",
+    mood: "chaos",
     excerpt: `Every spell begins with someone believing.
 
 Not in magic.
@@ -368,6 +379,7 @@ Just know that everything you fear about me is really something you fear about y
     artist: "John William Waterhouse",
     year: "1893",
     image: "/paintings/la-belle-dame-sans-merci-john-william-waterhouse.jpg",
+    mood: "longing",
     excerpt: `You knew.
 
 Somewhere beneath the wanting, you knew.
@@ -394,6 +406,7 @@ Some people need to be ruined once to understand what they were chasing.`,
     artist: "William Holman Hunt",
     year: "1853",
     image: "/paintings/the-awakening-conscience-william-holman-hunt.jpg",
+    mood: "madness",
     excerpt: `Something shifted.
 
 A note. A memory. A feeling too honest to ignore.
@@ -420,6 +433,7 @@ Perhaps the only real freedom is the moment you finally stop pretending you don'
     artist: "William Holman Hunt",
     year: "1851",
     image: "/paintings/the-hireling-shepherd-william-holman-hunt.jpg",
+    mood: "dread",
     excerpt: `While I was distracted, the flock wandered.
 
 That is the quiet horror of neglect.
@@ -448,6 +462,7 @@ Neglect just smiles and lets everything fall apart quietly.`,
     artist: "Edvard Munch",
     year: "1895",
     image: "/paintings/the-vampire-edvard-munch.jpg",
+    mood: "longing",
     excerpt: `You called it love.
 
 I called it hunger.
@@ -474,6 +489,7 @@ They offer themselves to what they believed love was supposed to feel like.`,
     artist: "Philip Burne-Jones",
     year: "1897",
     image: "/paintings/vampire-philip-burne-jones.jpg",
+    mood: "longing",
     excerpt: `Some kisses leave you emptier than before.
 
 You came looking for tenderness.
@@ -498,6 +514,7 @@ We have all confused hunger for love at least once.`,
     artist: "Franz von Stuck",
     year: "1895",
     image: "/paintings/the-kiss-of-the-sphinx-franz-von-stuck.jpg",
+    mood: "longing",
     excerpt: `Some questions have teeth.
 
 You came seeking an answer, and I offered you a kiss instead.
@@ -524,6 +541,7 @@ Let's see what you actually understand about yourself.`,
     artist: "Edward Hopper",
     year: "1942",
     image: "/paintings/nighthawks-edward-hopper.jpg",
+   mood: "isolation",
    excerpt: `We are all sitting together, and none of us are together.
 
 The city outside is empty, but this room is not much fuller.
@@ -550,6 +568,7 @@ A full one, where nobody speaks.`,
     artist: "Caravaggio",
     year: "1603-1604",
     image: "/paintings/the-entombment-of-christ-caravaggio.jpg",
+    mood: "melancholy",
     excerpt: `Even faith must eventually touch death.
 
 You believed in something larger than the body, and still the body had to be carried.
@@ -572,6 +591,7 @@ Everything else had already been decided.`,
     artist: "Peter Paul Rubens",
     year: "1612-1614",
     image: "/paintings/the-descent-from-the-cross-peter-paul-rubens.jpg",
+    mood: "longing",
     excerpt: `There is no graceful way to carry the dead.
 
 You try to be careful.
@@ -590,6 +610,7 @@ We lowered him slowly, not because slowness helped him, but because it was the o
     artist: "Rembrandt",
     year: "1634",
     image: "/paintings/the-descent-from-the-cross-rembrandt.jpg",
+    mood: "melancholy",
     excerpt: `The darkness is not outside.
 
 It is inside the room.
@@ -612,6 +633,7 @@ How much like any other evening, except for the absence sitting in the center of
     artist: "Henry Fuseli",
     year: "1781",
     image: "/paintings/the-nightmare-henry-fuseli.jpg",
+    mood: "madness",
     excerpt: `You call it a dream because you are afraid to call it real.
 
 That is easier, isn't it.
@@ -634,6 +656,7 @@ Sometimes it's simply the place where your fears finally get to speak.`,
     artist: "John Martin",
     year: "1841",
     image: "/paintings/pandemonium-john-martin.JPG",
+    mood: "dread",
     excerpt: `Hell does not need fire when chaos is enough.
 
 You imagined punishment as flame, as torment, as something done to you.
@@ -658,6 +681,7 @@ By the time the pillars fell, it was already too late to ask who was in charge.`
     artist: "John Martin",
     year: "1851-1853",
     image: "/paintings/the-great-day-of-his-wrath-john-martin.jpg",
+    mood: "isolation",
     excerpt: `When the world ends, no one will be important.
 
 You spent your life building status, comparing yourself to everyone around you, certain that your position mattered.
@@ -680,6 +704,7 @@ They only care that you, like everyone else standing here, are finally out of ti
     artist: "John Martin",
     year: "1851-1853",
     image: "/paintings/the-plains-of-heaven-john-martin.jpg",
+    mood: "melancholy",
     excerpt: `Even paradise can feel strangely empty.
 
 You spent your whole life imagining this place, certain that arriving here would finally be enough.
@@ -702,6 +727,7 @@ That is simply what it means to have wanted something for so long that you forgo
     artist: "Hieronymus Bosch",
     year: "1501",
     image: "/paintings/the-temptation-of-st-anthony-hieronymus-bosch.jpg",
+    mood: "longing",
     excerpt: `The worst monsters are the ones that know exactly what you want.
 
 They do not need claws.
@@ -722,6 +748,7 @@ It looks like something you didn't know you still wanted.`,
     artist: "Matthias Grünewald",
     year: "1512-1516",
     image: "/paintings/the-temptation-of-st-anthony-matthias-grunewald.jpg",
+    mood: "dread",
     excerpt: `Faith becomes frightening when doubt grows teeth.
 
 You believed you were strong enough to withstand anything, until the anything arrived wearing a hundred different faces at once.
@@ -742,6 +769,7 @@ By you, alone in the dark, wondering if you ever really believed at all.`,
     artist: "Jacques-Louis David",
     year: "1793",
     image: "/paintings/the-death-of-marat-jacques-louis-david.jpg",
+    mood: "melancholy",
     excerpt: `Some people become immortal only after they die.
 
 While I was alive, I was simply a man in a bathtub, exhausted, trying to keep working through the only comfort my illness allowed.
@@ -762,6 +790,7 @@ History chose it for me, and framed it as peace.`,
     artist: "Jacques-Louis David",
     year: "1787",
     image: "/paintings/the-death-of-socrates-jacques-louis-david.jpg",
+    mood: "melancholy",
     excerpt: `Sometimes the price of truth is everything.
 
 I could have recanted. I could have said what they wanted to hear and kept my life.
@@ -784,6 +813,7 @@ At the time, it simply looked like a man calmly choosing his convictions over hi
     artist: "Peter Paul Rubens",
     year: "1614",
     image: "/paintings/the-death-of-seneca-peter-paul-rubens.jpg",
+    mood: "melancholy",
     excerpt: `Even the wise cannot negotiate with death.
 
 I spent my life writing about acceptance, about calm in the face of the inevitable, and still my body resisted when the moment finally came.
@@ -802,6 +832,7 @@ Dying, it turns out, is rarely as elegant as the essays written about it.`,
     artist: "Théodore Géricault",
     year: "1818-1819",
     image: "/paintings/the-raft-of-the-medusa-theodore-gericault.jpg",
+   mood: "dread",
    excerpt: `Desperation reveals what people become when hope disappears.
 
 We were not monsters when we boarded this raft.
@@ -824,6 +855,7 @@ Most people do, right up until the moment the water runs out.`,
     artist: "James Ensor",
     year: "1891",
     image: "/paintings/the-skeletons-fighting-over-a-hanged-man-james-ensor.jpg",
+    mood: "melancholy",
     excerpt: `Even death can become ridiculous when humans are involved.
 
 You'd think the grave would finally end our pettiness.
@@ -844,6 +876,7 @@ Some people carry their smallness all the way to the bone.`,
     artist: "James Ensor",
     year: "1889",
     image: "/paintings/the-skeletons-warming-themselves-james-ensor.jpg",
+    mood: "chaos",
     excerpt: `Perhaps death is only waiting for the living to catch up.
 
 We sit here without urgency, without complaint, warming ourselves at a fire that no longer needs to keep us alive.
@@ -864,6 +897,7 @@ Just bones, and a small fire, and the patience of something that already knows h
     artist: "Hans Holbein the Younger",
     year: "1521-1522",
     image: "/paintings/the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger.JPG",
+    mood: "melancholy",
     excerpt: `Death is terrifying when nothing about it is softened.
 
 You are used to seeing it wrapped in meaning, in resurrection, in promise.
@@ -884,6 +918,7 @@ I am asking you to stop looking away from what waits for all of you eventually.`
     artist: "Michelangelo",
     year: "1536-1541",
     image: "/paintings/the-last-judgment-michelangelo.jpg",
+    mood: "melancholy",
     excerpt: `Every soul eventually faces itself.
 
 Not a stranger's judgment.
@@ -906,6 +941,7 @@ But every single one of them, in this final moment, finally sees themselves with
     artist: "Hans Memling",
     year: "1467-1471",
     image: "/paintings/the-last-judgment-hans-memling.jpg",
+    mood: "dread",
     excerpt: `There is nowhere to hide when eternity is watching.
 
 You spent your life negotiating, excusing, explaining yourself to everyone except the one witness who saw everything clearly.
@@ -922,6 +958,7 @@ This is about honesty, finally, after a lifetime of convenient forgetting.`,
     artist: "Michael Wolgemut",
     year: "1493",
     image: "/paintings/the-dance-of-death-michael-wolgemut.jpg",
+    mood: "melancholy",
     excerpt: `The grave makes equals of everyone.
 
 Kings, beggars, the beautiful, the forgotten, we all take the same hand eventually and step into the same dance.
@@ -940,6 +977,7 @@ It only checks whether you are still breathing, and then, gently, invites you to
     artist: "Edvard Munch",
     year: "1885",
     image: "/paintings/the-funeral-edvard-munch.jpg",
+    mood: "melancholy",
     excerpt: `The room is full, yet death has made it empty.
 
 Everyone gathered close, and still the space feels hollow, because the one person the room was built around is no longer in it.
@@ -956,6 +994,7 @@ We are all here together, orbiting a space that used to hold someone, unable to 
     artist: "Hans Baldung",
     year: "1517",
     image: "/paintings/death-and-the-maiden-hans-baldung.jpg",
+    mood: "melancholy",
     excerpt: `Beauty and death have always walked together.
 
 You think I arrived to take something from her.
@@ -978,6 +1017,7 @@ I was only ever the truth beauty tries so hard to forget.`,
     artist: "Caravaggio",
     year: "1599",
     image: "/paintings/judith-beheading-holofernes-caravaggio.jpg",
+    mood: "chaos",
     excerpt: `You mistook her mercy for weakness.
 
 That was your first mistake.
@@ -998,6 +1038,7 @@ Most men do, right up until the exact moment it no longer matters.`,
     artist: "Artemisia Gentileschi",
     year: "1620",
     image: "/paintings/judith-slaying-holofernes-artemisia-gentileschi.jpg",
+    mood: "longing",
     excerpt: `Some wounds are answered with another wound.
 
 You want this to be about anger.
@@ -1016,6 +1057,7 @@ Not because she feels nothing, but because she has already decided that this mom
     artist: "Caravaggio",
     year: "1610",
     image: "/paintings/david-with-the-head-of-goliath-caravaggio.jpg",
+    mood: "melancholy",
     excerpt: `The victor does not always look victorious.
 
 Look at my face.
@@ -1034,6 +1076,7 @@ Victory is rarely as clean as the story that gets told about it.`,
     artist: "Guido Reni",
     year: "1605",
     image: "/paintings/david-with-the-head-of-goliath-guido-reni.jpg",
+    mood: "dread",
     excerpt: `Power changes hands in a single moment.
 
 One instant he was the threat everyone feared.
@@ -1050,6 +1093,7 @@ I remember the fear that came before it, the trembling I hid so no one would see
     artist: "Caravaggio",
     year: "1609",
     image: "/paintings/salome-with-the-head-of-john-the-baptist-caravaggio.jpg",
+    mood: "longing",
     excerpt: `Desire can ask for something you can never take back.
 
 I did not fully understand what I was requesting.
@@ -1066,6 +1110,7 @@ Now I hold the proof of my own wanting, and I am learning, too late, that some r
     artist: "Titian",
     year: "1515",
     image: "/paintings/salome-with-the-head-of-john-the-baptist-titian.jpg",
+   mood: "longing",
    excerpt: `Beauty can carry terrible intentions.
 
 You look at my face and see innocence.
@@ -1084,6 +1129,7 @@ I only needed to ask sweetly, and the world handed me exactly what I wanted.`,
     artist: "Caravaggio",
     year: "1608",
     image: "/paintings/the-beheading-of-saint-john-the-baptist-caravaggio.jpg",
+   mood: "melancholy",
    excerpt: `Some endings happen quietly.
 
 You expect death to announce itself, to shake the room, to demand attention.
@@ -1104,6 +1150,7 @@ With a quiet efficiency that makes the horror somehow worse.`,
     artist: "Caravaggio",
     year: "1602",
     image: "/paintings/the-taking-of-christ-caravaggio.jpg",
+    mood: "madness",
     excerpt: `Betrayal sometimes arrives wearing the face of friendship.
 
 He did not attack me from a distance.
@@ -1124,6 +1171,7 @@ Only by someone you allowed near enough to hurt you.`,
     artist: "Caravaggio",
     year: "1600",
     image: "/paintings/the-martyrdom-of-saint-matthew-caravaggio.jpg",
+    mood: "chaos",
     excerpt: `Violence does not ask whether you are ready.
 
 One moment I was speaking. The next, the room had turned into chaos, and I understood that some endings do not give you time to prepare a response.
@@ -1138,6 +1186,7 @@ Most people simply become still, caught between disbelief and the sudden underst
     artist: "Eugène Delacroix",
     year: "1824",
     image: "/paintings/the-massacre-at-chios-eugene-delacroix.jpg",
+    mood: "isolation",
     excerpt: `War does not create heroes for everyone.
 
 For most of us, it only creates absence.
@@ -1154,6 +1203,7 @@ You will forget us, sitting here, waiting for a mercy that never arrived.`,
     artist: "Paul Delaroche",
     year: "1833",
     image: "/paintings/the-execution-of-lady-jane-grey-paul-delaroche.jpg",
+    mood: "melancholy",
     excerpt: `Sometimes innocence still walks toward the blade.
 
 I was given a crown I never asked for, and now I am paying for a decision that was never truly mine to make.
@@ -1172,6 +1222,7 @@ I simply became a lesson about how dangerous other people's ambitions can be.`,
     artist: "Francisco Goya",
     year: "1814",
     image: "/paintings/the-third-of-may-1808-francisco-goya.jpg",
+    mood: "melancholy",
     excerpt: `There is no glory in the moment before death.
 
 You have seen paintings of battle that make war look majestic.
@@ -1190,6 +1241,7 @@ War does not care about the difference between a soldier and a man who simply wa
     artist: "Francisco Goya",
     year: "1819-1823",
     image: "/paintings/the-dog-francisco-goya.jpg",
+   mood: "isolation",
    excerpt: `Sometimes loneliness is the only thing left in the world.
 
 You look at this vast emptiness and wonder what I am waiting for.
@@ -1210,6 +1262,7 @@ The absence of any reason to expect them.`,
     artist: "Francisco Goya",
     year: "1816",
     image: "/paintings/the-madhouse-francisco-goya.jpg",
+   mood: "chaos",
    excerpt: `Perhaps madness is only another way of seeing the world.
 
 You call this chaos.
@@ -1230,6 +1283,7 @@ From the questions we stopped pretending not to ask.`,
     artist: "Francisco Goya",
     year: "1808-1812",
     image: "/paintings/the-colossus-francisco-goya.jpg",
+    mood: "dread",
     excerpt: `You look at me and try to understand what I am.
 
 You search for a face.
@@ -1286,6 +1340,7 @@ still looking up.`,
     artist: "Edvard Munch",
     year: "1893",
     image: "/paintings/the-scream-edvard-munch.jpg",
+    mood: "chaos",
     excerpt: `I screamed.
 
 And the world kept moving.
@@ -1350,6 +1405,7 @@ You are human because something became too heavy to keep silent.`,
     artist: "Edvard Munch",
     year: "1894",
     image: "/paintings/anxiety-edvard-munch.jpg",
+    mood: "isolation",
     excerpt: `Look around you.
 
 They are all here.
@@ -1410,6 +1466,7 @@ It only needs to convince you that you don't belong in the one you're standing i
     artist: "Edvard Munch",
     year: "1894-1896",
     image: "/paintings/melancholy-edvard-munch.jpg",
+    mood: "longing",
     excerpt: `Nothing happened.
 
 That is what makes it difficult to explain.
@@ -1466,6 +1523,7 @@ Some are simply part of being human.`,
     artist: "Edvard Munch",
     year: "1892",
     image: "/paintings/evening-on-karl-johan-edvard-munch.jpg",
+    mood: "isolation",
     excerpt: `Look at the crowd.
 
 So many faces.
@@ -1508,6 +1566,7 @@ And still remain invisible.`,
     artist: "Edvard Munch",
     year: "1892",
     image: "/paintings/despair-edvard-munch.jpg",
+    mood: "melancholy",
     excerpt: `Hope did not leave all at once.
 
 It became quieter.
@@ -1556,6 +1615,7 @@ I simply cannot reach it from here.`,
     artist: "Edvard Munch",
     year: "1885-1886",
     image: "/paintings/the-sick-child-edvard-munch.jpg",
+    mood: "isolation",
     excerpt: `Memory is cruel.
 
 It does not remember things the way they happened.
@@ -1604,6 +1664,7 @@ Forever waiting for the ending you wished you could change.`,
     artist: "Arnold Böcklin",
     year: "1872",
     image: "/paintings/self-portrait-with-death-playing-the-fiddle-arnold-bocklin.jpg",
+    mood: "melancholy",
     excerpt: `I know you're there.
 
 You don't need to remind me.
@@ -1656,6 +1717,7 @@ And somewhere between your music and my brush, we will pretend neither of us kno
     artist: "Egon Schiele",
     year: "1918",
     image: "/paintings/the-painter-s-family-egon-schiele.jpeg",
+    mood: "madness",
     excerpt: `We are close enough to touch.
 
 And yet there is a distance between us that no hand can cross.
@@ -1682,6 +1744,7 @@ Perhaps it is simply the decision to stay, even when there are parts of each oth
     artist: "Egon Schiele",
     year: "1912",
     image: "/paintings/self-portrait-with-physalis-egon-schiele.jpg",
+    mood: "madness",
     excerpt: `You are looking at me.
 
 I have spent years doing the same.
@@ -1720,6 +1783,7 @@ Perhaps it is accepting that you have always had several.`,
     artist: "Egon Schiele",
     year: "1915",
     image: "/paintings/death-and-the-maiden-egon-schiele.jpg",
+    mood: "melancholy",
     excerpt: `She holds me as though I am something she can save.
 
 I let her.
@@ -1756,6 +1820,7 @@ And perhaps that moment is worth more than eternity.`,
     artist: "Egon Schiele",
     year: "1910",
     image: "/paintings/the-dead-mother-egon-schiele.jpg",
+    mood: "longing",
     excerpt: `Some things do not become memories.
 
 They remain wounds wearing the clothes of memories.
@@ -1788,6 +1853,7 @@ Learning how to walk while carrying it.`,
     artist: "August Friedrich Albrecht Schenck",
     year: "1878",
     image: "/paintings/the-agony-august-friedrich-albrecht-schenck.jpg",
+    mood: "melancholy",
     excerpt: `There is no human face here.
 
 And perhaps that is why you understand it.
@@ -1828,6 +1894,7 @@ The world is not.`,
     artist: "Théodore Géricault",
     year: "1822",
     image: "/paintings/insane-woman-theodore-gericault.jpg",
+    mood: "madness",
     excerpt: `You look into my eyes searching for an explanation.
 
 You want to know what happened.
@@ -1862,6 +1929,7 @@ What if reality is simply the name the majority gives to the world they agree up
     artist: "Peter Paul Rubens",
     year: "1611-1612",
     image: "/paintings/prometheus-bound-peter-paul-rubens.jpg",
+    mood: "chaos",
     excerpt: `I gave them fire.
 
 They called it a gift.
@@ -1900,6 +1968,7 @@ Was I wrong?`,
     artist: "José Clemente Orozco",
     year: "1930",
     image: "/paintings/prometheus-jose-clemente-orozco.jpg",
+    mood: "chaos",
     excerpt: `You wanted the fire.
 
 I gave it to you.
@@ -1938,6 +2007,7 @@ Perhaps the curse is simply being human.`,
     artist: "Peter Paul Rubens",
     year: "1615",
     image: "/paintings/ixion-peter-paul-rubens.jpg",
+    mood: "madness",
     excerpt: `Round and round.
 
 Again.
@@ -1978,6 +2048,7 @@ Perhaps the punishment is understanding exactly why you are on it.`,
     artist: "Pieter Bruegel the Elder",
     year: "1562",
     image: "/paintings/the-fall-of-the-rebel-angels-pieter-bruegel-the-elder.jpg",
+    mood: "melancholy",
     excerpt: `Heaven was not enough for them.
 
 That is what you always forget.
@@ -2014,6 +2085,7 @@ That is how destruction often looks from a distance.`,
     artist: "Luca Giordano",
     year: "1666",
     image: "/paintings/the-fall-of-the-rebel-angels-luca-giordano.jpg",
+    mood: "melancholy",
     excerpt: `We were beautiful once.
 
 That is what makes the fall so cruel.
@@ -2046,6 +2118,7 @@ The distance between the two is smaller than you think.`,
     artist: "Titian",
     year: "1549",
     image: "/paintings/the-punishment-of-tityus-titian.jpg",
+    mood: "dread",
     excerpt: `It never ends.
 
 That is the point.
@@ -2074,6 +2147,7 @@ and the horizon disappears with it.`,
     artist: "José de Ribera",
     year: "1632",
     image: "/paintings/tityus-jose-de-ribera.jpg",
+    mood: "chaos",
     excerpt: `You think pain is temporary because your pain has always been.
 
 You hurt.
@@ -2106,6 +2180,7 @@ The certainty that pain will never become memory.`,
     artist: "Titian",
     year: "1549",
     image: "/paintings/sisyphus-titian.jpg",
+    mood: "melancholy",
     excerpt: `I push because stopping is worse.
 
 That is something you understand more than you admit.
@@ -2144,6 +2219,7 @@ Perhaps meaning is hidden in the decision to push again when you already know wh
     artist: "Franz von Stuck",
     year: "1920",
     image: "/paintings/sisyphus-franz-von-stuck.jpg",
+    mood: "isolation",
     excerpt: `You think the stone is my punishment.
 
 It isn't.
@@ -2174,6 +2250,7 @@ Endless hope in the face of failure.`,
     artist: "Peter Paul Rubens",
     year: "1636-1638",
     image: "/paintings/the-rape-of-proserpina-peter-paul-rubens.jpg",
+    mood: "isolation",
     excerpt: `They called it destiny.
 
 That is a beautiful word for something you had no choice in.
@@ -2208,6 +2285,7 @@ And you spend the rest of your life learning how to become someone new around th
     artist: "Rembrandt",
     year: "1631",
     image: "/paintings/the-abduction-of-proserpine-rembrandt.jpg",
+    mood: "longing",
     excerpt: `He called it love.
 
 I called it captivity.
@@ -2244,6 +2322,7 @@ Anything else is hunger wearing a beautiful name.`,
     artist: "Gustave Moreau",
     year: "1864",
     image: "/paintings/oedipus-and-the-sphinx-gustave-moreau.jpg",
+    mood: "dread",
     excerpt: `She asked me a question.
 
 I answered.
@@ -2280,6 +2359,7 @@ Sometimes the truth itself is the monster.`,
     artist: "Henry Fuseli",
     year: "1786",
     image: "/paintings/oedipus-cursing-his-son-polynices-henry-fuseli.jpg",
+    mood: "dread",
     excerpt: `Blood does not guarantee love.
 
 Sometimes family is where the deepest wounds are made.
@@ -2310,6 +2390,7 @@ And eventually the children inherit wounds they never created.`,
     artist: "John Everett Millais",
     year: "1851-1852",
     image: "/paintings/ophelia-john-everett-millais.jpg",
+    mood: "melancholy",
     excerpt: `The water is quiet.
 
 That is what you notice first.
@@ -2346,6 +2427,7 @@ Because the struggle had finally become silent.`,
     artist: "Alexandre Cabanel",
     year: "1883",
     image: "/paintings/ophelia-alexandre-cabanel.JPG",
+    mood: "melancholy",
     excerpt: `From far away, death can look peaceful.
 
 That is dangerous.
@@ -2380,6 +2462,7 @@ Sometimes beauty is simply the final mask sorrow wears.`,
     artist: "John William Waterhouse",
     year: "1908",
     image: "/paintings/the-soul-of-the-rose-john-william-waterhouse.jpg",
+    mood: "longing",
     excerpt: `Desire does not always announce itself.
 
 Sometimes it is a fragrance.
@@ -2410,6 +2493,7 @@ But both have thorns.`,
     artist: "John William Waterhouse",
     year: "1892",
     image: "/paintings/circe-invidiosa-john-william-waterhouse.jpg",
+    mood: "isolation",
     excerpt: `Jealousy is not always loud.
 
 Sometimes it is patient.
@@ -2440,6 +2524,7 @@ Until you forget what was already yours.`,
     artist: "John William Waterhouse",
     year: "1891",
     image: "/paintings/circe-offering-the-cup-to-ulysses-john-william-waterhouse.jpg",
+    mood: "isolation",
     excerpt: `Drink.
 
 I promise nothing.
@@ -2472,6 +2557,7 @@ Or you can take the cup and spend the rest of your life wondering why you didn't
     artist: "Caspar David Friedrich",
     year: "1810",
     image: "/paintings/the-monk-by-the-sea-caspar-david-friedrich.jpg",
+    mood: "isolation",
     excerpt: `Look at me standing here.
 
 The sea does not care that I am afraid.
@@ -2502,6 +2588,7 @@ The silence has more to say than you do.`,
     artist: "Caspar David Friedrich",
     year: "1810",
     image: "/paintings/abbey-in-the-oakwood-caspar-david-friedrich.jpg",
+    mood: "longing",
     excerpt: `The living pass through.
 
 The dead remain.
@@ -2540,6 +2627,7 @@ Until even the places built to remember become things that need remembering.`,
     artist: "Caspar David Friedrich",
     year: "1819-1820",
     image: "/paintings/two-men-contemplating-the-moon-caspar-david-friedrich.jpg",
+    mood: "madness",
     excerpt: `We stand beneath the same moon and still do not know what it means.
 
 Perhaps that is enough.
@@ -2570,6 +2658,7 @@ For once, let the mystery remain a mystery.`,
     artist: "Caspar David Friedrich",
     year: "1830",
     image: "/paintings/the-evening-star-caspar-david-friedrich.jpg",
+    mood: "madness",
     excerpt: `The day is ending.
 
 You knew it would.
@@ -2610,6 +2699,7 @@ Perhaps they simply remind you that the light was never promised to stay forever
     artist: "Andrea Mantegna",
     year: "1480",
     image: "/paintings/the-lamentation-over-the-dead-christ-andrea-mantegna.jpg",
+    mood: "melancholy",
     excerpt: `They touch the body because touch is the last thing left.
 
 You can no longer speak to the dead.
@@ -2638,6 +2728,7 @@ It only knows that they are gone.`,
     artist: "Fra Angelico",
     year: "1425-1431",
     image: "/paintings/the-last-judgment-fra-angelico.jpg",
+    mood: "melancholy",
     excerpt: `There is a moment when mercy and fear stand together.
 
 You have spent your life imagining judgment as punishment.
@@ -2670,6 +2761,7 @@ The question is whether you will recognize yourself when the time comes.`,
     artist: "Matthias Grünewald",
     year: "1512-1516",
     image: "/paintings/the-crucifixion-matthias-grunewald.jpg",
+    mood: "isolation",
     excerpt: `Do not look away.
 
 Suffering does not become less terrible because someone calls it sacred.
@@ -2698,6 +2790,7 @@ Not every wound needs to be explained before it deserves compassion.`,
     artist: "Gustave Moreau",
     year: "1876",
     image: "/paintings/the-apparition-gustave-moreau.jpg",
+    mood: "dread",
     excerpt: `You think visions should comfort you.
 
 Some do the opposite.
@@ -2722,6 +2815,7 @@ Perhaps the difference was never as large as you thought.`,
     artist: "Gustave Moreau",
     year: "1876",
     image: "/paintings/salome-dancing-before-herod-gustave-moreau.jpg",
+    mood: "longing",
     excerpt: `They are watching me.
 
 That is the point.
@@ -2746,6 +2840,7 @@ The consequences do not.`,
     artist: "Gustave Moreau",
     year: "1878",
     image: "/paintings/salome-in-the-garden-gustave-moreau.jpg",
+    mood: "longing",
     excerpt: `Desire rarely tells you what it will destroy.
 
 It whispers about what you want.
@@ -2772,6 +2867,7 @@ Because wanting can become so loud that everything else becomes quiet.`,
     artist: "Gustav Klimt",
     year: "1908",
     image: "/paintings/the-kiss-gustav-klimt.jpg",
+    mood: "longing",
     excerpt: `You think I am holding someone.
 
 Perhaps I am surrendering.
@@ -2800,6 +2896,7 @@ Perhaps some risks are worth taking.`,
     artist: "Sandro Botticelli",
     year: "1485",
     image: "/paintings/the-birth-of-venus-sandro-botticelli.jpg",
+    mood: "longing",
     excerpt: `They call me beauty.
 
 They forget that beauty is rarely born from nothing.
@@ -2834,6 +2931,7 @@ Perhaps that is what makes it beautiful.`,
     artist: "René Magritte",
     year: "1964",
     image: "/paintings/the-son-of-man-rene-magritte.png",
+    mood: "madness",
     excerpt: `You can see my face.
 
 And still you cannot see me.
@@ -2870,6 +2968,7 @@ You may never completely see.`,
     artist: "René Magritte",
     year: "1928",
     image: "/paintings/the-lovers-rene-magritte.jpg",
+    mood: "longing",
     excerpt: `We are close.
 
 Closer than most people ever become.
@@ -2902,6 +3001,7 @@ You can love someone completely and still never reach them.`,
     artist: "René Magritte",
     year: "1933",
     image: "/paintings/the-human-condition-rene-magritte.jpg",
+    mood: "madness",
     excerpt: `You think you are looking through the window.
 
 Perhaps you are only looking at another painting.
@@ -2930,6 +3030,7 @@ How certain are you that the world outside the painting is actually outside it?`
     artist: "René Magritte",
     year: "1953-1954",
     image: "/paintings/the-empire-of-light-rene-magritte.jpg",
+    mood: "madness",
     excerpt: `Day and night should not exist together.
 
 And yet here they are.
@@ -2962,6 +3063,7 @@ Perhaps opposites do not need to choose.`,
     artist: "René Magritte",
     year: "1929",
     image: "/paintings/the-false-mirror-rene-magritte.jpg",
+    mood: "madness",
     excerpt: `You are looking through an eye.
 
 But what is the eye looking at?
@@ -2994,6 +3096,7 @@ Maybe the world you see is partly the world you brought with you.`,
     artist: "Odilon Redon",
     year: "1914",
     image: "/paintings/the-cyclops-odilon-redon.jpg",
+    mood: "dread",
     excerpt: `You call me a monster because I watch.
 
 But why are you so afraid of being seen?
@@ -3020,6 +3123,7 @@ You never ask what it feels like to exist inside it.`,
     artist: "Odilon Redon",
     year: "1881",
     image: "/paintings/the-crying-spider-odilon-redon.jpg",
+    mood: "melancholy",
     excerpt: `You thought monsters could not grieve.
 
 You were wrong.
@@ -3050,6 +3154,7 @@ Perhaps that is what makes them human.`,
     artist: "Henri Rousseau",
     year: "1910",
     image: "/paintings/the-dream-henri-rousseau.jpg",
+    mood: "madness",
     excerpt: `The jungle is beautiful.
 
 That is why you should be careful.
@@ -3078,6 +3183,7 @@ You are never completely alone in the places your mind creates.`,
     artist: "Henri Rousseau",
     year: "1907",
     image: "/paintings/the-snake-charmer-henri-rousseau.jpg",
+    mood: "madness",
     excerpt: `The unknown does not need to attack you.
 
 Sometimes it simply waits.
@@ -3106,6 +3212,7 @@ And suddenly your imagination becomes more frightening than anything that could 
     artist: "Henri Rousseau",
     year: "1897",
     image: "/paintings/the-sleeping-gypsy-henri-rousseau.jpg",
+    mood: "isolation",
     excerpt: `She sleeps peacefully.
 
 She does not know what is watching.
@@ -3128,4 +3235,5 @@ She dreams.
 
 And for this one moment, the unknown has not yet decided whether it will become a threat.`,
   },
+
 ];
