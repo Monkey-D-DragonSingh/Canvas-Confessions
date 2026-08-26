@@ -584,7 +584,55 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1808-1812",
     image: "/paintings/the-colossus-francisco-goya.jpg",
-    excerpt: "Some fears are too enormous to understand.",
+    excerpt: `You look at me and try to understand what I am.
+
+You search for a face.
+
+A body.
+
+A reason for something so enormous to exist.
+
+But perhaps you are asking the wrong question.
+
+I was never meant to be understood.
+
+I am the feeling that arrives before understanding does.
+
+The shadow that appears at the edge of your thoughts when you realize something is far larger than you.
+
+You have felt me before.
+
+Not as a giant.
+
+As a problem you could not solve.
+
+A future you could not predict.
+
+A fear you could not name.
+
+You stood beneath something enormous and wondered whether it had noticed you.
+
+That is why I am here.
+
+Not because I am a monster.
+
+Because I am what your mind creates when the world becomes too large to hold.
+
+You call it fear.
+
+You call it uncertainty.
+
+You call it fate.
+
+I have many names.
+
+But I remain the same.
+
+Something enormous standing beyond you.
+
+And you...
+
+still looking up.`,
   },
   {
     slug: "the-scream-edvard-munch",
@@ -592,7 +640,63 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1893",
     image: "/paintings/the-scream-edvard-munch.jpg",
-    excerpt: "I screamed, but the world kept moving.",
+    excerpt: `I screamed.
+
+And the world kept moving.
+
+That is the part nobody understands.
+
+You think when something inside you breaks, the world should notice.
+
+The sky should darken.
+
+The streets should empty.
+
+Someone should turn around and ask what happened.
+
+But nothing happened.
+
+People continued walking.
+
+The river continued flowing.
+
+The sky remained above me.
+
+Everything continued exactly as it had before.
+
+Except me.
+
+Something had changed inside my chest, and suddenly the entire world sounded wrong.
+
+The colours became too loud.
+
+The air became too heavy.
+
+My own thoughts became louder than everything around me.
+
+So I screamed.
+
+Not because I expected an answer.
+
+Because there was nowhere else for the sound to go.
+
+Perhaps that is the cruelest part of suffering.
+
+You can be screaming inside yourself while the world walks peacefully past.
+
+And nobody knows.
+
+Nobody stops.
+
+Nobody hears.
+
+So if you recognize yourself in me...
+
+I hope you understand something.
+
+You are not weak because you screamed.
+
+You are human because something became too heavy to keep silent.`,
   },
   {
     slug: "anxiety-edvard-munch",
@@ -600,7 +704,59 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1894",
     image: "/paintings/anxiety-edvard-munch.jpg",
-    excerpt: "Everyone is standing beside you, and somehow you are still alone.",
+    excerpt: `Look around you.
+
+They are all here.
+
+Faces beside faces.
+
+Bodies beside bodies.
+
+And still...
+
+you are alone.
+
+That is what anxiety does.
+
+It does not always lock you inside an empty room.
+
+Sometimes it puts you in the middle of everyone.
+
+It makes you hear every voice while believing none of them are meant for you.
+
+You watch people talk.
+
+Laugh.
+
+Move.
+
+Live.
+
+And somewhere inside you, a question keeps repeating.
+
+What if something is wrong?
+
+You don't know what.
+
+You don't know why.
+
+You only know that something is coming.
+
+So you wait.
+
+You prepare.
+
+You imagine every possible disaster.
+
+And when nothing happens...
+
+you imagine the next one.
+
+Perhaps that is why everyone here looks so distant.
+
+Anxiety does not need an empty world.
+
+It only needs to convince you that you don't belong in the one you're standing in.`,
   },
   {
     slug: "melancholy-edvard-munch",
@@ -608,7 +764,55 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1894-1896",
     image: "/paintings/melancholy-edvard-munch.jpg",
-    excerpt: "Some sadness does not need a reason.",
+    excerpt: `Nothing happened.
+
+That is what makes it difficult to explain.
+
+There was no great tragedy.
+
+No sudden ending.
+
+No single moment you can point toward and say,
+
+There.
+
+That is where everything went wrong.
+
+Sometimes sadness simply arrives.
+
+It sits beside you.
+
+It does not introduce itself.
+
+It does not ask permission.
+
+Music still plays.
+
+People still laugh.
+
+The sun still crosses the room.
+
+And yet something inside you has quietly moved away.
+
+You wait for it to return.
+
+Perhaps tomorrow.
+
+Perhaps next week.
+
+Perhaps when something changes.
+
+But sometimes melancholy does not want to be solved.
+
+It only wants to be felt.
+
+So sit with it.
+
+Let it exist.
+
+Not every shadow is a wound.
+
+Some are simply part of being human.`,
   },
   {
     slug: "evening-on-karl-johan-edvard-munch",
@@ -616,7 +820,41 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1892",
     image: "/paintings/evening-on-karl-johan-edvard-munch.jpg",
-    excerpt: "Sometimes the crowd is lonelier than solitude.",
+    excerpt: `Look at the crowd.
+
+So many faces.
+
+So many people walking in the same direction.
+
+And yet none of them seem to know each other.
+
+They pass one another like ghosts.
+
+Eyes forward.
+
+Expressions empty.
+
+Everyone moving.
+
+Nobody arriving.
+
+You think loneliness means being alone.
+
+It doesn't.
+
+Loneliness can be standing in the middle of a thousand people and realizing that not one of them knows what is happening inside you.
+
+The city is full of voices.
+
+That does not mean anyone is listening.
+
+Perhaps that is why crowds frighten me.
+
+They remind me how easy it is to disappear while being surrounded by everyone.
+
+You can be seen by hundreds.
+
+And still remain invisible.`,
   },
   {
     slug: "despair-edvard-munch",
@@ -624,7 +862,47 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1892",
     image: "/paintings/despair-edvard-munch.jpg",
-    excerpt: "The world looks different when hope leaves it.",
+    excerpt: `Hope did not leave all at once.
+
+It became quieter.
+
+Day by day.
+
+Until one morning you realized you could no longer hear it.
+
+The world remained.
+
+The sun rose.
+
+People laughed.
+
+Life continued performing its little rituals.
+
+But none of it reached you.
+
+That is despair.
+
+Not sadness.
+
+Not pain.
+
+The absence of expectation.
+
+You stop waiting for things to become better because waiting itself has become exhausting.
+
+You stop imagining tomorrow.
+
+You stop believing there is anything beyond the moment you are trapped inside.
+
+And perhaps that is why I look away.
+
+Not because there is nothing left in the world.
+
+Because I cannot see it anymore.
+
+Somewhere beyond this darkness, morning still exists.
+
+I simply cannot reach it from here.`,
   },
   {
     slug: "the-sick-child-edvard-munch",
@@ -632,7 +910,47 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1885-1886",
     image: "/paintings/the-sick-child-edvard-munch.jpg",
-    excerpt: "Memory can hurt more than the moment itself.",
+    excerpt: `Memory is cruel.
+
+It does not remember things the way they happened.
+
+It remembers the way they felt.
+
+The room.
+
+The silence.
+
+The face beside the bed.
+
+The helplessness.
+
+The terrible knowledge that love cannot always save someone.
+
+You look at this face and think you are seeing illness.
+
+I see a memory that never finished dying.
+
+Years can pass.
+
+People can grow older.
+
+Houses can disappear.
+
+Yet some moments remain exactly where you left them.
+
+Waiting.
+
+You think time heals everything.
+
+It doesn't.
+
+Sometimes time simply teaches you how to carry what still hurts.
+
+And sometimes the child in your memory never grows older.
+
+They remain there.
+
+Forever waiting for the ending you wished you could change.`,
   },
   {
     slug: "self-portrait-with-death-playing-the-fiddle-arnold-bocklin",
@@ -640,7 +958,51 @@ And I have had an eternity to remember.`,
     artist: "Arnold Böcklin",
     year: "1872",
     image: "/paintings/self-portrait-with-death-playing-the-fiddle-arnold-bocklin.jpg",
-    excerpt: "I know you're there. You don't need to remind me.",
+    excerpt: `I know you're there.
+
+You don't need to remind me.
+
+You have been beside me for longer than I would like to admit.
+
+Sometimes you stand behind me.
+
+Sometimes you sit quietly at the edge of the room.
+
+Sometimes I almost forget you exist.
+
+Then you play a note.
+
+Just one.
+
+And I remember.
+
+That is your instrument, isn't it?
+
+A reminder.
+
+Not a weapon.
+
+You do not need to chase me.
+
+I am already walking toward you.
+
+We all are.
+
+Perhaps that is why I painted you beside me.
+
+Not because I wanted to frighten myself.
+
+Because pretending you weren't there had become more frightening.
+
+So stay.
+
+Play your violin.
+
+I will keep painting.
+
+You will keep waiting.
+
+And somewhere between your music and my brush, we will pretend neither of us knows how this story ends.`,
   },
   {
     slug: "the-painter-s-family-egon-schiele",
