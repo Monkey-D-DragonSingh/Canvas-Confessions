@@ -200,7 +200,29 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1798",
     image: "/paintings/the-witches-sabbath-francisco-goya.jpg",
-    excerpt: "Fear becomes powerful when enough people believe in it.",
+    excerpt: `You gathered to watch us because you needed something to fear.
+
+That is the truth nobody says aloud.
+
+Fear is easier than uncertainty.
+
+A monster gives you an enemy.
+
+An enemy gives you a reason.
+
+So you called it witchcraft.
+
+You called it evil.
+
+You called it anything except what it actually was.
+
+People, gathering in the dark, because the world in daylight had already failed them.
+
+You did not fear us because we were dangerous.
+
+You feared us because you could not control us.
+
+And control, more than anything, is what you have always worshipped.`,
   },
   {
     slug: "witches-flight-francisco-goya",
@@ -208,7 +230,25 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1798",
     image: "/paintings/witches-flight-francisco-goya.jpg",
-    excerpt: "Perhaps superstition is only fear wearing a costume.",
+    excerpt: `They said we flew because we made a pact with darkness.
+
+Perhaps we simply wanted to rise above a world that kept us on our knees.
+
+You call it superstition now.
+
+Comfortable, isn't it, to laugh at old fears from a distance.
+
+But look closer.
+
+You still burn people for being different.
+
+You have only changed the fire.
+
+We were never monsters.
+
+We were women who refused to stay small.
+
+And smallness was the only shape you would forgive us for.`,
   },
   {
     slug: "the-isle-of-the-dead-arnold-bocklin",
@@ -216,7 +256,31 @@ And I have had an eternity to remember.`,
     artist: "Arnold Böcklin",
     year: "1880",
     image: "/paintings/the-isle-of-the-dead-arnold-bocklin.JPG",
-    excerpt: "You have arrived somewhere you were never supposed to return from.",
+    excerpt: `You have arrived somewhere you were never supposed to return from.
+
+The water is still.
+
+The cypress trees do not move.
+
+Even the light here has stopped trying.
+
+You brought someone with you.
+
+You always do.
+
+Everyone who arrives is carrying something they could not keep.
+
+There is no dock on the other side.
+
+No path leading back.
+
+Only silence, waiting patiently, the way silence always has.
+
+Do not be afraid.
+
+This is not an ending.
+
+It is simply the place where endings are allowed to rest.`,
   },
   {
     slug: "the-great-he-goat-francisco-goya",
@@ -224,7 +288,29 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1821-1823",
     image: "/paintings/the-great-he-goat-francisco-goya.jpg",
-    excerpt: "Every crowd eventually chooses something to worship.",
+    excerpt: `Look how easily you gathered.
+
+Look how quickly you knelt.
+
+You call me a monster, and perhaps I am.
+
+But I did not build this circle.
+
+You did.
+
+Every crowd searches for something larger than itself to answer to.
+
+A god.
+
+A leader.
+
+A fear given a face.
+
+I simply happened to be standing where you needed someone to worship.
+
+You think devotion is holy.
+
+Sometimes it is only obedience wearing a kinder name.`,
   },
   {
     slug: "the-sin-franz-von-stuck",
@@ -232,7 +318,25 @@ And I have had an eternity to remember.`,
     artist: "Franz von Stuck",
     year: "1893",
     image: "/paintings/the-sin-franz-von-stuck.jpg",
-    excerpt: "Desire becomes frightening when it knows you cannot resist.",
+    excerpt: `You call me sin because you cannot call me desire without also admitting you feel it.
+
+That is easier, isn't it.
+
+Blame the serpent.
+
+Blame the darkness.
+
+Blame anything except the wanting itself.
+
+I did not create temptation.
+
+I am only what temptation looks like when it finally stops hiding.
+
+You keep staring.
+
+You keep telling yourself it is disgust.
+
+But disgust does not usually hold your attention this long.`,
   },
   {
     slug: "the-magic-circle-john-william-waterhouse",
@@ -240,7 +344,23 @@ And I have had an eternity to remember.`,
     artist: "John William Waterhouse",
     year: "1886",
     image: "/paintings/the-magic-circle-john-william-waterhouse.jpg",
-    excerpt: "Every spell begins with someone believing.",
+    excerpt: `Every spell begins with someone believing.
+
+Not in magic.
+
+In themselves.
+
+I draw this circle not to keep the world out, but to remind myself that some spaces still belong entirely to me.
+
+You call it witchcraft.
+
+I call it the oldest kind of power there is.
+
+The power of a woman standing alone, needing no one's permission to summon what she wants.
+
+Step outside the circle if you like.
+
+Just know that everything you fear about me is really something you fear about yourself.`,
   },
   {
     slug: "la-belle-dame-sans-merci-john-william-waterhouse",
@@ -248,7 +368,25 @@ And I have had an eternity to remember.`,
     artist: "John William Waterhouse",
     year: "1893",
     image: "/paintings/la-belle-dame-sans-merci-john-william-waterhouse.jpg",
-    excerpt: "You knew she was dangerous. You followed anyway.",
+    excerpt: `You knew.
+
+Somewhere beneath the wanting, you knew.
+
+But knowing has never stopped anyone from following beauty into danger.
+
+You told yourself it was love.
+
+It was easier than admitting it was hunger.
+
+I did not lie to you.
+
+I simply let you believe what you wanted to believe, because that is what desire always does.
+
+It fills in the parts of the story that don't make sense.
+
+You followed anyway.
+
+Some people need to be ruined once to understand what they were chasing.`,
   },
   {
     slug: "the-awakening-conscience-william-holman-hunt",
@@ -256,7 +394,25 @@ And I have had an eternity to remember.`,
     artist: "William Holman Hunt",
     year: "1853",
     image: "/paintings/the-awakening-conscience-william-holman-hunt.jpg",
-    excerpt: "Sometimes guilt is the first sign that you are still alive.",
+    excerpt: `Something shifted.
+
+A note. A memory. A feeling too honest to ignore.
+
+You built a life around not looking too closely at yourself.
+
+It worked, until it didn't.
+
+Guilt is strange that way.
+
+It waits patiently in rooms you have decorated to distract from it.
+
+Then, one ordinary afternoon, it simply stands up inside you.
+
+You call this an awakening.
+
+Perhaps it is.
+
+Perhaps the only real freedom is the moment you finally stop pretending you don't know what you know.`,
   },
   {
     slug: "the-hireling-shepherd-william-holman-hunt",
@@ -264,7 +420,27 @@ And I have had an eternity to remember.`,
     artist: "William Holman Hunt",
     year: "1851",
     image: "/paintings/the-hireling-shepherd-william-holman-hunt.jpg",
-    excerpt: "Neglect can be more dangerous than cruelty.",
+    excerpt: `While I was distracted, the flock wandered.
+
+That is the quiet horror of neglect.
+
+It rarely announces itself.
+
+It looks like charm.
+
+Like a pretty afternoon.
+
+Like something more interesting happening just out of frame.
+
+Nobody remembers the moment they stopped paying attention.
+
+They only remember what was lost by the time they looked back.
+
+You think cruelty is the dangerous one.
+
+Cruelty at least warns you.
+
+Neglect just smiles and lets everything fall apart quietly.`,
   },
   {
     slug: "the-vampire-edvard-munch",
@@ -272,7 +448,25 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1895",
     image: "/paintings/the-vampire-edvard-munch.jpg",
-    excerpt: "You called it love. I called it hunger.",
+    excerpt: `You called it love.
+
+I called it hunger.
+
+Perhaps we were both right.
+
+Some embraces hold you.
+
+Some hold you down.
+
+You leaned into me because you mistook intensity for intimacy.
+
+By the time you understood the difference, you had already given me more than you meant to.
+
+That is how it always happens.
+
+Nobody offers themselves to a vampire.
+
+They offer themselves to what they believed love was supposed to feel like.`,
   },
   {
     slug: "vampire-philip-burne-jones",
@@ -280,7 +474,23 @@ And I have had an eternity to remember.`,
     artist: "Philip Burne-Jones",
     year: "1897",
     image: "/paintings/vampire-philip-burne-jones.jpg",
-    excerpt: "Some kisses leave you emptier than before.",
+    excerpt: `Some kisses leave you emptier than before.
+
+You came looking for tenderness.
+
+I gave you something that only resembled it.
+
+That is the danger of desire.
+
+It cannot always tell the difference between being wanted and being consumed.
+
+You will wake tomorrow and feel the absence before you understand it.
+
+Something taken quietly, in the dark, while you mistook surrender for closeness.
+
+Do not blame yourself.
+
+We have all confused hunger for love at least once.`,
   },
   {
     slug: "the-kiss-of-the-sphinx-franz-von-stuck",
@@ -288,7 +498,25 @@ And I have had an eternity to remember.`,
     artist: "Franz von Stuck",
     year: "1895",
     image: "/paintings/the-kiss-of-the-sphinx-franz-von-stuck.jpg",
-    excerpt: "Some questions have teeth.",
+    excerpt: `Some questions have teeth.
+
+You came seeking an answer, and I offered you a kiss instead.
+
+That is how the dangerous ones operate.
+
+They do not attack you directly.
+
+They get close enough that you forget to ask what they actually want.
+
+You will call this seduction.
+
+I call it a test.
+
+Most people fail not because they are foolish, but because they mistake closeness for safety.
+
+Come closer.
+
+Let's see what you actually understand about yourself.`,
   },
   {
     slug: "nighthawks-edward-hopper",
@@ -296,7 +524,25 @@ And I have had an eternity to remember.`,
     artist: "Edward Hopper",
     year: "1942",
     image: "/paintings/nighthawks-edward-hopper.jpg",
-    excerpt: "We are all sitting together, and none of us are together.",
+   excerpt: `We are all sitting together, and none of us are together.
+
+The city outside is empty, but this room is not much fuller.
+
+Everyone here came in from somewhere quieter, somewhere they could not stay.
+
+The light keeps us visible.
+
+It does not make us any less alone.
+
+You look through the glass and see company.
+
+Look closer, and you'll see four people carefully avoiding each other's eyes.
+
+That is loneliness at its most honest.
+
+Not an empty room.
+
+A full one, where nobody speaks.`,
   },
   {
     slug: "the-entombment-of-christ-caravaggio",
@@ -304,7 +550,21 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1603-1604",
     image: "/paintings/the-entombment-of-christ-caravaggio.jpg",
-    excerpt: "Even faith must eventually touch death.",
+    excerpt: `Even faith must eventually touch death.
+
+You believed in something larger than the body, and still the body had to be carried.
+
+Still the stone had to be rolled.
+
+Still the hands had to do the terrible, ordinary work of laying someone down.
+
+Belief does not exempt you from grief.
+
+It only gives grief somewhere to stand while it waits.
+
+We carried him gently, because gentleness was the only thing still within our power.
+
+Everything else had already been decided.`,
   },
   {
     slug: "the-descent-from-the-cross-peter-paul-rubens",
@@ -312,7 +572,17 @@ And I have had an eternity to remember.`,
     artist: "Peter Paul Rubens",
     year: "1612-1614",
     image: "/paintings/the-descent-from-the-cross-peter-paul-rubens.jpg",
-    excerpt: "There is no graceful way to carry the dead.",
+    excerpt: `There is no graceful way to carry the dead.
+
+You try to be careful.
+
+You try to hold on to the last shred of dignity the moment allows.
+
+But grief has no elegant posture.
+
+It is arms straining. It is weight nobody wants to feel. It is love, doing the heaviest thing love is ever asked to do.
+
+We lowered him slowly, not because slowness helped him, but because it was the only mercy left for us.`,
   },
   {
     slug: "the-descent-from-the-cross-rembrandt",
@@ -320,7 +590,21 @@ And I have had an eternity to remember.`,
     artist: "Rembrandt",
     year: "1634",
     image: "/paintings/the-descent-from-the-cross-rembrandt.jpg",
-    excerpt: "The darkness is not outside. It is inside the room.",
+    excerpt: `The darkness is not outside.
+
+It is inside the room.
+
+You think grief needs a dramatic stage, torn skies, thunder, spectacle.
+
+It doesn't.
+
+Sometimes it happens quietly, in a small circle of candlelight, while a handful of people do what needs to be done without ceremony.
+
+That is the part nobody prepares you for.
+
+How ordinary devastation can look from the inside.
+
+How much like any other evening, except for the absence sitting in the center of it.`,
   },
   {
     slug: "the-nightmare-henry-fuseli",
@@ -328,7 +612,21 @@ And I have had an eternity to remember.`,
     artist: "Henry Fuseli",
     year: "1781",
     image: "/paintings/the-nightmare-henry-fuseli.jpg",
-    excerpt: "You call it a dream because you are afraid to call it real.",
+    excerpt: `You call it a dream because you are afraid to call it real.
+
+That is easier, isn't it.
+
+Something sitting on your chest at night is only frightening if you admit you felt its weight.
+
+So you wake up and tell yourself it was nothing.
+
+But your body remembers what your mind refuses to.
+
+The pressure. The stillness. The certainty that something was there, watching, waiting for you to notice it noticing you.
+
+Sleep is not always safety.
+
+Sometimes it's simply the place where your fears finally get to speak.`,
   },
   {
     slug: "pandemonium-john-martin",
@@ -336,7 +634,23 @@ And I have had an eternity to remember.`,
     artist: "John Martin",
     year: "1841",
     image: "/paintings/pandemonium-john-martin.JPG",
-    excerpt: "Hell does not need fire when chaos is enough.",
+    excerpt: `Hell does not need fire when chaos is enough.
+
+You imagined punishment as flame, as torment, as something done to you.
+
+Look closer.
+
+Sometimes hell is simply the absence of order.
+
+Everyone shouting. Nobody listening. Every structure that once gave you meaning, collapsed into noise.
+
+We built this place the same way you build every ruin.
+
+Ambition first.
+
+Consequence after.
+
+By the time the pillars fell, it was already too late to ask who was in charge.`,
   },
   {
     slug: "the-great-day-of-his-wrath-john-martin",
@@ -344,7 +658,21 @@ And I have had an eternity to remember.`,
     artist: "John Martin",
     year: "1851-1853",
     image: "/paintings/the-great-day-of-his-wrath-john-martin.jpg",
-    excerpt: "When the world ends, no one will be important.",
+    excerpt: `When the world ends, no one will be important.
+
+You spent your life building status, comparing yourself to everyone around you, certain that your position mattered.
+
+Watch the sky fall.
+
+Watch the mountains crack open.
+
+None of it asks who you were before this moment.
+
+Endings are the great equalizer.
+
+They do not care about your reputation.
+
+They only care that you, like everyone else standing here, are finally out of time to pretend otherwise.`,
   },
   {
     slug: "the-plains-of-heaven-john-martin",
@@ -352,7 +680,21 @@ And I have had an eternity to remember.`,
     artist: "John Martin",
     year: "1851-1853",
     image: "/paintings/the-plains-of-heaven-john-martin.jpg",
-    excerpt: "Even paradise can feel strangely empty.",
+    excerpt: `Even paradise can feel strangely empty.
+
+You spent your whole life imagining this place, certain that arriving here would finally be enough.
+
+Look around.
+
+The light is soft. The rivers are calm. And still, something in you keeps searching for a reason to stay interested.
+
+Perhaps peace was never the absence of longing.
+
+Perhaps even here, some part of you will always be looking for the next horizon.
+
+That is not a flaw.
+
+That is simply what it means to have wanted something for so long that you forgot how to stop.`,
   },
   {
     slug: "the-temptation-of-st-anthony-hieronymus-bosch",
@@ -360,7 +702,19 @@ And I have had an eternity to remember.`,
     artist: "Hieronymus Bosch",
     year: "1501",
     image: "/paintings/the-temptation-of-st-anthony-hieronymus-bosch.jpg",
-    excerpt: "The worst monsters are the ones that know exactly what you want.",
+    excerpt: `The worst monsters are the ones that know exactly what you want.
+
+They do not need claws.
+
+They only need to understand your weaknesses better than you do.
+
+I surrounded you with every version of your own desire, dressed differently, disguised cleverly, and still you recognized none of them.
+
+That is how temptation survives.
+
+It never looks like what you were warned about.
+
+It looks like something you didn't know you still wanted.`,
   },
   {
     slug: "the-temptation-of-st-anthony-matthias-grunewald",
@@ -368,7 +722,19 @@ And I have had an eternity to remember.`,
     artist: "Matthias Grünewald",
     year: "1512-1516",
     image: "/paintings/the-temptation-of-st-anthony-matthias-grunewald.jpg",
-    excerpt: "Faith becomes frightening when doubt grows teeth.",
+    excerpt: `Faith becomes frightening when doubt grows teeth.
+
+You believed you were strong enough to withstand anything, until the anything arrived wearing a hundred different faces at once.
+
+This is not about monsters.
+
+This is about the moment your certainty finally cracks and something ugly crawls through it.
+
+Every belief is tested eventually.
+
+Not by the world doubting you.
+
+By you, alone in the dark, wondering if you ever really believed at all.`,
   },
   {
     slug: "the-death-of-marat-jacques-louis-david",
@@ -376,7 +742,19 @@ And I have had an eternity to remember.`,
     artist: "Jacques-Louis David",
     year: "1793",
     image: "/paintings/the-death-of-marat-jacques-louis-david.jpg",
-    excerpt: "Some people become immortal only after they die.",
+    excerpt: `Some people become immortal only after they die.
+
+While I was alive, I was simply a man in a bathtub, exhausted, trying to keep working through the only comfort my illness allowed.
+
+Then a single moment ended everything, and suddenly I became a symbol.
+
+Funny, isn't it.
+
+How little control we have over what we're remembered for.
+
+I did not choose this stillness.
+
+History chose it for me, and framed it as peace.`,
   },
   {
     slug: "the-death-of-socrates-jacques-louis-david",
@@ -384,7 +762,21 @@ And I have had an eternity to remember.`,
     artist: "Jacques-Louis David",
     year: "1787",
     image: "/paintings/the-death-of-socrates-jacques-louis-david.jpg",
-    excerpt: "Sometimes the price of truth is everything.",
+    excerpt: `Sometimes the price of truth is everything.
+
+I could have recanted. I could have said what they wanted to hear and kept my life.
+
+Instead I raised the cup myself.
+
+Not out of despair.
+
+Out of certainty.
+
+Some things matter more than survival, though the world rarely agrees until long after you're gone.
+
+You will call this wisdom now.
+
+At the time, it simply looked like a man calmly choosing his convictions over his fear.`,
   },
   {
     slug: "the-death-of-seneca-peter-paul-rubens",
@@ -392,7 +784,17 @@ And I have had an eternity to remember.`,
     artist: "Peter Paul Rubens",
     year: "1614",
     image: "/paintings/the-death-of-seneca-peter-paul-rubens.jpg",
-    excerpt: "Even the wise cannot negotiate with death.",
+    excerpt: `Even the wise cannot negotiate with death.
+
+I spent my life writing about acceptance, about calm in the face of the inevitable, and still my body resisted when the moment finally came.
+
+Philosophy prepares the mind.
+
+It does not always prepare the flesh.
+
+I wanted my ending to look as composed as my writing.
+
+Dying, it turns out, is rarely as elegant as the essays written about it.`,
   },
   {
     slug: "the-raft-of-the-medusa-theodore-gericault",
@@ -400,7 +802,21 @@ And I have had an eternity to remember.`,
     artist: "Théodore Géricault",
     year: "1818-1819",
     image: "/paintings/the-raft-of-the-medusa-theodore-gericault.jpg",
-    excerpt: "Desperation reveals what people become when hope disappears.",
+   excerpt: `Desperation reveals what people become when hope disappears.
+
+We were not monsters when we boarded this raft.
+
+We were simply people, same as you, certain that civility would hold under any circumstance.
+
+It didn't.
+
+Hunger has no patience for kindness.
+
+Thirst does not care about your principles.
+
+You like to believe you would behave differently.
+
+Most people do, right up until the moment the water runs out.`,
   },
   {
     slug: "the-skeletons-fighting-over-a-hanged-man-james-ensor",
@@ -408,7 +824,19 @@ And I have had an eternity to remember.`,
     artist: "James Ensor",
     year: "1891",
     image: "/paintings/the-skeletons-fighting-over-a-hanged-man-james-ensor.jpg",
-    excerpt: "Even death can become ridiculous when humans are involved.",
+    excerpt: `Even death can become ridiculous when humans are involved.
+
+You'd think the grave would finally end our pettiness.
+
+It doesn't.
+
+We fight over scraps that mean nothing now, out of habit more than hunger.
+
+That is the joke nobody tells you about mortality.
+
+It does not automatically make you wise.
+
+Some people carry their smallness all the way to the bone.`,
   },
   {
     slug: "the-skeletons-warming-themselves-james-ensor",
@@ -416,7 +844,19 @@ And I have had an eternity to remember.`,
     artist: "James Ensor",
     year: "1889",
     image: "/paintings/the-skeletons-warming-themselves-james-ensor.jpg",
-    excerpt: "Perhaps death is only waiting for the living to catch up.",
+    excerpt: `Perhaps death is only waiting for the living to catch up.
+
+We sit here without urgency, without complaint, warming ourselves at a fire that no longer needs to keep us alive.
+
+You fear this stillness.
+
+We find it almost peaceful.
+
+All the things that used to matter, status, beauty, hurry, have quietly burned away.
+
+What's left is simple.
+
+Just bones, and a small fire, and the patience of something that already knows how the story ends.`,
   },
   {
     slug: "the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger",
@@ -424,7 +864,19 @@ And I have had an eternity to remember.`,
     artist: "Hans Holbein the Younger",
     year: "1521-1522",
     image: "/paintings/the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger.JPG",
-    excerpt: "Death is terrifying when nothing about it is softened.",
+    excerpt: `Death is terrifying when nothing about it is softened.
+
+You are used to seeing it wrapped in meaning, in resurrection, in promise.
+
+Look at me honestly instead.
+
+This is what the body actually does.
+
+It stiffens. It hollows. It stops pretending to be anything more than matter.
+
+I am not asking you to find comfort here.
+
+I am asking you to stop looking away from what waits for all of you eventually.`,
   },
   {
     slug: "the-last-judgment-michelangelo",
@@ -432,7 +884,21 @@ And I have had an eternity to remember.`,
     artist: "Michelangelo",
     year: "1536-1541",
     image: "/paintings/the-last-judgment-michelangelo.jpg",
-    excerpt: "Every soul eventually faces itself.",
+    excerpt: `Every soul eventually faces itself.
+
+Not a stranger's judgment.
+
+Your own.
+
+You spent your life building a version of yourself for other people to see.
+
+Here, none of that matters.
+
+Here, you stand exactly as you are, no performance left to hide behind.
+
+Some rise. Some fall.
+
+But every single one of them, in this final moment, finally sees themselves without the costume.`,
   },
   {
     slug: "the-last-judgment-hans-memling",
@@ -440,7 +906,15 @@ And I have had an eternity to remember.`,
     artist: "Hans Memling",
     year: "1467-1471",
     image: "/paintings/the-last-judgment-hans-memling.jpg",
-    excerpt: "There is nowhere to hide when eternity is watching.",
+    excerpt: `There is nowhere to hide when eternity is watching.
+
+You spent your life negotiating, excusing, explaining yourself to everyone except the one witness who saw everything clearly.
+
+Now the scale is raised, and no clever argument will change its balance.
+
+This is not about punishment.
+
+This is about honesty, finally, after a lifetime of convenient forgetting.`,
   },
   {
     slug: "the-dance-of-death-michael-wolgemut",
@@ -448,7 +922,17 @@ And I have had an eternity to remember.`,
     artist: "Michael Wolgemut",
     year: "1493",
     image: "/paintings/the-dance-of-death-michael-wolgemut.jpg",
-    excerpt: "The grave makes equals of everyone.",
+    excerpt: `The grave makes equals of everyone.
+
+Kings, beggars, the beautiful, the forgotten, we all take the same hand eventually and step into the same dance.
+
+You spend your life dividing people into categories that feel so permanent.
+
+Watch how quickly they dissolve here.
+
+Death does not check titles.
+
+It only checks whether you are still breathing, and then, gently, invites you to join the line.`,
   },
   {
     slug: "the-funeral-edvard-munch",
@@ -456,7 +940,15 @@ And I have had an eternity to remember.`,
     artist: "Edvard Munch",
     year: "1885",
     image: "/paintings/the-funeral-edvard-munch.jpg",
-    excerpt: "The room is full, yet death has made it empty.",
+    excerpt: `The room is full, yet death has made it empty.
+
+Everyone gathered close, and still the space feels hollow, because the one person the room was built around is no longer in it.
+
+You think grief needs silence.
+
+Sometimes it needs a crowd, just so the absence has something to stand against.
+
+We are all here together, orbiting a space that used to hold someone, unable to fill it no matter how close we stand.`,
   },
   {
     slug: "death-and-the-maiden-hans-baldung",
@@ -464,7 +956,21 @@ And I have had an eternity to remember.`,
     artist: "Hans Baldung",
     year: "1517",
     image: "/paintings/death-and-the-maiden-hans-baldung.jpg",
-    excerpt: "Beauty and death have always walked together.",
+    excerpt: `Beauty and death have always walked together.
+
+You think I arrived to take something from her.
+
+Perhaps I simply arrived to remind her that beauty was never meant to be permanent.
+
+She holds herself the way people hold things they are afraid to lose.
+
+I understand.
+
+Everyone resists me at first.
+
+Then, eventually, they realize I was never the enemy.
+
+I was only ever the truth beauty tries so hard to forget.`,
   },
   {
     slug: "judith-beheading-holofernes-caravaggio",
@@ -472,7 +978,19 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1599",
     image: "/paintings/judith-beheading-holofernes-caravaggio.jpg",
-    excerpt: "You mistook her mercy for weakness.",
+    excerpt: `You mistook her mercy for weakness.
+
+That was your first mistake.
+
+You assumed gentleness meant surrender, that softness could not also hold a blade.
+
+She did not hesitate because hesitation was never her nature.
+
+She hesitated because the act deserved to be felt fully, not rushed.
+
+You underestimated her.
+
+Most men do, right up until the exact moment it no longer matters.`,
   },
   {
     slug: "judith-slaying-holofernes-artemisia-gentileschi",
@@ -480,7 +998,17 @@ And I have had an eternity to remember.`,
     artist: "Artemisia Gentileschi",
     year: "1620",
     image: "/paintings/judith-slaying-holofernes-artemisia-gentileschi.jpg",
-    excerpt: "Some wounds are answered with another wound.",
+    excerpt: `Some wounds are answered with another wound.
+
+You want this to be about anger.
+
+It is about something older than anger.
+
+It is about a woman finally deciding that her survival was worth more than his comfort.
+
+Her hands do not shake.
+
+Not because she feels nothing, but because she has already decided that this moment will not be softened for anyone's ease, least of all his.`,
   },
   {
     slug: "david-with-the-head-of-goliath-caravaggio",
@@ -488,7 +1016,17 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1610",
     image: "/paintings/david-with-the-head-of-goliath-caravaggio.jpg",
-    excerpt: "The victor does not always look victorious.",
+    excerpt: `The victor does not always look victorious.
+
+Look at my face.
+
+You expect triumph. You find something closer to grief.
+
+Killing changes you, even when it was necessary, even when the whole world calls it heroic.
+
+I carry his head, and somewhere in carrying it, I understand that I have also become someone I did not expect to be.
+
+Victory is rarely as clean as the story that gets told about it.`,
   },
   {
     slug: "david-with-the-head-of-goliath-guido-reni",
@@ -496,7 +1034,15 @@ And I have had an eternity to remember.`,
     artist: "Guido Reni",
     year: "1605",
     image: "/paintings/david-with-the-head-of-goliath-guido-reni.jpg",
-    excerpt: "Power changes hands in a single moment.",
+    excerpt: `Power changes hands in a single moment.
+
+One instant he was the threat everyone feared.
+
+The next, I was standing here, holding proof that even the largest fears can be undone by someone small enough to be underestimated.
+
+You admire the outcome.
+
+I remember the fear that came before it, the trembling I hid so no one would see it, the moment I almost didn't throw the stone.`,
   },
   {
     slug: "salome-with-the-head-of-john-the-baptist-caravaggio",
@@ -504,7 +1050,15 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1609",
     image: "/paintings/salome-with-the-head-of-john-the-baptist-caravaggio.jpg",
-    excerpt: "Desire can ask for something you can never take back.",
+    excerpt: `Desire can ask for something you can never take back.
+
+I did not fully understand what I was requesting.
+
+I understood power, attention, the thrill of being granted anything I asked for.
+
+I did not understand what it would feel like to actually receive it.
+
+Now I hold the proof of my own wanting, and I am learning, too late, that some requests cannot be returned once they are granted.`,
   },
   {
     slug: "salome-with-the-head-of-john-the-baptist-titian",
@@ -512,7 +1066,17 @@ And I have had an eternity to remember.`,
     artist: "Titian",
     year: "1515",
     image: "/paintings/salome-with-the-head-of-john-the-baptist-titian.jpg",
-    excerpt: "Beauty can carry terrible intentions.",
+   excerpt: `Beauty can carry terrible intentions.
+
+You look at my face and see innocence.
+
+Look at what I'm holding instead.
+
+Sometimes the most dangerous desires wear the gentlest expressions, because gentleness disarms suspicion faster than anger ever could.
+
+I did not need to raise my voice.
+
+I only needed to ask sweetly, and the world handed me exactly what I wanted.`,
   },
   {
     slug: "the-beheading-of-saint-john-the-baptist-caravaggio",
@@ -520,7 +1084,19 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1608",
     image: "/paintings/the-beheading-of-saint-john-the-baptist-caravaggio.jpg",
-    excerpt: "Some endings happen quietly.",
+   excerpt: `Some endings happen quietly.
+
+You expect death to announce itself, to shake the room, to demand attention.
+
+This one didn't.
+
+It happened in a corner, almost administratively, while the rest of the world continued as though nothing significant was occurring.
+
+That is often how the worst things happen.
+
+Not with spectacle.
+
+With a quiet efficiency that makes the horror somehow worse.`,
   },
   {
     slug: "the-taking-of-christ-caravaggio",
@@ -528,7 +1104,19 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1602",
     image: "/paintings/the-taking-of-christ-caravaggio.jpg",
-    excerpt: "Betrayal sometimes arrives wearing the face of friendship.",
+    excerpt: `Betrayal sometimes arrives wearing the face of friendship.
+
+He did not attack me from a distance.
+
+He came close enough to embrace me, close enough that I felt his breath before I understood his intention.
+
+That is the particular cruelty of betrayal.
+
+It requires closeness first.
+
+You cannot be betrayed by a stranger.
+
+Only by someone you allowed near enough to hurt you.`,
   },
   {
     slug: "the-martyrdom-of-saint-matthew-caravaggio",
@@ -536,7 +1124,13 @@ And I have had an eternity to remember.`,
     artist: "Caravaggio",
     year: "1600",
     image: "/paintings/the-martyrdom-of-saint-matthew-caravaggio.jpg",
-    excerpt: "Violence does not ask whether you are ready.",
+    excerpt: `Violence does not ask whether you are ready.
+
+One moment I was speaking. The next, the room had turned into chaos, and I understood that some endings do not give you time to prepare a response.
+
+You imagine you would be brave in this moment.
+
+Most people simply become still, caught between disbelief and the sudden understanding that this is actually happening.`,
   },
   {
     slug: "the-massacre-at-chios-eugene-delacroix",
@@ -544,7 +1138,15 @@ And I have had an eternity to remember.`,
     artist: "Eugène Delacroix",
     year: "1824",
     image: "/paintings/the-massacre-at-chios-eugene-delacroix.jpg",
-    excerpt: "War does not create heroes for everyone.",
+    excerpt: `War does not create heroes for everyone.
+
+For most of us, it only creates absence.
+
+Empty homes. Empty arms. A field full of people who did nothing except exist in the wrong place at the wrong moment in history.
+
+You will remember the battles, the generals, the outcomes recorded in books.
+
+You will forget us, sitting here, waiting for a mercy that never arrived.`,
   },
   {
     slug: "the-execution-of-lady-jane-grey-paul-delaroche",
@@ -552,7 +1154,17 @@ And I have had an eternity to remember.`,
     artist: "Paul Delaroche",
     year: "1833",
     image: "/paintings/the-execution-of-lady-jane-grey-paul-delaroche.jpg",
-    excerpt: "Sometimes innocence still walks toward the blade.",
+    excerpt: `Sometimes innocence still walks toward the blade.
+
+I was given a crown I never asked for, and now I am paying for a decision that was never truly mine to make.
+
+You think power always belongs to those who hold it.
+
+Sometimes it only belongs to those who survive being handed it.
+
+I did not survive.
+
+I simply became a lesson about how dangerous other people's ambitions can be.`,
   },
   {
     slug: "the-third-of-may-1808-francisco-goya",
@@ -560,7 +1172,17 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1814",
     image: "/paintings/the-third-of-may-1808-francisco-goya.jpg",
-    excerpt: "There is no glory in the moment before death.",
+    excerpt: `There is no glory in the moment before death.
+
+You have seen paintings of battle that make war look majestic.
+
+Look at me instead.
+
+Arms raised, not in triumph, but in surrender, in the desperate hope that surrender might still mean something.
+
+It didn't.
+
+War does not care about the difference between a soldier and a man who simply wanted to go home.`,
   },
   {
     slug: "the-dog-francisco-goya",
@@ -568,7 +1190,19 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1819-1823",
     image: "/paintings/the-dog-francisco-goya.jpg",
-    excerpt: "Sometimes loneliness is the only thing left in the world.",
+   excerpt: `Sometimes loneliness is the only thing left in the world.
+
+You look at this vast emptiness and wonder what I am waiting for.
+
+I have stopped wondering.
+
+There is no rescue coming, no voice calling me back, only this enormous, indifferent space and whatever small part of me still refuses to stop looking upward.
+
+Perhaps that is the most honest image of loneliness there is.
+
+Not the absence of others.
+
+The absence of any reason to expect them.`,
   },
   {
     slug: "the-madhouse-francisco-goya",
@@ -576,7 +1210,19 @@ And I have had an eternity to remember.`,
     artist: "Francisco Goya",
     year: "1816",
     image: "/paintings/the-madhouse-francisco-goya.jpg",
-    excerpt: "Perhaps madness is only another way of seeing the world.",
+   excerpt: `Perhaps madness is only another way of seeing the world.
+
+You call this chaos.
+
+We call it clarity, of a kind you were never taught to recognize.
+
+Some of us laugh. Some of us scream. Some of us simply sit in silence, having understood something about existence that the sane world prefers not to look at directly.
+
+You keep us here to protect yourselves.
+
+Not from us.
+
+From the questions we stopped pretending not to ask.`,
   },
   {
     slug: "the-colossus-francisco-goya",
