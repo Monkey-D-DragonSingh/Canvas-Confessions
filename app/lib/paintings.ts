@@ -22,7 +22,7 @@ export const paintings: Painting[] = [
   title: "Lucifer",
   artist: "Franz von Stuck",
   year: "1890",
-  image: "/paintings/lucifer.jpg",
+  image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/lucifer",
   mood: "dread",
   excerpt: `You came looking for darkness.
 
@@ -61,7 +61,7 @@ Neither am I.`,
   title: "The Fallen Angel",
   artist: "Alexandre Cabanel",
   year: "1847",
-  image: "/paintings/the-fallen-angel-alexandre-cabanel.jpg",
+  image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-fallen-angel-alexandre-cabanel",
   mood: "melancholy",
   excerpt: `Do not look at me as though I am broken.
 
@@ -204,7 +204,7 @@ And I have had an eternity to remember.`,
     title: "The Witches' Sabbath",
     artist: "Francisco Goya",
     year: "1798",
-    image: "/paintings/the-witches-sabbath-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-witches-sabbath-francisco-goya",
     mood: "chaos",
     excerpt: `You gathered to watch us because you needed something to fear.
 
@@ -235,7 +235,7 @@ And control, more than anything, is what you have always worshipped.`,
     title: "Witches' Flight",
     artist: "Francisco Goya",
     year: "1798",
-    image: "/paintings/witches-flight-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/witches-flight-francisco-goya",
     mood: "chaos",
     excerpt: `They said we flew because we made a pact with darkness.
 
@@ -262,7 +262,7 @@ And smallness was the only shape you would forgive us for.`,
     title: "The Isle of the Dead",
     artist: "Arnold Böcklin",
     year: "1880",
-    image: "/paintings/the-isle-of-the-dead-arnold-bocklin.JPG",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-isle-of-the-dead-arnold-bocklin",
     mood: "melancholy",
     excerpt: `You have arrived somewhere you were never supposed to return from.
 
@@ -295,7 +295,7 @@ It is simply the place where endings are allowed to rest.`,
     title: "The Great He-Goat",
     artist: "Francisco Goya",
     year: "1821-1823",
-    image: "/paintings/the-great-he-goat-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-great-he-goat-francisco-goya",
     mood: "dread",
     excerpt: `Look how easily you gathered.
 
@@ -326,7 +326,7 @@ Sometimes it is only obedience wearing a kinder name.`,
     title: "The Sin",
     artist: "Franz von Stuck",
     year: "1893",
-    image: "/paintings/the-sin-franz-von-stuck.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-sin-franz-von-stuck",
     mood: "dread",
     excerpt: `You call me sin because you cannot call me desire without also admitting you feel it.
 
@@ -353,7 +353,7 @@ But disgust does not usually hold your attention this long.`,
     title: "The Magic Circle",
     artist: "John William Waterhouse",
     year: "1886",
-    image: "/paintings/the-magic-circle-john-william-waterhouse.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-magic-circle-john-william-waterhouse",
     mood: "chaos",
     excerpt: `Every spell begins with someone believing.
 
@@ -378,7 +378,7 @@ Just know that everything you fear about me is really something you fear about y
     title: "La Belle Dame Sans Merci",
     artist: "John William Waterhouse",
     year: "1893",
-    image: "/paintings/la-belle-dame-sans-merci-john-william-waterhouse.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/la-belle-dame-sans-merci-john-william-waterhouse",
     mood: "longing",
     excerpt: `You knew.
 
@@ -405,7 +405,7 @@ Some people need to be ruined once to understand what they were chasing.`,
     title: "The Awakening Conscience",
     artist: "William Holman Hunt",
     year: "1853",
-    image: "/paintings/the-awakening-conscience-william-holman-hunt.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-awakening-conscience-william-holman-hunt",
     mood: "madness",
     excerpt: `Something shifted.
 
@@ -432,7 +432,7 @@ Perhaps the only real freedom is the moment you finally stop pretending you don'
     title: "The Hireling Shepherd",
     artist: "William Holman Hunt",
     year: "1851",
-    image: "/paintings/the-hireling-shepherd-william-holman-hunt.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-hireling-shepherd-william-holman-hunt",
     mood: "dread",
     excerpt: `While I was distracted, the flock wandered.
 
@@ -461,7 +461,7 @@ Neglect just smiles and lets everything fall apart quietly.`,
     title: "The Vampire",
     artist: "Edvard Munch",
     year: "1895",
-    image: "/paintings/the-vampire-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-vampire-edvard-munch",
     mood: "longing",
     excerpt: `You called it love.
 
@@ -488,7 +488,7 @@ They offer themselves to what they believed love was supposed to feel like.`,
     title: "Vampire",
     artist: "Philip Burne-Jones",
     year: "1897",
-    image: "/paintings/vampire-philip-burne-jones.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/vampire-philip-burne-jones",
     mood: "longing",
     excerpt: `Some kisses leave you emptier than before.
 
@@ -513,7 +513,7 @@ We have all confused hunger for love at least once.`,
     title: "The Kiss of the Sphinx",
     artist: "Franz von Stuck",
     year: "1895",
-    image: "/paintings/the-kiss-of-the-sphinx-franz-von-stuck.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-kiss-of-the-sphinx-franz-von-stuck",
     mood: "longing",
     excerpt: `Some questions have teeth.
 
@@ -540,7 +540,7 @@ Let's see what you actually understand about yourself.`,
     title: "Nighthawks",
     artist: "Edward Hopper",
     year: "1942",
-    image: "/paintings/nighthawks-edward-hopper.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/nighthawks-edward-hopper",
    mood: "isolation",
    excerpt: `We are all sitting together, and none of us are together.
 
@@ -567,7 +567,7 @@ A full one, where nobody speaks.`,
     title: "The Entombment of Christ",
     artist: "Caravaggio",
     year: "1603-1604",
-    image: "/paintings/the-entombment-of-christ-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-entombment-of-christ-caravaggio",
     mood: "melancholy",
     excerpt: `Even faith must eventually touch death.
 
@@ -590,7 +590,7 @@ Everything else had already been decided.`,
     title: "The Descent from the Cross",
     artist: "Peter Paul Rubens",
     year: "1612-1614",
-    image: "/paintings/the-descent-from-the-cross-peter-paul-rubens.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-descent-from-the-cross-peter-paul-rubens",
     mood: "longing",
     excerpt: `There is no graceful way to carry the dead.
 
@@ -609,7 +609,7 @@ We lowered him slowly, not because slowness helped him, but because it was the o
     title: "The Descent from the Cross",
     artist: "Rembrandt",
     year: "1634",
-    image: "/paintings/the-descent-from-the-cross-rembrandt.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-descent-from-the-cross-rembrandt",
     mood: "melancholy",
     excerpt: `The darkness is not outside.
 
@@ -632,7 +632,7 @@ How much like any other evening, except for the absence sitting in the center of
     title: "The Nightmare",
     artist: "Henry Fuseli",
     year: "1781",
-    image: "/paintings/the-nightmare-henry-fuseli.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-nightmare-henry-fuseli",
     mood: "madness",
     excerpt: `You call it a dream because you are afraid to call it real.
 
@@ -655,7 +655,7 @@ Sometimes it's simply the place where your fears finally get to speak.`,
     title: "Pandemonium",
     artist: "John Martin",
     year: "1841",
-    image: "/paintings/pandemonium-john-martin.JPG",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/pandemonium-john-martin",
     mood: "dread",
     excerpt: `Hell does not need fire when chaos is enough.
 
@@ -680,7 +680,7 @@ By the time the pillars fell, it was already too late to ask who was in charge.`
     title: "The Great Day of His Wrath",
     artist: "John Martin",
     year: "1851-1853",
-    image: "/paintings/the-great-day-of-his-wrath-john-martin.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-great-day-of-his-wrath-john-martin",
     mood: "isolation",
     excerpt: `When the world ends, no one will be important.
 
@@ -703,7 +703,7 @@ They only care that you, like everyone else standing here, are finally out of ti
     title: "The Plains of Heaven",
     artist: "John Martin",
     year: "1851-1853",
-    image: "/paintings/the-plains-of-heaven-john-martin.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-plains-of-heaven-john-martin",
     mood: "melancholy",
     excerpt: `Even paradise can feel strangely empty.
 
@@ -726,7 +726,7 @@ That is simply what it means to have wanted something for so long that you forgo
     title: "The Temptation of St. Anthony",
     artist: "Hieronymus Bosch",
     year: "1501",
-    image: "/paintings/the-temptation-of-st-anthony-hieronymus-bosch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-temptation-of-st-anthony-hieronymus-bosch",
     mood: "longing",
     excerpt: `The worst monsters are the ones that know exactly what you want.
 
@@ -747,7 +747,7 @@ It looks like something you didn't know you still wanted.`,
     title: "The Temptation of St. Anthony",
     artist: "Matthias Grünewald",
     year: "1512-1516",
-    image: "/paintings/the-temptation-of-st-anthony-matthias-grunewald.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-temptation-of-st-anthony-matthias-grunewald",
     mood: "dread",
     excerpt: `Faith becomes frightening when doubt grows teeth.
 
@@ -768,7 +768,7 @@ By you, alone in the dark, wondering if you ever really believed at all.`,
     title: "The Death of Marat",
     artist: "Jacques-Louis David",
     year: "1793",
-    image: "/paintings/the-death-of-marat-jacques-louis-david.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-death-of-marat-jacques-louis-david",
     mood: "melancholy",
     excerpt: `Some people become immortal only after they die.
 
@@ -789,7 +789,7 @@ History chose it for me, and framed it as peace.`,
     title: "The Death of Socrates",
     artist: "Jacques-Louis David",
     year: "1787",
-    image: "/paintings/the-death-of-socrates-jacques-louis-david.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-death-of-socrates-jacques-louis-david",
     mood: "melancholy",
     excerpt: `Sometimes the price of truth is everything.
 
@@ -812,7 +812,7 @@ At the time, it simply looked like a man calmly choosing his convictions over hi
     title: "The Death of Seneca",
     artist: "Peter Paul Rubens",
     year: "1614",
-    image: "/paintings/the-death-of-seneca-peter-paul-rubens.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-death-of-seneca-peter-paul-rubens",
     mood: "melancholy",
     excerpt: `Even the wise cannot negotiate with death.
 
@@ -831,7 +831,7 @@ Dying, it turns out, is rarely as elegant as the essays written about it.`,
     title: "The Raft of the Medusa",
     artist: "Théodore Géricault",
     year: "1818-1819",
-    image: "/paintings/the-raft-of-the-medusa-theodore-gericault.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-raft-of-the-medusa-theodore-gericault",
    mood: "dread",
    excerpt: `Desperation reveals what people become when hope disappears.
 
@@ -854,7 +854,7 @@ Most people do, right up until the moment the water runs out.`,
     title: "The Skeletons Fighting Over a Hanged Man",
     artist: "James Ensor",
     year: "1891",
-    image: "/paintings/the-skeletons-fighting-over-a-hanged-man-james-ensor.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-skeletons-fighting-over-a-hanged-man-james-ensor",
     mood: "melancholy",
     excerpt: `Even death can become ridiculous when humans are involved.
 
@@ -875,7 +875,7 @@ Some people carry their smallness all the way to the bone.`,
     title: "The Skeletons Warming Themselves",
     artist: "James Ensor",
     year: "1889",
-    image: "/paintings/the-skeletons-warming-themselves-james-ensor.jpg",
+    image:"https://res.cloudinary.com/daldbatl/image/f_auto,q_auto/the-skeletons-warming-themselves-james-ensor",
     mood: "chaos",
     excerpt: `Perhaps death is only waiting for the living to catch up.
 
@@ -896,7 +896,7 @@ Just bones, and a small fire, and the patience of something that already knows h
     title: "The Body of the Dead Christ in the Tomb",
     artist: "Hans Holbein the Younger",
     year: "1521-1522",
-    image: "/paintings/the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger.JPG",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger",
     mood: "melancholy",
     excerpt: `Death is terrifying when nothing about it is softened.
 
@@ -917,7 +917,7 @@ I am asking you to stop looking away from what waits for all of you eventually.`
     title: "The Last Judgment",
     artist: "Michelangelo",
     year: "1536-1541",
-    image: "/paintings/the-last-judgment-michelangelo.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-last-judgment-michelangelo",
     mood: "melancholy",
     excerpt: `Every soul eventually faces itself.
 
@@ -940,7 +940,7 @@ But every single one of them, in this final moment, finally sees themselves with
     title: "The Last Judgment",
     artist: "Hans Memling",
     year: "1467-1471",
-    image: "/paintings/the-last-judgment-hans-memling.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-last-judgment-hans-memling",
     mood: "dread",
     excerpt: `There is nowhere to hide when eternity is watching.
 
@@ -957,7 +957,7 @@ This is about honesty, finally, after a lifetime of convenient forgetting.`,
     title: "The Dance of Death",
     artist: "Michael Wolgemut",
     year: "1493",
-    image: "/paintings/the-dance-of-death-michael-wolgemut.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-dance-of-death-michael-wolgemut",
     mood: "melancholy",
     excerpt: `The grave makes equals of everyone.
 
@@ -976,7 +976,7 @@ It only checks whether you are still breathing, and then, gently, invites you to
     title: "The Funeral",
     artist: "Edvard Munch",
     year: "1885",
-    image: "/paintings/the-funeral-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-funeral-edvard-munch",
     mood: "melancholy",
     excerpt: `The room is full, yet death has made it empty.
 
@@ -993,7 +993,7 @@ We are all here together, orbiting a space that used to hold someone, unable to 
     title: "Death and the Maiden",
     artist: "Hans Baldung",
     year: "1517",
-    image: "/paintings/death-and-the-maiden-hans-baldung.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/death-and-the-maiden-hans-baldung",
     mood: "melancholy",
     excerpt: `Beauty and death have always walked together.
 
@@ -1016,7 +1016,7 @@ I was only ever the truth beauty tries so hard to forget.`,
     title: "Judith Beheading Holofernes",
     artist: "Caravaggio",
     year: "1599",
-    image: "/paintings/judith-beheading-holofernes-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/judith-beheading-holofernes-caravaggio",
     mood: "chaos",
     excerpt: `You mistook her mercy for weakness.
 
@@ -1037,7 +1037,7 @@ Most men do, right up until the exact moment it no longer matters.`,
     title: "Judith Slaying Holofernes",
     artist: "Artemisia Gentileschi",
     year: "1620",
-    image: "/paintings/judith-slaying-holofernes-artemisia-gentileschi.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/judith-slaying-holofernes-artemisia-gentileschi",
     mood: "longing",
     excerpt: `Some wounds are answered with another wound.
 
@@ -1056,7 +1056,7 @@ Not because she feels nothing, but because she has already decided that this mom
     title: "David with the Head of Goliath",
     artist: "Caravaggio",
     year: "1610",
-    image: "/paintings/david-with-the-head-of-goliath-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/david-with-the-head-of-goliath-caravaggio",
     mood: "melancholy",
     excerpt: `The victor does not always look victorious.
 
@@ -1075,7 +1075,7 @@ Victory is rarely as clean as the story that gets told about it.`,
     title: "David with the Head of Goliath",
     artist: "Guido Reni",
     year: "1605",
-    image: "/paintings/david-with-the-head-of-goliath-guido-reni.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/david-with-the-head-of-goliath-guido-reni",
     mood: "dread",
     excerpt: `Power changes hands in a single moment.
 
@@ -1092,7 +1092,7 @@ I remember the fear that came before it, the trembling I hid so no one would see
     title: "Salome with the Head of John the Baptist",
     artist: "Caravaggio",
     year: "1609",
-    image: "/paintings/salome-with-the-head-of-john-the-baptist-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/salome-with-the-head-of-john-the-baptist-caravaggio",
     mood: "longing",
     excerpt: `Desire can ask for something you can never take back.
 
@@ -1109,7 +1109,7 @@ Now I hold the proof of my own wanting, and I am learning, too late, that some r
     title: "Salome with the Head of John the Baptist",
     artist: "Titian",
     year: "1515",
-    image: "/paintings/salome-with-the-head-of-john-the-baptist-titian.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/salome-with-the-head-of-john-the-baptist-titian",
    mood: "longing",
    excerpt: `Beauty can carry terrible intentions.
 
@@ -1128,7 +1128,7 @@ I only needed to ask sweetly, and the world handed me exactly what I wanted.`,
     title: "The Beheading of Saint John the Baptist",
     artist: "Caravaggio",
     year: "1608",
-    image: "/paintings/the-beheading-of-saint-john-the-baptist-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-beheading-of-saint-john-the-baptist-caravaggio",
    mood: "melancholy",
    excerpt: `Some endings happen quietly.
 
@@ -1149,7 +1149,7 @@ With a quiet efficiency that makes the horror somehow worse.`,
     title: "The Taking of Christ",
     artist: "Caravaggio",
     year: "1602",
-    image: "/paintings/the-taking-of-christ-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-taking-of-christ-caravaggio",
     mood: "madness",
     excerpt: `Betrayal sometimes arrives wearing the face of friendship.
 
@@ -1170,7 +1170,7 @@ Only by someone you allowed near enough to hurt you.`,
     title: "The Martyrdom of Saint Matthew",
     artist: "Caravaggio",
     year: "1600",
-    image: "/paintings/the-martyrdom-of-saint-matthew-caravaggio.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-martyrdom-of-saint-matthew-caravaggio",
     mood: "chaos",
     excerpt: `Violence does not ask whether you are ready.
 
@@ -1185,7 +1185,7 @@ Most people simply become still, caught between disbelief and the sudden underst
     title: "The Massacre at Chios",
     artist: "Eugène Delacroix",
     year: "1824",
-    image: "/paintings/the-massacre-at-chios-eugene-delacroix.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-massacre-at-chios-eugene-delacroix",
     mood: "isolation",
     excerpt: `War does not create heroes for everyone.
 
@@ -1202,7 +1202,7 @@ You will forget us, sitting here, waiting for a mercy that never arrived.`,
     title: "The Execution of Lady Jane Grey",
     artist: "Paul Delaroche",
     year: "1833",
-    image: "/paintings/the-execution-of-lady-jane-grey-paul-delaroche.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-execution-of-lady-jane-grey-paul-delaroche",
     mood: "melancholy",
     excerpt: `Sometimes innocence still walks toward the blade.
 
@@ -1221,7 +1221,7 @@ I simply became a lesson about how dangerous other people's ambitions can be.`,
     title: "The Third of May 1808",
     artist: "Francisco Goya",
     year: "1814",
-    image: "/paintings/the-third-of-may-1808-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-third-of-may-1808-francisco-goya",
     mood: "melancholy",
     excerpt: `There is no glory in the moment before death.
 
@@ -1240,7 +1240,7 @@ War does not care about the difference between a soldier and a man who simply wa
     title: "The Dog",
     artist: "Francisco Goya",
     year: "1819-1823",
-    image: "/paintings/the-dog-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-dog-francisco-goya",
    mood: "isolation",
    excerpt: `Sometimes loneliness is the only thing left in the world.
 
@@ -1261,7 +1261,7 @@ The absence of any reason to expect them.`,
     title: "The Madhouse",
     artist: "Francisco Goya",
     year: "1816",
-    image: "/paintings/the-madhouse-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-madhouse-francisco-goya",
    mood: "chaos",
    excerpt: `Perhaps madness is only another way of seeing the world.
 
@@ -1282,7 +1282,7 @@ From the questions we stopped pretending not to ask.`,
     title: "The Colossus",
     artist: "Francisco Goya",
     year: "1808-1812",
-    image: "/paintings/the-colossus-francisco-goya.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-colossus-francisco-goya",
     mood: "dread",
     excerpt: `You look at me and try to understand what I am.
 
@@ -1339,7 +1339,7 @@ still looking up.`,
     title: "The Scream",
     artist: "Edvard Munch",
     year: "1893",
-    image: "/paintings/the-scream-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-scream-edvard-munch",
     mood: "chaos",
     excerpt: `I screamed.
 
@@ -1404,7 +1404,7 @@ You are human because something became too heavy to keep silent.`,
     title: "Anxiety",
     artist: "Edvard Munch",
     year: "1894",
-    image: "/paintings/anxiety-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/anxiety-edvard-munch",
     mood: "isolation",
     excerpt: `Look around you.
 
@@ -1465,7 +1465,7 @@ It only needs to convince you that you don't belong in the one you're standing i
     title: "Melancholy",
     artist: "Edvard Munch",
     year: "1894-1896",
-    image: "/paintings/melancholy-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/melancholy-edvard-munch",
     mood: "longing",
     excerpt: `Nothing happened.
 
@@ -1522,7 +1522,7 @@ Some are simply part of being human.`,
     title: "Evening on Karl Johan",
     artist: "Edvard Munch",
     year: "1892",
-    image: "/paintings/evening-on-karl-johan-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/evening-on-karl-johan-edvard-munch",
     mood: "isolation",
     excerpt: `Look at the crowd.
 
@@ -1565,7 +1565,7 @@ And still remain invisible.`,
     title: "Despair",
     artist: "Edvard Munch",
     year: "1892",
-    image: "/paintings/despair-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/despair-edvard-munch",
     mood: "melancholy",
     excerpt: `Hope did not leave all at once.
 
@@ -1614,7 +1614,7 @@ I simply cannot reach it from here.`,
     title: "The Sick Child",
     artist: "Edvard Munch",
     year: "1885-1886",
-    image: "/paintings/the-sick-child-edvard-munch.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-sick-child-edvard-munch",
     mood: "isolation",
     excerpt: `Memory is cruel.
 
@@ -1663,7 +1663,7 @@ Forever waiting for the ending you wished you could change.`,
     title: "Self-Portrait with Death Playing the Fiddle",
     artist: "Arnold Böcklin",
     year: "1872",
-    image: "/paintings/self-portrait-with-death-playing-the-fiddle-arnold-bocklin.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/self-portrait-with-death-playing-the-fiddle-arnold-bocklin",
     mood: "melancholy",
     excerpt: `I know you're there.
 
@@ -1716,7 +1716,7 @@ And somewhere between your music and my brush, we will pretend neither of us kno
     title: "The Painter's Family",
     artist: "Egon Schiele",
     year: "1918",
-    image: "/paintings/the-painter-s-family-egon-schiele.jpeg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-painter-s-family-egon-schiele",
     mood: "madness",
     excerpt: `We are close enough to touch.
 
@@ -1743,7 +1743,7 @@ Perhaps it is simply the decision to stay, even when there are parts of each oth
     title: "Self-Portrait with Physalis",
     artist: "Egon Schiele",
     year: "1912",
-    image: "/paintings/self-portrait-with-physalis-egon-schiele.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/self-portrait-with-physalis-egon-schiele",
     mood: "madness",
     excerpt: `You are looking at me.
 
@@ -1782,7 +1782,7 @@ Perhaps it is accepting that you have always had several.`,
     title: "Death and the Maiden",
     artist: "Egon Schiele",
     year: "1915",
-    image: "/paintings/death-and-the-maiden-egon-schiele.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/death-and-the-maiden-egon-schiele",
     mood: "melancholy",
     excerpt: `She holds me as though I am something she can save.
 
@@ -1819,7 +1819,7 @@ And perhaps that moment is worth more than eternity.`,
     title: "The Dead Mother",
     artist: "Egon Schiele",
     year: "1910",
-    image: "/paintings/the-dead-mother-egon-schiele.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-dead-mother-egon-schiele",
     mood: "longing",
     excerpt: `Some things do not become memories.
 
@@ -1852,7 +1852,7 @@ Learning how to walk while carrying it.`,
     title: "The Agony",
     artist: "August Friedrich Albrecht Schenck",
     year: "1878",
-    image: "/paintings/the-agony-august-friedrich-albrecht-schenck.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-agony-august-friedrich-albrecht-schenck",
     mood: "melancholy",
     excerpt: `There is no human face here.
 
@@ -1893,7 +1893,7 @@ The world is not.`,
     title: "Insane Woman",
     artist: "Théodore Géricault",
     year: "1822",
-    image: "/paintings/insane-woman-theodore-gericault.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/insane-woman-theodore-gericault",
     mood: "madness",
     excerpt: `You look into my eyes searching for an explanation.
 
@@ -1928,7 +1928,7 @@ What if reality is simply the name the majority gives to the world they agree up
     title: "Prometheus Bound",
     artist: "Peter Paul Rubens",
     year: "1611-1612",
-    image: "/paintings/prometheus-bound-peter-paul-rubens.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/prometheus-bound-peter-paul-rubens",
     mood: "chaos",
     excerpt: `I gave them fire.
 
@@ -1967,7 +1967,7 @@ Was I wrong?`,
     title: "Prometheus",
     artist: "José Clemente Orozco",
     year: "1930",
-    image: "/paintings/prometheus-jose-clemente-orozco.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/prometheus-jose-clemente-orozco",
     mood: "chaos",
     excerpt: `You wanted the fire.
 
@@ -2006,7 +2006,7 @@ Perhaps the curse is simply being human.`,
     title: "Ixion",
     artist: "Peter Paul Rubens",
     year: "1615",
-    image: "/paintings/ixion-peter-paul-rubens.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/ixion-peter-paul-rubens",
     mood: "madness",
     excerpt: `Round and round.
 
@@ -2047,7 +2047,7 @@ Perhaps the punishment is understanding exactly why you are on it.`,
     title: "The Fall of the Rebel Angels",
     artist: "Pieter Bruegel the Elder",
     year: "1562",
-    image: "/paintings/the-fall-of-the-rebel-angels-pieter-bruegel-the-elder.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-fall-of-the-rebel-angels-pieter-bruegel-the-elder",
     mood: "melancholy",
     excerpt: `Heaven was not enough for them.
 
@@ -2084,7 +2084,7 @@ That is how destruction often looks from a distance.`,
     title: "The Fall of the Rebel Angels",
     artist: "Luca Giordano",
     year: "1666",
-    image: "/paintings/the-fall-of-the-rebel-angels-luca-giordano.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-fall-of-the-rebel-angels-luca-giordano",
     mood: "melancholy",
     excerpt: `We were beautiful once.
 
@@ -2117,7 +2117,7 @@ The distance between the two is smaller than you think.`,
     title: "The Punishment of Tityus",
     artist: "Titian",
     year: "1549",
-    image: "/paintings/the-punishment-of-tityus-titian.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-punishment-of-tityus-titian",
     mood: "dread",
     excerpt: `It never ends.
 
@@ -2146,7 +2146,7 @@ and the horizon disappears with it.`,
     title: "Tityus",
     artist: "José de Ribera",
     year: "1632",
-    image: "/paintings/tityus-jose-de-ribera.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/tityus-jose-de-ribera",
     mood: "chaos",
     excerpt: `You think pain is temporary because your pain has always been.
 
@@ -2179,7 +2179,7 @@ The certainty that pain will never become memory.`,
     title: "Sisyphus",
     artist: "Titian",
     year: "1549",
-    image: "/paintings/sisyphus-titian.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/sisyphus-titian",
     mood: "melancholy",
     excerpt: `I push because stopping is worse.
 
@@ -2218,7 +2218,7 @@ Perhaps meaning is hidden in the decision to push again when you already know wh
     title: "Sisyphus",
     artist: "Franz von Stuck",
     year: "1920",
-    image: "/paintings/sisyphus-franz-von-stuck.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/sisyphus-franz-von-stuck",
     mood: "isolation",
     excerpt: `You think the stone is my punishment.
 
@@ -2249,7 +2249,7 @@ Endless hope in the face of failure.`,
     title: "The Rape of Proserpina",
     artist: "Peter Paul Rubens",
     year: "1636-1638",
-    image: "/paintings/the-rape-of-proserpina-peter-paul-rubens.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-rape-of-proserpina-peter-paul-rubens",
     mood: "isolation",
     excerpt: `They called it destiny.
 
@@ -2284,7 +2284,7 @@ And you spend the rest of your life learning how to become someone new around th
     title: "The Abduction of Proserpine",
     artist: "Rembrandt",
     year: "1631",
-    image: "/paintings/the-abduction-of-proserpine-rembrandt.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-abduction-of-proserpine-rembrandt",
     mood: "longing",
     excerpt: `He called it love.
 
@@ -2321,7 +2321,7 @@ Anything else is hunger wearing a beautiful name.`,
     title: "Oedipus and the Sphinx",
     artist: "Gustave Moreau",
     year: "1864",
-    image: "/paintings/oedipus-and-the-sphinx-gustave-moreau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/oedipus-and-the-sphinx-gustave-moreau",
     mood: "dread",
     excerpt: `She asked me a question.
 
@@ -2358,7 +2358,7 @@ Sometimes the truth itself is the monster.`,
     title: "Oedipus Cursing His Son Polynices",
     artist: "Henry Fuseli",
     year: "1786",
-    image: "/paintings/oedipus-cursing-his-son-polynices-henry-fuseli.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/oedipus-cursing-his-son-polynices-henry-fuseli",
     mood: "dread",
     excerpt: `Blood does not guarantee love.
 
@@ -2389,7 +2389,7 @@ And eventually the children inherit wounds they never created.`,
     title: "Ophelia",
     artist: "John Everett Millais",
     year: "1851-1852",
-    image: "/paintings/ophelia-john-everett-millais.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/ophelia-john-everett-millais",
     mood: "melancholy",
     excerpt: `The water is quiet.
 
@@ -2426,7 +2426,7 @@ Because the struggle had finally become silent.`,
     title: "Ophelia",
     artist: "Alexandre Cabanel",
     year: "1883",
-    image: "/paintings/ophelia-alexandre-cabanel.JPG",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/ophelia-alexandre-cabanel",
     mood: "melancholy",
     excerpt: `From far away, death can look peaceful.
 
@@ -2461,7 +2461,7 @@ Sometimes beauty is simply the final mask sorrow wears.`,
     title: "The Soul of the Rose",
     artist: "John William Waterhouse",
     year: "1908",
-    image: "/paintings/the-soul-of-the-rose-john-william-waterhouse.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-soul-of-the-rose-john-william-waterhouse",
     mood: "longing",
     excerpt: `Desire does not always announce itself.
 
@@ -2492,7 +2492,7 @@ But both have thorns.`,
     title: "Circe Invidiosa",
     artist: "John William Waterhouse",
     year: "1892",
-    image: "/paintings/circe-invidiosa-john-william-waterhouse.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/circe-invidiosa-john-william-waterhouse",
     mood: "isolation",
     excerpt: `Jealousy is not always loud.
 
@@ -2523,7 +2523,7 @@ Until you forget what was already yours.`,
     title: "Circe Offering the Cup to Ulysses",
     artist: "John William Waterhouse",
     year: "1891",
-    image: "/paintings/circe-offering-the-cup-to-ulysses-john-william-waterhouse.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/circe-offering-the-cup-to-ulysses-john-william-waterhouse",
     mood: "isolation",
     excerpt: `Drink.
 
@@ -2556,7 +2556,7 @@ Or you can take the cup and spend the rest of your life wondering why you didn't
     title: "The Monk by the Sea",
     artist: "Caspar David Friedrich",
     year: "1810",
-    image: "/paintings/the-monk-by-the-sea-caspar-david-friedrich.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-monk-by-the-sea-caspar-david-friedrich",
     mood: "isolation",
     excerpt: `Look at me standing here.
 
@@ -2587,7 +2587,7 @@ The silence has more to say than you do.`,
     title: "Abbey in the Oakwood",
     artist: "Caspar David Friedrich",
     year: "1810",
-    image: "/paintings/abbey-in-the-oakwood-caspar-david-friedrich.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/abbey-in-the-oakwood-caspar-david-friedrich",
     mood: "longing",
     excerpt: `The living pass through.
 
@@ -2626,7 +2626,7 @@ Until even the places built to remember become things that need remembering.`,
     title: "Two Men Contemplating the Moon",
     artist: "Caspar David Friedrich",
     year: "1819-1820",
-    image: "/paintings/two-men-contemplating-the-moon-caspar-david-friedrich.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/two-men-contemplating-the-moon-caspar-david-friedrich",
     mood: "madness",
     excerpt: `We stand beneath the same moon and still do not know what it means.
 
@@ -2657,7 +2657,7 @@ For once, let the mystery remain a mystery.`,
     title: "The Evening Star",
     artist: "Caspar David Friedrich",
     year: "1830",
-    image: "/paintings/the-evening-star-caspar-david-friedrich.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-evening-star-caspar-david-friedrich",
     mood: "madness",
     excerpt: `The day is ending.
 
@@ -2698,7 +2698,7 @@ Perhaps they simply remind you that the light was never promised to stay forever
     title: "The Lamentation over the Dead Christ",
     artist: "Andrea Mantegna",
     year: "1480",
-    image: "/paintings/the-lamentation-over-the-dead-christ-andrea-mantegna.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-lamentation-over-the-dead-christ-andrea-mantegna",
     mood: "melancholy",
     excerpt: `They touch the body because touch is the last thing left.
 
@@ -2727,7 +2727,7 @@ It only knows that they are gone.`,
     title: "The Last Judgment",
     artist: "Fra Angelico",
     year: "1425-1431",
-    image: "/paintings/the-last-judgment-fra-angelico.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-last-judgment-fra-angelico",
     mood: "melancholy",
     excerpt: `There is a moment when mercy and fear stand together.
 
@@ -2760,7 +2760,7 @@ The question is whether you will recognize yourself when the time comes.`,
     title: "The Crucifixion",
     artist: "Matthias Grünewald",
     year: "1512-1516",
-    image: "/paintings/the-crucifixion-matthias-grunewald.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-crucifixion-matthias-grunewald",
     mood: "isolation",
     excerpt: `Do not look away.
 
@@ -2789,7 +2789,7 @@ Not every wound needs to be explained before it deserves compassion.`,
     title: "The Apparition",
     artist: "Gustave Moreau",
     year: "1876",
-    image: "/paintings/the-apparition-gustave-moreau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-apparition-gustave-moreau",
     mood: "dread",
     excerpt: `You think visions should comfort you.
 
@@ -2814,7 +2814,7 @@ Perhaps the difference was never as large as you thought.`,
     title: "Salome Dancing Before Herod",
     artist: "Gustave Moreau",
     year: "1876",
-    image: "/paintings/salome-dancing-before-herod-gustave-moreau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/salome-dancing-before-herod-gustave-moreau",
     mood: "longing",
     excerpt: `They are watching me.
 
@@ -2839,7 +2839,7 @@ The consequences do not.`,
     title: "Salome in the Garden",
     artist: "Gustave Moreau",
     year: "1878",
-    image: "/paintings/salome-in-the-garden-gustave-moreau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/salome-in-the-garden-gustave-moreau",
     mood: "longing",
     excerpt: `Desire rarely tells you what it will destroy.
 
@@ -2866,7 +2866,7 @@ Because wanting can become so loud that everything else becomes quiet.`,
     title: "The Kiss",
     artist: "Gustav Klimt",
     year: "1908",
-    image: "/paintings/the-kiss-gustav-klimt.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-kiss-gustav-klimt",
     mood: "longing",
     excerpt: `You think I am holding someone.
 
@@ -2895,7 +2895,7 @@ Perhaps some risks are worth taking.`,
     title: "The Birth of Venus",
     artist: "Sandro Botticelli",
     year: "1485",
-    image: "/paintings/the-birth-of-venus-sandro-botticelli.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-birth-of-venus-sandro-botticelli",
     mood: "longing",
     excerpt: `They call me beauty.
 
@@ -2930,7 +2930,7 @@ Perhaps that is what makes it beautiful.`,
     title: "The Son of Man",
     artist: "René Magritte",
     year: "1964",
-    image: "/paintings/the-son-of-man-rene-magritte.png",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-son-of-man-rene-magritte",
     mood: "madness",
     excerpt: `You can see my face.
 
@@ -2967,7 +2967,7 @@ You may never completely see.`,
     title: "The Lovers",
     artist: "René Magritte",
     year: "1928",
-    image: "/paintings/the-lovers-rene-magritte.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-lovers-rene-magritte",
     mood: "longing",
     excerpt: `We are close.
 
@@ -3000,7 +3000,7 @@ You can love someone completely and still never reach them.`,
     title: "The Human Condition",
     artist: "René Magritte",
     year: "1933",
-    image: "/paintings/the-human-condition-rene-magritte.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-human-condition-rene-magritte",
     mood: "madness",
     excerpt: `You think you are looking through the window.
 
@@ -3029,7 +3029,7 @@ How certain are you that the world outside the painting is actually outside it?`
     title: "The Empire of Light",
     artist: "René Magritte",
     year: "1953-1954",
-    image: "/paintings/the-empire-of-light-rene-magritte.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-empire-of-light-rene-magritte",
     mood: "madness",
     excerpt: `Day and night should not exist together.
 
@@ -3062,7 +3062,7 @@ Perhaps opposites do not need to choose.`,
     title: "The False Mirror",
     artist: "René Magritte",
     year: "1929",
-    image: "/paintings/the-false-mirror-rene-magritte.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-false-mirror-rene-magritte",
     mood: "madness",
     excerpt: `You are looking through an eye.
 
@@ -3095,7 +3095,7 @@ Maybe the world you see is partly the world you brought with you.`,
     title: "The Cyclops",
     artist: "Odilon Redon",
     year: "1914",
-    image: "/paintings/the-cyclops-odilon-redon.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-cyclops-odilon-redon",
     mood: "dread",
     excerpt: `You call me a monster because I watch.
 
@@ -3122,7 +3122,7 @@ You never ask what it feels like to exist inside it.`,
     title: "The Crying Spider",
     artist: "Odilon Redon",
     year: "1881",
-    image: "/paintings/the-crying-spider-odilon-redon.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-crying-spider-odilon-redon",
     mood: "melancholy",
     excerpt: `You thought monsters could not grieve.
 
@@ -3153,7 +3153,7 @@ Perhaps that is what makes them human.`,
     title: "The Dream",
     artist: "Henri Rousseau",
     year: "1910",
-    image: "/paintings/the-dream-henri-rousseau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-dream-henri-rousseau",
     mood: "madness",
     excerpt: `The jungle is beautiful.
 
@@ -3182,7 +3182,7 @@ You are never completely alone in the places your mind creates.`,
     title: "The Snake Charmer",
     artist: "Henri Rousseau",
     year: "1907",
-    image: "/paintings/the-snake-charmer-henri-rousseau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-snake-charmer-henri-rousseau",
     mood: "madness",
     excerpt: `The unknown does not need to attack you.
 
@@ -3211,7 +3211,7 @@ And suddenly your imagination becomes more frightening than anything that could 
     title: "The Sleeping Gypsy",
     artist: "Henri Rousseau",
     year: "1897",
-    image: "/paintings/the-sleeping-gypsy-henri-rousseau.jpg",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-sleeping-gypsy-henri-rousseau",
     mood: "isolation",
     excerpt: `She sleeps peacefully.
 
