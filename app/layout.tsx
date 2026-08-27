@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Work_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -25,18 +26,15 @@ export const metadata: Metadata = {
   description: "Let the paintings speak for themselves.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${workSans.variable} ${spaceMono.variable} h-full antialiased dark`}
+      className={`${fraunces.variable} ${workSans.variable} ${spaceMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-gallery text-ivory selection:bg-brass selection:text-gallery">
+      <body className="min-h-full flex flex-col bg-gallery text-ivory">
         <SmoothScroll>{children}</SmoothScroll>
+        <MusicPlayer />
       </body>
     </html>
   );
