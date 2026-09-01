@@ -82,12 +82,11 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
             className="absolute inset-0 z-20 flex items-center justify-center px-8"
           >
             <motion.div
-              initial={{ opacity: 0, letterSpacing: mood.letterSpacingStart, y: 12 }}
-              animate={{ opacity: 1, letterSpacing: "0.02em", y: 0 }}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 8 }}
               transition={{
                 opacity: { duration: mood.textDuration, delay: textDelay, ease: mood.revealEase },
-                letterSpacing: { duration: mood.textDuration, delay: textDelay, ease: mood.revealEase },
                 y: { duration: mood.textDuration, delay: textDelay, ease: mood.revealEase },
               }}
               onClick={(e) => e.stopPropagation()}

@@ -9,7 +9,6 @@ export const moodStyles: Record<Mood, {
   stillnessPause: number;
   textDuration: number;
   revealEase: readonly [number, number, number, number];
-  letterSpacingStart: string;
 }> = {
   dread: {
     vignetteFrom: "from-gallery/80",
@@ -20,7 +19,6 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.6,
     textDuration: 1.5,
     revealEase: [0.16, 1, 0.3, 1],
-    letterSpacingStart: "0.4em",
   },
   chaos: {
     vignetteFrom: "from-gallery/70",
@@ -31,7 +29,6 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.2,
     textDuration: 0.6,
     revealEase: [0.34, 1.56, 0.64, 1],
-    letterSpacingStart: "0.15em",
   },
   melancholy: {
     vignetteFrom: "from-gallery/75",
@@ -42,7 +39,6 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.7,
     textDuration: 1.8,
     revealEase: [0.16, 1, 0.3, 1],
-    letterSpacingStart: "0.3em",
   },
   isolation: {
     vignetteFrom: "from-gallery/85",
@@ -53,7 +49,6 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.9,
     textDuration: 2.0,
     revealEase: [0.16, 1, 0.3, 1],
-    letterSpacingStart: "0.5em",
   },
   longing: {
     vignetteFrom: "from-gallery/70",
@@ -64,7 +59,6 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.5,
     textDuration: 1.4,
     revealEase: [0.16, 1, 0.3, 1],
-    letterSpacingStart: "0.3em",
   },
   madness: {
     vignetteFrom: "from-gallery/80",
@@ -75,6 +69,5 @@ export const moodStyles: Record<Mood, {
     stillnessPause: 0.3,
     textDuration: 0.9,
     revealEase: [0.34, 1.56, 0.64, 1],
-    letterSpacingStart: "0.6em",
   },
 };

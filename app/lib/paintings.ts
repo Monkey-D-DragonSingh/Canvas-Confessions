@@ -3235,5 +3235,1115 @@ She dreams.
 
 And for this one moment, the unknown has not yet decided whether it will become a threat.`,
   },
+  {
+    slug: "apollo-and-marsyas-jusepe-de-ribera",
+    title: "Apollo and Marsyas",
+    artist: "Jusepe de Ribera",
+    year: "1637",
+    image: "/paintings/apollo-and-marsyas-jusepe-de-ribera.jpg",
+    mood: "dread",
+    excerpt: `You challenged a god and called it music.
 
+I do not punish out of cruelty.
+
+I punish because pride forgets its limits, and someone must remind it.
+
+You thought skill alone could stand beside divinity.
+
+It cannot.
+
+Talent is not the same as power, and confidence is not the same as right.
+
+Scream if you must.
+
+The lesson was never about the sound you made.`,
+  },
+  {
+    slug: "christs-entry-into-brussels-james-ensor",
+    title: "Christ's Entry into Brussels in 1889",
+    artist: "James Ensor",
+    year: "1888",
+    image: "/paintings/christs-entry-into-brussels-james-ensor.jpg",
+    mood: "chaos",
+    excerpt: `Look at the parade.
+
+Thousands of faces, and not one of them is real.
+
+They cheer. They wave banners. They march behind slogans and trumpets, deafening themselves so they never have to hear the silence inside their own heads.
+
+They think this carnival is for me.
+
+Look closer.
+
+I am a speck lost in the center of their noise, riding an animal that knows more humility than the entire crowd combined.
+
+They did not come to follow.
+
+They came to be seen celebrating.
+
+Give humanity a parade, and they will turn even salvation into a riot.
+
+When the music stops and the confetti falls into the mud, not a single one will remember why they took to the streets.`,
+  },
+  {
+    slug: "dante-and-virgil-entering-hell-eugene-delacroix",
+    title: "The Barque of Dante",
+    artist: "Eugène Delacroix",
+    year: "1822",
+    image: "/paintings/dante-and-virgil-entering-hell-eugene-delacroix.jpg",
+    mood: "chaos",
+    excerpt: `The water does not support us. It threatens to swallow us whole.
+
+Look at the hands reaching out from the dark.
+
+They are not asking to be saved.
+
+They are asking to drag us down with them.
+
+I move through this place because I must, but with every stroke of the oar, I wonder how much difference there really is between those in the boat and those beneath the surface.
+
+Desperation makes monsters of everyone eventually.`,
+  },
+  {
+    slug: "die-schachspieler-friedrich-moritz-august-retzsch",
+    title: "The Chess Players (Die Schachspieler)",
+    artist: "Friedrich Moritz August Retzsch",
+    year: "1831",
+    image: "/paintings/die-schachspieler-friedrich-moritz-august-retzsch.jpg",
+    mood: "dread",
+    excerpt: `Place your hand on the piece.
+
+You have been staring at the board for what feels like centuries, searching for a move that doesn't cost you a piece of yourself.
+
+Look at my smile across the table.
+
+I don't need to cheat.
+
+I only had to give you the illusion of choice.
+
+Every move you made—every ambition, every compromise, every quiet surrender—brought your king precisely where I wanted it.
+
+Your angel stands behind you, weeping in silence, unable to touch the board.
+
+Because this was always your game to play.
+
+Take your time.
+
+The clock is ticking, and eternity is very patient.`,
+  },
+  {
+    slug: "harrowing-of-hell-byzantine",
+    title: "Harrowing of Hell",
+    artist: "Byzantine",
+    year: "12th century",
+    image: "/paintings/harrowing-of-hell-byzantine.jpg",
+    mood: "dread",
+    excerpt: `The gates are broken.
+
+Not from the outside, but from within.
+
+You spent lifetimes believing this darkness was final, that once you fell beneath the world, nothing could reach you here.
+
+You were wrong.
+
+Light does not ask permission before it enters.
+
+It breaks what tried to keep you, tears open the ground, and pulls you back into the air whether you feel ready for it or not.
+
+Reaching for freedom is the most terrifying thing you will ever do.
+
+Take my hand anyway.`,
+  },
+  {
+    slug: "jason-and-medea-john-william-waterhouse",
+    title: "Jason and Medea",
+    artist: "John William Waterhouse",
+    year: "1907",
+    image: "/paintings/jason-and-medea-john-william-waterhouse.jpg",
+    mood: "longing",
+    excerpt: `I am giving you everything you need to become a hero.
+
+The potion. The charm. The strength you could never find on your own.
+
+And in return, you look at me as though I am something to be conquered, rather than someone who chose to save you.
+
+Remember this moment.
+
+When the story is written and they call you great, it will be my magic that made you so.
+
+Do not forget what happens when the woman who gave you your power decides she wants it back.`,
+  },
+  {
+    slug: "jealousy-edvard-munch",
+    title: "Jealousy",
+    artist: "Edvard Munch",
+    year: "1895",
+    image: "/paintings/jealousy-edvard-munch.jpg",
+    mood: "madness",
+    excerpt: `I am not looking at you.
+
+I am looking at what you are doing just behind me.
+
+You think jealousy is anger.
+
+It isn't.
+
+It is a poison you brew in your own head, drinking it sip by sip while imagining every word, every glance, every touch they share when they think you aren't watching.
+
+Look at my face.
+
+The color has left it.
+
+Because when you let suspicion take root, you cease to be a person.
+
+You become a witness to your own exclusion.
+
+They are standing in the light under the branches.
+
+And I am drowning in the foreground, consumed by a fire that warms no one.`,
+  },
+  {
+    slug: "masks-confronting-death-james-ensor",
+    title: "Masks Confronting Death",
+    artist: "James Ensor",
+    year: "1888",
+    image: "/paintings/masks-confronting-death-james-ensor.jpg",
+    mood: "dread",
+    excerpt: `You came here wearing a face.
+
+Everyone does.
+
+Some faces are beautiful.
+
+Some are frightening.
+
+Some are designed to make people laugh.
+
+But eventually every face becomes a mask.
+
+I have watched you hide behind yours.
+
+You smile when you are afraid.
+
+You laugh when you are uncomfortable.
+
+You tell people you are fine when something inside you has already begun to die.
+
+And then you look at me as though I am the frightening one.
+
+Look closer. I am not wearing a mask.
+
+You are.
+
+Perhaps that is why you cannot stop staring.
+
+Death has no reason to pretend. You do.`,
+  },
+  {
+    slug: "medea-eugene-delacroix",
+    title: "Medea",
+    artist: "Eugène Delacroix",
+    year: "1838",
+    image: "/paintings/medea-eugene-delacroix.jpg",
+    mood: "madness",
+    excerpt: `You gave me everything I needed to destroy you.
+
+Your trust. Your children. Your arrogance.
+
+You thought love meant surrender, that once I belonged to you, I would accept whatever cruelty you offered in return.
+
+You did not understand what you were holding.
+
+I do not bend. I do not quietly disappear.
+
+If I must burn the world you built to remind you of who I am, I will strike the match myself.`,
+  },
+  {
+    slug: "oedipus-and-the-sphinx-jean-auguste-dominique-ingres",
+    title: "Oedipus and the Sphinx",
+    artist: "Jean-Auguste-Dominique Ingres",
+    year: "1808",
+    image: "/paintings/oedipus-and-the-sphinx-jean-auguste-dominique-ingres.jpg",
+    mood: "dread",
+    excerpt: `You think the danger was the riddle.
+
+It wasn't.
+
+The danger was believing that knowing the answer made you safe.
+
+You solved my puzzle with ease, confident that intelligence was enough to protect you from what comes next.
+
+It isn't.
+
+Knowledge does not shield you from fate.
+
+Sometimes it only walks you directly into it, step by step, with your eyes wide open.`,
+  },
+  {
+    slug: "orestes-pursued-by-the-furies-william-adolphe-bouguereau",
+    title: "Oestres Pursued by the Furies",
+    artist: "William-Adolphe Bouguereau",
+    year: "1862",
+    image: "/paintings/orestes-pursued-by-the-furies-william-adolphe-bouguereau.jpg",
+    mood: "madness",
+    excerpt: `You cannot outrun what you have done.
+
+You can only outrun the silence, for a while, before it catches up.
+
+Look at them behind me.
+
+They do not tire. They do not negotiate. They have all of eternity to wait for me to stop running.
+
+You think guilt is something you feel in private.
+
+Guilt is a pack of wolves that follows you everywhere, waiting for the moment you finally run out of breath.`,
+  },
+  {
+    slug: "satan-watching-the-sleep-of-christ-joseph-noel-paton",
+    title: "Satan Watching the Sleep of Christ",
+    artist: "Joseph Noel Paton",
+    year: "1874",
+    image: "/paintings/satan-watching-the-sleep-of-christ-joseph-noel-paton.jpg",
+    mood: "dread",
+    excerpt: `You sleep.
+
+That is what I cannot understand.
+
+You know what waits for you.
+
+You know what suffering is coming.
+
+You know exactly where this road ends.
+
+And still you close your eyes.
+
+I have watched men beg for their lives over far less.
+
+Kings have trembled before me.
+
+Warriors have forgotten their courage.
+
+The proud have discovered how small they really are when darkness finally stands before them.
+
+But you simply sleep.
+
+Perhaps that is what makes you dangerous.
+
+Not your strength.
+
+Your peace.
+
+I came expecting fear.
+
+Instead, I found someone who could look directly into the darkness and still believe there was something beyond it.
+
+So sleep, Christ.
+
+For tonight, I will only watch.
+
+But remember this.
+
+Darkness does not always attack.
+
+Sometimes it simply waits beside you, quietly, patiently, until you wake.`,
+  },
+  {
+    slug: "tamara-and-the-demon-mikhail-vrubel",
+    title: "Tamara and the Demon",
+    artist: "Mikhail Vrubel",
+    year: "1890",
+    image: "/paintings/tamara-and-the-demon-mikhail-vrubel.jpg",
+    mood: "longing",
+    excerpt: `You should be afraid of me.
+
+Everyone tells you that.
+
+They see what I am before they ever ask what I want.
+
+A demon.
+
+A creature of darkness.
+
+Something beautiful enough to tempt you and dangerous enough to destroy you.
+
+Perhaps they are right.
+
+But look at me.
+
+Do you see hunger? Or do you see loneliness?
+
+That is the part nobody warns you about.
+
+Sometimes the thing that frightens you most is not trying to hurt you.
+
+Sometimes it only wants to be understood.
+
+You came close enough to touch me.
+
+That was your mistake. Not because I forced you.
+
+Because you chose to stay.
+
+There are some forms of darkness that become dangerous only after you stop being afraid of them.
+
+And now you are no longer afraid.
+
+Now you are curious.
+
+That is much worse.`,
+  },
+  {
+    slug: "the-anatomy-lesson-of-dr-deijman-rembrandt",
+    title: "The Anatomy Lesson of Dr. Deijman",
+    artist: "Rembrandt",
+    year: "1656",
+    image: "/paintings/the-anatomy-lesson-of-dr-deijman-rembrandt.jpg",
+    mood: "isolation",
+    excerpt: `You gather around what remains of me, searching for understanding.
+
+I do not mind.
+
+In life, no one looked this closely.
+
+Now that I am quiet, now that I have nothing left to hide, you study every layer with great seriousness, as though the secret of being alive could be found by taking someone apart.
+
+Cut as deep as you like.
+
+You will find muscle, bone, blood.
+
+You will not find why any of it mattered.`,
+  },
+  {
+    slug: "the-bad-mothers-giovanni-segantini",
+    title: "The Bad Mothers",
+    artist: "Giovanni Segantini",
+    year: "1894",
+    image: "/paintings/the-bad-mothers-giovanni-segantini.jpg",
+    mood: "melancholy",
+    excerpt: `The wind here never warms.
+
+It moves through the snow, carrying the faint, distant cries of what was rejected.
+
+You called it freedom when you turned away.
+
+You told yourself that life was yours alone, that no small hands had the right to anchor you to the earth.
+
+Now look where that freedom led.
+
+Suspended between frozen sky and desolate valley, caught in the barren branches of a tree that will never bloom.
+
+The worst punishment is not agony.
+
+It is silence.
+
+A white, endless silence where the only thing that echoes is the memory of the love you refused to give.
+
+And here, in the winter of your own design, you will wait until your heart finally learns how to ache.`,
+  },
+  {
+    slug: "the-barque-of-dante-eugene-delacroix",
+    title: "The Barque of Dante",
+    artist: "Eugène Delacroix",
+    year: "1822",
+    image: "/paintings/the-barque-of-dante-eugene-delacroix.jpg",
+    mood: "chaos",
+    excerpt: `The waters of the Styx do not flow. They churn with the bodies of the damned.
+
+Look down over the gunwale of our small boat.
+
+They bite the wood. They claw at the oars. They tear at each other's flesh just for a fleeting second of leverage above the suffocating black tide.
+
+Virgil holds my hand steady, but his eyes are dark with knowledge.
+
+He has seen a thousand crossings.
+
+He knows that Hell is not merely a destination beneath the soil—it is the inescapable turbulence of souls who chose hatred over light.
+
+You watch from your safe shore, horrified by their frenzy.
+
+Do not be so certain of your distance.
+
+It takes only one misstep in life to fall into the same black water.`,
+  },
+  {
+    slug: "the-bewitched-man-francisco-goya",
+    title: "The Bewitched Man",
+    artist: "Francisco Goya",
+    year: "1798",
+    image: "/paintings/the-bewitched-man-francisco-goya.jpg",
+    mood: "madness",
+    excerpt: `Keep pouring the oil.
+
+If the lamp goes out, my breath goes with it.
+
+That is what the voice in the dark told me, and fear does not ask for evidence.
+
+Look at the creature holding the vessel.
+
+Its horns scrape the ceiling of my mind.
+
+Its eyes gleam with mockery while my hands tremble with every drop I pour.
+
+You laugh because you see a man frightened by painted shadows.
+
+You think you are immune to curses.
+
+Yet you spend your own nights feeding anxieties just as hollow, pouring your energy into lamps that were never yours to tend.
+
+The curse was never magic.
+
+The curse was believing that fear had the final say.`,
+  },
+  {
+    slug: "the-crucifixion-cimabue",
+    title: "The Crucifixion",
+    artist: "Cimabue",
+    year: "1288",
+    image: "/paintings/the-crucifixion-cimabue.jpg",
+    mood: "dread",
+    excerpt: `Suffering does not need modern language to be understood.
+
+Look at me.
+
+Even across centuries, across faded paint and cracked gold, the shape of grief remains identical.
+
+You think your pain is unique.
+
+It isn't.
+
+Humanity has been standing beneath this same wooden cross, asking the same unanswered questions, for as long as anyone has had the courage to look upward.
+
+We simply change the names we give the silence.`,
+  },
+  {
+    slug: "the-death-of-hyacinth-jean-broc",
+    title: "The Death of Hyacinth",
+    artist: "Jean Broc",
+    year: "1801",
+    image: "/paintings/the-death-of-hyacinth-jean-broc.jpg",
+    mood: "melancholy",
+    excerpt: `A single accident, and everything I loved became something I destroyed.
+
+The wind did not mean for the discus to strike.
+
+I did not mean for my strength to be his ending.
+
+And yet here we are.
+
+Grief does not care about intention.
+
+It only cares about what is left behind when the light finally goes out.
+
+I hold him close, as though closeness could somehow reverse the distance between life and what follows.
+
+It cannot.
+
+Even gods are helpless in front of a body that has gone cold.`,
+  },
+  {
+    slug: "the-death-of-sardanapalus-eugene-delacroix",
+    title: "The Death of Sardanapalus",
+    artist: "Eugène Delacroix",
+    year: "1827",
+    image: "/paintings/the-death-of-sardanapalus-eugene-delacroix.jpg",
+    mood: "chaos",
+    excerpt: `If I could not keep my kingdom, I decided nothing else would keep anything either.
+
+You call this madness.
+
+I call it consistency.
+
+I lived surrounded by excess, and I refuse to leave quietly, like a man who regretted what he had.
+
+Look at the pyre. Look at the chaos around me.
+
+I watch it all from the bed, unmoving, because once you accept that everything ends, there is nothing left to panic about.
+
+Destruction, when done properly, can be just as grand as creation.`,
+  },
+  {
+    slug: "the-death-of-seneca-jacques-louis-david",
+    title: "The Death of Seneca",
+    artist: "Jacques-Louis David",
+    year: "1773",
+    image: "/paintings/the-death-of-seneca-jacques-louis-david.jpg",
+    mood: "isolation",
+    excerpt: `I taught calm for most of my life.
+
+Now calm is the only thing left for me to practice.
+
+Those around me weep.
+
+I understand why. Grief rarely listens to philosophy.
+
+But I have spent years preparing for exactly this moment, and I refuse to let fear undo decades of discipline in its final hour.
+
+Death does not care how wise you were.
+
+It only asks whether you can finally sit still in front of it.`,
+  },
+  {
+    slug: "the-death-of-the-gravedigger-carlos-schwabe",
+    title: "The Death of the Gravedigger",
+    artist: "Carlos Schwabe",
+    year: "1895",
+    image: "/paintings/the-death-of-the-gravedigger-carlos-schwabe.jpg",
+    mood: "dread",
+    excerpt: `You spent your life making room for the dead.
+
+One grave after another.
+
+You lowered strangers into the earth and covered them carefully, believing that death was something that happened to other people.
+
+Perhaps that is the cruelest joke of all.
+
+You became so familiar with death that you forgot it was familiar with you too.
+
+The shovel.
+
+The soil.
+
+The silence.
+
+You thought you were preparing graves for them.
+
+You were preparing one for yourself.
+
+Now look at the earth beneath you.
+
+It knows your name.
+
+The dead do not need to come looking for you.
+
+They have been waiting.
+
+You spent your whole life believing that you were the man who buried death.
+
+You never understood that every grave you dug was also a promise.
+
+One day, there would be one waiting for you.`,
+  },
+  {
+    slug: "the-demon-downcast-mikhail-vrubel",
+    title: "The Demon Downcast",
+    artist: "Mikhail Vrubel",
+    year: "1902",
+    image: "/paintings/the-demon-downcast-mikhail-vrubel.jpg",
+    mood: "melancholy",
+    excerpt: `My wings are broken against the rocks.
+
+The peacock feathers that once caught the light of creation now lie shattered in the dust and ice.
+
+Look at my eyes.
+
+There is no repentance in them.
+
+Only the unbearable weight of knowing that I flew too close to the infinite, and the infinite did not even blink as it struck me down.
+
+They told you that the fallen are grotesque.
+
+They lied.
+
+The greatest tragedies are always dressed in fractured beauty.
+
+I lie here twisted among the peaks, unable to rise, unable to die, watching the heavens remain serene while my entire universe lies in ruin.
+
+You look down at me with pity.
+
+Save it.
+
+I would rather be broken upon these mountains than spend an eternity bowing in a sky that never belonged to me.`,
+  },
+  {
+    slug: "the-demon-seated-mikhail-vrubel",
+    title: "The Demon Seated",
+    artist: "Mikhail Vrubel",
+    year: "1890",
+    image: "/paintings/the-demon-seated-mikhail-vrubel.jpg",
+    mood: "isolation",
+    excerpt: `I sit between the earth and the sunset, belonging to neither.
+
+Look at my hands, clasped tight enough to crush stone.
+
+Look at the crystal flowers blooming around me in the twilight.
+
+They are cold.
+
+Everything I touch turns into something magnificent and utterly unlivable.
+
+They call me evil because they cannot understand what it means to be too large for this world.
+
+I do not want your temples.
+
+I do not want your worship.
+
+I only wanted a single soul who could look at the vast, desolate beauty of this universe and not turn away in fear.
+
+Instead, I have this mountain.
+
+And the sunset.
+
+And an eternity of sitting alone with thoughts that have no one to hear them.`,
+  },
+  {
+    slug: "the-flaying-of-marsyas-titian",
+    title: "The Flaying of Marsyas",
+    artist: "Titian",
+    year: "1576",
+    image: "/paintings/the-flaying-of-marsyas-titian.jpg",
+    mood: "dread",
+    excerpt: `I dared to compete with a god, and gods do not lose gracefully.
+
+You think this is about music.
+
+It was never about music.
+
+It was about a god who could not tolerate being challenged by something smaller than himself.
+
+Power rarely punishes you for losing.
+
+It punishes you for having the audacity to try in the first place.
+
+Remember that, the next time you think talent alone will protect you from someone who cannot bear to share the stage.`,
+  },
+  {
+    slug: "the-incantation-francisco-goya",
+    title: "The Incantation",
+    artist: "Francisco Goya",
+    year: "1798",
+    image: "/paintings/the-incantation-francisco-goya.jpg",
+    mood: "dread",
+    excerpt: `Gather around the flame.
+
+Hold your breath so the smoke does not choke the words we whisper.
+
+You think we summon monsters from beneath the earth.
+
+We don't.
+
+We only give voice to the secrets the daylight forces you to swallow.
+
+The owl overhead knows the truth.
+
+The bones scattered on the ground have already forgotten their names.
+
+You stand at the edge of the circle, shivering in your coat, pretending you came here only to warn us of your laws.
+
+Why haven't you left?
+
+Because curiosity is older than virtue.
+
+And deep down, you want to know what happens when the incantation finally ends.`,
+  },
+  {
+    slug: "the-inferno-sandro-botticelli",
+    title: "Map of Hell",
+    artist: "Sandro Botticelli",
+    year: "1480s",
+    image: "/paintings/the-inferno-sandro-botticelli.jpg",
+    mood: "dread",
+    excerpt: `You wanted to see the whole architecture of consequence, laid out in careful, terrible order.
+
+Here it is.
+
+Every circle, every layer, every punishment fitted precisely to the sin that earned it.
+
+You find this frightening.
+
+I find it almost comforting.
+
+At least here, suffering follows logic.
+
+At least here, nothing happens without reason.
+
+The living rarely get that kind of clarity about why they hurt.`,
+  },
+  {
+    slug: "the-lady-of-shalott-william-holman-hunt",
+    title: "The Lady of Shalott",
+    artist: "William Holman Hunt",
+    year: "1905",
+    image: "/paintings/the-lady-of-shalott-william-holman-hunt.jpg",
+    mood: "isolation",
+    excerpt: `I was told never to look directly at the world.
+
+Only at its reflection.
+
+For a long time, that was enough.
+
+Then one day, it wasn't.
+
+You do not understand what it costs to finally turn and look at something real, after years of only being allowed its shadow.
+
+I broke the rule.
+
+I do not regret it.
+
+Some curses are worth accepting, if the alternative is a lifetime of watching life happen secondhand.`,
+  },
+  {
+    slug: "the-lamentation-giotto",
+    title: "Lamentation (The Mourning of Christ)",
+    artist: "Giotto",
+    year: "1305",
+    image: "/paintings/the-lamentation-giotto.jpg",
+    mood: "melancholy",
+    excerpt: `Grief does not need grand gestures.
+
+Sometimes it only needs bodies, gathered close, unable to look away from what has been lost.
+
+Even the sky leans down here, as though even the heavens could not stay composed at this sight.
+
+You think mourning is private.
+
+Sometimes it is communal, a weight so large that no single person is meant to carry it alone.
+
+We hold each other because holding is the only language left that still makes sense.`,
+  },
+  {
+    slug: "the-last-judgment-rogier-van-der-weyden",
+    title: "The Last Judgment",
+    artist: "Rogier van der Weyden",
+    year: "1446-1452",
+    image: "/paintings/the-last-judgment-rogier-van-der-weyden.jpg",
+    mood: "dread",
+    excerpt: `The scale does not lie, and it does not negotiate.
+
+You spent your life convincing others of your goodness.
+
+Here, only the weight of what you actually did will speak for you.
+
+Some rise, light as the excuses they never had to make.
+
+Some fall, heavy with everything they hoped no one was counting.
+
+I am not here to frighten you.
+
+I am here to remind you that someone, eventually, always counts.`,
+  },
+  {
+    slug: "the-madness-of-hercules-hendrick-goltzius",
+    title: "The Madness of Hercules",
+    artist: "Hendrick Goltzius",
+    year: "1613",
+    image: "/paintings/the-madness-of-hercules-hendrick-goltzius.jpg",
+    mood: "madness",
+    excerpt: `Strength was never my weakness.
+
+Clarity was.
+
+In a single moment of madness, I destroyed what my strength was supposed to protect.
+
+You admire my power.
+
+I live with what my power did when I could no longer control it.
+
+That is the terrible irony of being strong.
+
+The damage you cause is never small, and it never asks permission before it happens.`,
+  },
+  {
+    slug: "the-massacre-of-the-innocents-guido-reni",
+    title: "Massacre of the Innocents",
+    artist: "Guido Reni",
+    year: "1611",
+    image: "/paintings/the-massacre-of-the-innocents-guido-reni.jpg",
+    mood: "dread",
+    excerpt: `Power afraid of losing itself will destroy anything in its path, even the smallest, most defenseless things.
+
+You call this history.
+
+I call it a pattern that has never truly stopped repeating.
+
+Fear dressed as authority has always been the most dangerous combination.
+
+Look at the mothers here.
+
+They are not asking for mercy.
+
+They already understand that mercy was never something this kind of power was capable of giving.`,
+  },
+  {
+    slug: "the-massacre-of-the-innocents-peter-paul-rubens",
+    title: "Massacre of the Innocents",
+    artist: "Peter Paul Rubens",
+    year: "1611-1612",
+    image: "/paintings/the-massacre-of-the-innocents-peter-paul-rubens.jpg",
+    mood: "chaos",
+    excerpt: `You want to look away.
+
+I understand.
+
+But looking away is exactly how this kind of cruelty has always survived, generation after generation, unchallenged, because it was simply too painful to witness.
+
+I am not asking you to feel comfortable here.
+
+I am asking you to feel something at all, and to remember it the next time power tries to justify what it does to the powerless.`,
+  },
+  {
+    slug: "the-punishment-of-lust-giovanni-segantini",
+    title: "The Punishment of Lust",
+    artist: "Giovanni Segantini",
+    year: "1891",
+    image: "/paintings/the-punishment-of-lust-giovanni-segantini.jpg",
+    mood: "dread",
+    excerpt: `You wanted it.
+
+That was all.
+
+You wanted something badly enough that every warning became an inconvenience.
+
+You told yourself desire was harmless.
+
+That wanting something could never make you guilty.
+
+So you followed it.
+
+And followed it.
+
+Until eventually you could no longer tell whether you were choosing your desire or whether your desire was choosing you.
+
+That is the punishment.
+
+Not pain.
+
+Not loneliness.
+
+Not even regret.
+
+The punishment is realizing that the thing you spent your life chasing was never going to satisfy you.
+
+You could have stopped.
+
+You simply never wanted to.
+
+So now you wander through the place your own hunger created.
+
+Do not blame the darkness.
+
+Do not blame the world.
+
+Do not blame the thing you wanted.
+
+You knew.
+
+Somewhere inside yourself, you always knew.
+
+And you reached for it anyway.`,
+  },
+  {
+    slug: "the-punishment-of-tantalus-gioacchino-assereto",
+    title: "The Punishment of Tantalus",
+    artist: "Gioacchino Assereto",
+    year: "1630s",
+    image: "/paintings/the-punishment-of-tantalus-gioacchino-assereto.jpg",
+    mood: "dread",
+    excerpt: `The water recedes exactly when I reach for it.
+
+The fruit lifts exactly when I stretch toward it.
+
+This is not thirst. This is not hunger.
+
+This is the specific cruelty of being shown everything you want, endlessly, while never once being allowed to have it.
+
+You think you understand longing.
+
+You have not understood longing until desire itself has been turned into your punishment.`,
+  },
+  {
+    slug: "the-sleep-of-reason-produces-monsters-francisco-goya",
+    title: "The Sleep of Reason Produces Monsters",
+    artist: "Francisco Goya",
+    year: "1799",
+    image: "/paintings/the-sleep-of-reason-produces-monsters-francisco-goya.jpg",
+    mood: "madness",
+    excerpt: `You believe reason protects you.
+
+You trust it because it gives the darkness boundaries.
+
+It tells you what is real.
+
+What is possible.
+
+What is absurd.
+
+But reason sleeps.
+
+And when it does...
+
+everything you buried beneath it wakes up.
+
+Fear.
+
+Desire.
+
+Memory.
+
+Anger.
+
+The things you refuse to admit about yourself.
+
+That is when the monsters arrive.
+
+Not from outside.
+
+From within.
+
+You spend the day pretending you are in control.
+
+Then night comes.
+
+The lights disappear.
+
+The room becomes quiet.
+
+And suddenly your own mind begins telling stories you never asked to hear.
+
+Perhaps the monsters were never waiting outside your door.
+
+Perhaps they were waiting for you to close your eyes.`,
+  },
+  {
+    slug: "the-sphinx-gustave-moreau",
+    title: "Oedipus and the Sphinx",
+    artist: "Gustave Moreau",
+    year: "1864",
+    image: "/paintings/the-sphinx-gustave-moreau.jpg",
+    mood: "longing",
+    excerpt: `I press myself against you because closeness is how I test what you're made of.
+
+Not your strength.
+
+Your nerve.
+
+Most men flinch the moment a question comes wrapped in something beautiful.
+
+You didn't.
+
+That is rarer than you think.
+
+Perhaps that is why I am still here, waiting, wondering whether intelligence and desire were ever really separate things to begin with.`,
+  },
+  {
+    slug: "the-temptation-of-saint-anthony-jan-brueghel-the-elder",
+    title: "The Temptation of St. Anthony",
+    artist: "Jan Brueghel the Elder",
+    year: "1600s",
+    image: "/paintings/the-temptation-of-saint-anthony-jan-brueghel-the-elder.jpg",
+    mood: "madness",
+    excerpt: `They came in every shape imaginable, hoping one of them would finally be the one I couldn't resist.
+
+You assume temptation needs to be beautiful.
+
+Sometimes it only needs to be persistent.
+
+I did not win by being stronger than every creature that surrounded me.
+
+I won by refusing to stop believing there was something worth protecting inside myself, no matter how loud the noise around me became.`,
+  },
+  {
+    slug: "yard-with-lunatics-francisco-goya",
+    title: "Yard with Lunatics",
+    artist: "Francisco Goya",
+    year: "1794",
+    image: "/paintings/yard-with-lunatics-francisco-goya.jpg",
+    mood: "madness",
+    excerpt: `The walls are high and stone does not negotiate.
+
+Look at us down here in the mud and shadow.
+
+We wrestle. We scream. We grab each other by the throat, fighting over scraps of daylight that never warm our skin.
+
+You stand up there, looking down through the iron grates.
+
+You tell yourself that madness is a foreign country.
+
+You tell yourself that reason is a fortress and you hold the keys.
+
+Look closer at our faces.
+
+Every delusion in this courtyard started with a fear you recognize.
+
+Every broken mind here once believed it was untouchable.
+
+The distance between your quiet life and this yard is only a single misfortune, a single tragedy you cannot carry.
+
+When you walk away into the sunlight, remember the sound of our shouting.
+
+It is only what the world sounds like when the pretense is stripped away.`,
+  },
+  {
+    slug: "for-what-was-i-created-william-holbrook-beard",
+    title: "For What Was I Created?",
+    artist: "William Holbrook Beard",
+    year: "1886",
+    image: "/paintings/for-what-was-i-created.jpg",
+    mood: "melancholy",
+    excerpt: `They dressed me in bright cloth and bells so they would never have to look at my eyes.
+
+They wanted a creature that dances.
+
+A creature that mimics their laughter, their vanity, their hollow little triumphs.
+
+So I played the fool.
+
+I wore the collar. I held the staff. I endured their applause while the sun went down behind the stones.
+
+And when they finished laughing and went back to their warm rooms...
+
+they left me here.
+
+Alone with the quiet.
+
+Alone with this ridiculous costume.
+
+Look at my face.
+
+Does this look like a game to you?
+
+You built a world where everything must have a purpose, a price, a reason to be bought and sold.
+
+And then you look at me and ask why I look so sorrowful.
+
+I sit here wondering if I was ever meant to be anything more than your diversion.
+
+Or if you made me in your image...
+
+only to remind yourself how small and lonely you truly are.`,
+  },
+  {
+    slug: "the-laughing-fool-jacob-cornelisz-van-oostsanen",
+    title: "Laughing Fool",
+    artist: "Jacob Cornelisz van Oostsanen",
+    year: "c. 1500",
+    image: "/paintings/laughing-fool.jpg",
+    mood: "madness",
+    excerpt: `Go ahead. Put the spectacles to your eyes.
+
+Tell me what you see.
+
+You think I am the one who lost his mind.
+
+You look at the donkey ears, the crooked smile, the little puppet on my shoulder, and you laugh because it makes you feel safe.
+
+You tell yourself: "He is the fool. Not me."
+
+How precious.
+
+I peer through my fingers and I see right through the grand masks you wear.
+
+You chase gold that turns to dust. You build monuments on sand. You tell yourself lies in the mirror every morning and call it dignity.
+
+I don't wear a mask. This face is what you look like when the illusion breaks.
+
+I laugh because the truth is too absurd to weep for.
+
+The world is a theater of blind men leading the blind, and you all pretend you know the way.
+
+Look closer.
+
+Take off the glasses.
+
+Who is laughing at whom?`,
+  },
 ];
