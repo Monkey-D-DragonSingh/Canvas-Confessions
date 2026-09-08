@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import type { Painting } from "@/app/lib/paintings";
 
-export default function PaintingCard({ painting }: { painting: Painting }) {
+export default function PaintingCard({ painting }: { painting: Pick<Painting, "slug" | "title" | "artist" | "year" | "image"> }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -19,7 +19,7 @@ export default function PaintingCard({ painting }: { painting: Painting }) {
   };
 
   return (
-    <Link href={`/paintings/${painting.slug}`}>
+    <Link href={`/paintings/${painting.slug}`} prefetch={false}>
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
@@ -29,6 +29,7 @@ export default function PaintingCard({ painting }: { painting: Painting }) {
           src={painting.image}
           alt={painting.title}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
         />
 

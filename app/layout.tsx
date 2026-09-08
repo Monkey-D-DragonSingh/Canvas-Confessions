@@ -3,6 +3,9 @@ import { Fraunces, Work_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import MusicPlayer from "@/components/MusicPlayer";
+import GalleryMenu from "@/components/GalleryMenu";
+import { paintings } from "@/app/lib/paintings";
+import { rooms, getRoomPaintings } from "@/app/lib/rooms";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -34,6 +37,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-gallery text-ivory">
         <SmoothScroll>{children}</SmoothScroll>
+        <GalleryMenu
+          total={paintings.length}
+          rooms={rooms.map(({ slug, title }) => ({ slug, title, count: getRoomPaintings(slug).length }))}
+        />
         <MusicPlayer />
       </body>
     </html>

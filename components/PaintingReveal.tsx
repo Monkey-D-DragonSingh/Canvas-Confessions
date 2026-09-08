@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Painting } from "@/app/lib/paintings";
 import { moodStyles } from "@/app/lib/moodstyles";
@@ -18,7 +19,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
     : mood.vignetteDuration + mood.stillnessPause;
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-gallery">
+    <div className="relative h-dvh w-full overflow-hidden bg-gallery">
       <motion.div
         className="absolute inset-0"
         animate={{ scale: open ? 1.08 : 1 }}
@@ -31,6 +32,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
           src={painting.image}
           alt={painting.title}
           fill
+          sizes="100vw"
           className="object-contain"
           priority
         />
@@ -49,14 +51,15 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
       />
 
       <motion.div
-        className="absolute top-10 left-10"
+        className="absolute top-24 left-6 right-6 md:left-10 md:right-10"
         animate={{ opacity: open ? 0 : 1, y: open ? -8 : 0 }}
         transition={{ duration: FADE_DURATION, ease: CLOSE_EASE }}
       >
+        <Link href="/#gallery" className="inline-block mb-5 font-label text-[10px] text-brass hover:text-ivory">&larr; Main gallery</Link>
         <p className="font-label text-xs text-brass">
           {painting.artist} · {painting.year}
         </p>
-        <h1 className="font-display italic text-3xl md:text-5xl text-ivory mt-2">
+        <h1 className="font-display italic text-2xl md:text-4xl text-ivory mt-2 max-w-4xl">
           {painting.title}
         </h1>
       </motion.div>
@@ -92,9 +95,18 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
               onClick={(e) => e.stopPropagation()}
               className="confession-scroll max-w-2xl max-h-[75vh] overflow-y-auto text-center px-2"
             >
-              <p className="font-display italic text-xl md:text-3xl text-ivory leading-relaxed">
+              <p className="font-display italic text-xl md:text-3xl text-ivory leading-relaxed whitespace-pre-line">
                 &ldquo;{painting.excerpt}&rdquo;
               </p>
+
+              {painting.sourceUrl && (
+                <div className="mt-8 border-t border-brass/20 pt-5 text-xs text-ivory/65 leading-relaxed">
+                  <p>Original imaginative confession inspired by the artwork, not a historical quotation or religious text.</p>
+                  <p className="mt-3">{painting.imageCredit}</p>
+                  <p className="mt-2">{painting.license}</p>
+                  <a href={painting.sourceUrl} target="_blank" rel="noreferrer" className="inline-block mt-3 text-brass underline underline-offset-4">Artwork source &amp; image credits</a>
+                </div>
+              )}
 
               <motion.button
                 initial={{ opacity: 0 }}

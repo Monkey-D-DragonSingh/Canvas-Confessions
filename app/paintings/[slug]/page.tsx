@@ -14,7 +14,7 @@ export default async function PaintingDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  return <PaintingReveal painting={painting} />;
+  return <PaintingReveal key={painting.slug} painting={painting} />;
 }
 
 export async function generateStaticParams() {
