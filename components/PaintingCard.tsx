@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import PaintingImage from "@/components/PaintingImage";
 import { useRef } from "react";
 import type { Painting } from "@/app/lib/paintings";
 
@@ -25,11 +25,11 @@ export default function PaintingCard({ painting }: { painting: Pick<Painting, "s
         onMouseMove={handleMouseMove}
         className="group relative overflow-hidden rounded-sm bg-surface aspect-[3/4] transition-transform duration-500 hover:scale-[1.02]"
       >
-        <Image
+        <PaintingImage
           src={painting.image}
           alt={painting.title}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          sizes="(min-width: 1280px) 374px, (min-width: 1024px) calc((100vw - 160px) / 3), (min-width: 768px) calc((100vw - 128px) / 2), (min-width: 640px) calc((100vw - 72px) / 2), calc(100vw - 48px)"
           className="object-cover opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
         />
 

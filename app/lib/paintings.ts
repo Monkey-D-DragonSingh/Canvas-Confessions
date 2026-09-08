@@ -910,7 +910,7 @@ Some people carry their smallness all the way to the bone.`,
     title: "The Skeletons Warming Themselves",
     artist: "James Ensor",
     year: "1889",
-    image:"https://res.cloudinary.com/daldbatl/image/f_auto,q_auto/the-skeletons-warming-themselves-james-ensor",
+    image: "https://res.cloudinary.com/daldbatl/image/upload/f_auto,q_auto/the-skeletons-warming-themselves-james-ensor",
     mood: "chaos",
     excerpt: `Perhaps death is only waiting for the living to catch up.
 

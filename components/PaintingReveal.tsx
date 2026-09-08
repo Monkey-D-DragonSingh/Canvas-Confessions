@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import PaintingImage from "@/components/PaintingImage";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Painting } from "@/app/lib/paintings";
@@ -28,13 +28,13 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
           ease: open ? mood.revealEase : CLOSE_EASE,
         }}
       >
-        <Image
+        <PaintingImage
           src={painting.image}
           alt={painting.title}
           fill
           sizes="100vw"
           className="object-contain"
-          priority
+          preload
         />
       </motion.div>
 

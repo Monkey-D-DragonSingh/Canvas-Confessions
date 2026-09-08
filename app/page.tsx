@@ -2,7 +2,7 @@ import { paintings } from "@/app/lib/paintings";
 import GalleryGrid from "@/components/GalleryGrid";
 import { rooms, getRoomPaintings } from "@/app/lib/rooms";
 import Link from "next/link";
-import Image from "next/image";
+import PaintingImage from "@/components/PaintingImage";
 
 export default function GalleryHomePage() {
   const featuredPainting = paintings[0];
@@ -62,13 +62,13 @@ export default function GalleryHomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface/40 border border-brass/20 rounded-sm p-6 md:p-10 backdrop-blur-sm">
             {/* Image Preview Column */}
             <div className="lg:col-span-5 relative aspect-[3/4] w-full rounded-sm overflow-hidden border border-brass/20 group">
-              <Image
+              <PaintingImage
                 src={featuredPainting.image}
                 alt={featuredPainting.title}
                 fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(min-width: 1280px) 440px, (min-width: 1024px) calc((100vw - 224px) * 5 / 12), (min-width: 768px) calc(100vw - 180px), calc(100vw - 100px)"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-                priority
+                preload
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gallery via-transparent to-transparent" />
             </div>
@@ -109,7 +109,7 @@ export default function GalleryHomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {roomDirectory.filter((room) => ["sins", "norse", "indian"].includes(room.slug)).map((room) => (
             <Link key={room.slug} href={`/rooms/${room.slug}`} className="room-preview group relative overflow-hidden min-h-80 border border-brass/20 bg-surface">
-              {room.preview && <Image src={room.preview.image} alt={room.preview.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />}
+              {room.preview && <PaintingImage src={room.preview.image} alt={room.preview.title} fill sizes="(min-width: 1280px) 382px, (min-width: 768px) calc((100vw - 136px) / 3), calc(100vw - 48px)" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />}
               <div className="absolute inset-0 bg-gradient-to-t from-gallery via-gallery/35 to-transparent" />
               <div className="relative z-10 p-7 flex flex-col justify-between h-full min-h-80">
                 <span className="font-label text-[10px] text-ivory/85">{room.count} {room.count === 1 ? "artwork" : "artworks"}</span>
