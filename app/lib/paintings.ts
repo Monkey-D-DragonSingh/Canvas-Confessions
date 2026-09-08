@@ -8,6 +8,11 @@ export type Painting = {
   image: string;
   excerpt: string;
   mood: Mood;
+  collection?: "norse" | "indian" | "classical";
+  rooms?: Array<"sins" | "death" | "war" | "longing" | "solitude" | "nightmares" | "divine" | "dreams">;
+  sourceUrl?: string;
+  imageCredit?: string;
+  license?: string;
   fullConfession?: string[];
   details?: {
     medium?: string;
@@ -19,6 +24,7 @@ export type Painting = {
 export const paintings: Painting[] = [
   {
   slug: "lucifer-franz-von-stuck",
+  rooms: ["sins", "solitude", "divine"],
   title: "Lucifer",
   artist: "Franz von Stuck",
   year: "1890",
@@ -58,6 +64,7 @@ Neither am I.`,
 },
   {
   slug: "the-fallen-angel-alexandre-cabanel",
+  rooms: ["sins", "longing", "solitude", "divine"],
   title: "The Fallen Angel",
   artist: "Alexandre Cabanel",
   year: "1847",
@@ -201,6 +208,7 @@ And I have had an eternity to remember.`,
 },
   {
     slug: "the-witches-sabbath-francisco-goya",
+    rooms: ["sins", "death", "nightmares"],
     title: "The Witches' Sabbath",
     artist: "Francisco Goya",
     year: "1798",
@@ -232,6 +240,7 @@ And control, more than anything, is what you have always worshipped.`,
   },
   {
     slug: "witches-flight-francisco-goya",
+    rooms: ["sins", "war", "nightmares", "dreams"],
     title: "Witches' Flight",
     artist: "Francisco Goya",
     year: "1798",
@@ -259,6 +268,7 @@ And smallness was the only shape you would forgive us for.`,
   },
   {
     slug: "the-isle-of-the-dead-arnold-bocklin",
+    rooms: ["death", "solitude", "dreams"],
     title: "The Isle of the Dead",
     artist: "Arnold Böcklin",
     year: "1880",
@@ -292,6 +302,7 @@ It is simply the place where endings are allowed to rest.`,
   },
   {
     slug: "the-great-he-goat-francisco-goya",
+    rooms: ["nightmares"],
     title: "The Great He-Goat",
     artist: "Francisco Goya",
     year: "1821-1823",
@@ -323,6 +334,7 @@ Sometimes it is only obedience wearing a kinder name.`,
   },
   {
     slug: "the-sin-franz-von-stuck",
+    rooms: ["sins", "longing", "dreams"],
     title: "The Sin",
     artist: "Franz von Stuck",
     year: "1893",
@@ -350,6 +362,7 @@ But disgust does not usually hold your attention this long.`,
   },
   {
     slug: "the-magic-circle-john-william-waterhouse",
+    rooms: ["dreams"],
     title: "The Magic Circle",
     artist: "John William Waterhouse",
     year: "1886",
@@ -375,6 +388,7 @@ Just know that everything you fear about me is really something you fear about y
   },
   {
     slug: "la-belle-dame-sans-merci-john-william-waterhouse",
+    rooms: ["longing", "dreams"],
     title: "La Belle Dame Sans Merci",
     artist: "John William Waterhouse",
     year: "1893",
@@ -402,6 +416,7 @@ Some people need to be ruined once to understand what they were chasing.`,
   },
   {
     slug: "the-awakening-conscience-william-holman-hunt",
+    rooms: ["sins", "longing"],
     title: "The Awakening Conscience",
     artist: "William Holman Hunt",
     year: "1853",
@@ -429,6 +444,7 @@ Perhaps the only real freedom is the moment you finally stop pretending you don'
   },
   {
     slug: "the-hireling-shepherd-william-holman-hunt",
+    rooms: ["sins", "longing"],
     title: "The Hireling Shepherd",
     artist: "William Holman Hunt",
     year: "1851",
@@ -458,6 +474,7 @@ Neglect just smiles and lets everything fall apart quietly.`,
   },
   {
     slug: "the-vampire-edvard-munch",
+    rooms: ["longing", "dreams"],
     title: "The Vampire",
     artist: "Edvard Munch",
     year: "1895",
@@ -485,6 +502,7 @@ They offer themselves to what they believed love was supposed to feel like.`,
   },
   {
     slug: "vampire-philip-burne-jones",
+    rooms: ["sins", "longing", "nightmares"],
     title: "Vampire",
     artist: "Philip Burne-Jones",
     year: "1897",
@@ -510,6 +528,7 @@ We have all confused hunger for love at least once.`,
   },
   {
     slug: "the-kiss-of-the-sphinx-franz-von-stuck",
+    rooms: ["longing", "nightmares", "divine"],
     title: "The Kiss of the Sphinx",
     artist: "Franz von Stuck",
     year: "1895",
@@ -537,6 +556,7 @@ Let's see what you actually understand about yourself.`,
   },
   {
     slug: "nighthawks-edward-hopper",
+    rooms: ["solitude"],
     title: "Nighthawks",
     artist: "Edward Hopper",
     year: "1942",
@@ -564,6 +584,7 @@ A full one, where nobody speaks.`,
   },
   {
     slug: "the-entombment-of-christ-caravaggio",
+    rooms: ["death", "longing", "divine"],
     title: "The Entombment of Christ",
     artist: "Caravaggio",
     year: "1603-1604",
@@ -587,6 +608,7 @@ Everything else had already been decided.`,
   },
   {
     slug: "the-descent-from-the-cross-peter-paul-rubens",
+    rooms: ["death", "longing", "divine"],
     title: "The Descent from the Cross",
     artist: "Peter Paul Rubens",
     year: "1612-1614",
@@ -606,6 +628,7 @@ We lowered him slowly, not because slowness helped him, but because it was the o
   },
   {
     slug: "the-descent-from-the-cross-rembrandt",
+    rooms: ["death", "longing", "divine"],
     title: "The Descent from the Cross",
     artist: "Rembrandt",
     year: "1634",
@@ -629,6 +652,7 @@ How much like any other evening, except for the absence sitting in the center of
   },
   {
     slug: "the-nightmare-henry-fuseli",
+    rooms: ["nightmares", "dreams"],
     title: "The Nightmare",
     artist: "Henry Fuseli",
     year: "1781",
@@ -652,6 +676,7 @@ Sometimes it's simply the place where your fears finally get to speak.`,
   },
   {
     slug: "pandemonium-john-martin",
+    rooms: ["sins", "war", "divine", "dreams"],
     title: "Pandemonium",
     artist: "John Martin",
     year: "1841",
@@ -677,6 +702,7 @@ By the time the pillars fell, it was already too late to ask who was in charge.`
   },
   {
     slug: "the-great-day-of-his-wrath-john-martin",
+    rooms: ["death", "nightmares", "divine", "dreams"],
     title: "The Great Day of His Wrath",
     artist: "John Martin",
     year: "1851-1853",
@@ -700,6 +726,7 @@ They only care that you, like everyone else standing here, are finally out of ti
   },
   {
     slug: "the-plains-of-heaven-john-martin",
+    rooms: ["divine", "dreams"],
     title: "The Plains of Heaven",
     artist: "John Martin",
     year: "1851-1853",
@@ -723,6 +750,7 @@ That is simply what it means to have wanted something for so long that you forgo
   },
   {
     slug: "the-temptation-of-st-anthony-hieronymus-bosch",
+    rooms: ["sins", "nightmares", "divine", "dreams"],
     title: "The Temptation of St. Anthony",
     artist: "Hieronymus Bosch",
     year: "1501",
@@ -744,6 +772,7 @@ It looks like something you didn't know you still wanted.`,
   },
   {
     slug: "the-temptation-of-st-anthony-matthias-grunewald",
+    rooms: ["war", "nightmares", "divine"],
     title: "The Temptation of St. Anthony",
     artist: "Matthias Grünewald",
     year: "1512-1516",
@@ -765,6 +794,7 @@ By you, alone in the dark, wondering if you ever really believed at all.`,
   },
   {
     slug: "the-death-of-marat-jacques-louis-david",
+    rooms: ["sins", "death", "war"],
     title: "The Death of Marat",
     artist: "Jacques-Louis David",
     year: "1793",
@@ -786,6 +816,7 @@ History chose it for me, and framed it as peace.`,
   },
   {
     slug: "the-death-of-socrates-jacques-louis-david",
+    rooms: ["death"],
     title: "The Death of Socrates",
     artist: "Jacques-Louis David",
     year: "1787",
@@ -809,6 +840,7 @@ At the time, it simply looked like a man calmly choosing his convictions over hi
   },
   {
     slug: "the-death-of-seneca-peter-paul-rubens",
+    rooms: ["death"],
     title: "The Death of Seneca",
     artist: "Peter Paul Rubens",
     year: "1614",
@@ -828,6 +860,7 @@ Dying, it turns out, is rarely as elegant as the essays written about it.`,
   },
   {
     slug: "the-raft-of-the-medusa-theodore-gericault",
+    rooms: ["death", "solitude"],
     title: "The Raft of the Medusa",
     artist: "Théodore Géricault",
     year: "1818-1819",
@@ -851,6 +884,7 @@ Most people do, right up until the moment the water runs out.`,
   },
   {
     slug: "the-skeletons-fighting-over-a-hanged-man-james-ensor",
+    rooms: ["sins", "death", "war", "nightmares", "dreams"],
     title: "The Skeletons Fighting Over a Hanged Man",
     artist: "James Ensor",
     year: "1891",
@@ -872,6 +906,7 @@ Some people carry their smallness all the way to the bone.`,
   },
   {
     slug: "the-skeletons-warming-themselves-james-ensor",
+    rooms: ["death", "dreams"],
     title: "The Skeletons Warming Themselves",
     artist: "James Ensor",
     year: "1889",
@@ -893,6 +928,7 @@ Just bones, and a small fire, and the patience of something that already knows h
   },
   {
     slug: "the-body-of-the-dead-christ-in-the-tomb-hans-holbein-the-younger",
+    rooms: ["death", "divine"],
     title: "The Body of the Dead Christ in the Tomb",
     artist: "Hans Holbein the Younger",
     year: "1521-1522",
@@ -914,6 +950,7 @@ I am asking you to stop looking away from what waits for all of you eventually.`
   },
   {
     slug: "the-last-judgment-michelangelo",
+    rooms: ["sins", "death", "divine"],
     title: "The Last Judgment",
     artist: "Michelangelo",
     year: "1536-1541",
@@ -937,6 +974,7 @@ But every single one of them, in this final moment, finally sees themselves with
   },
   {
     slug: "the-last-judgment-hans-memling",
+    rooms: ["sins", "death", "divine"],
     title: "The Last Judgment",
     artist: "Hans Memling",
     year: "1467-1471",
@@ -954,6 +992,7 @@ This is about honesty, finally, after a lifetime of convenient forgetting.`,
   },
   {
     slug: "the-dance-of-death-michael-wolgemut",
+    rooms: ["death", "dreams"],
     title: "The Dance of Death",
     artist: "Michael Wolgemut",
     year: "1493",
@@ -973,6 +1012,7 @@ It only checks whether you are still breathing, and then, gently, invites you to
   },
   {
     slug: "the-funeral-edvard-munch",
+    rooms: ["death", "longing"],
     title: "The Funeral",
     artist: "Edvard Munch",
     year: "1885",
@@ -990,6 +1030,7 @@ We are all here together, orbiting a space that used to hold someone, unable to 
   },
   {
     slug: "death-and-the-maiden-hans-baldung",
+    rooms: ["death", "nightmares", "dreams"],
     title: "Death and the Maiden",
     artist: "Hans Baldung",
     year: "1517",
@@ -1013,6 +1054,7 @@ I was only ever the truth beauty tries so hard to forget.`,
   },
   {
     slug: "judith-beheading-holofernes-caravaggio",
+    rooms: ["death", "war", "divine"],
     title: "Judith Beheading Holofernes",
     artist: "Caravaggio",
     year: "1599",
@@ -1034,6 +1076,7 @@ Most men do, right up until the exact moment it no longer matters.`,
   },
   {
     slug: "judith-slaying-holofernes-artemisia-gentileschi",
+    rooms: ["death", "war", "divine"],
     title: "Judith Slaying Holofernes",
     artist: "Artemisia Gentileschi",
     year: "1620",
@@ -1053,6 +1096,7 @@ Not because she feels nothing, but because she has already decided that this mom
   },
   {
     slug: "david-with-the-head-of-goliath-caravaggio",
+    rooms: ["death", "war", "divine"],
     title: "David with the Head of Goliath",
     artist: "Caravaggio",
     year: "1610",
@@ -1072,6 +1116,7 @@ Victory is rarely as clean as the story that gets told about it.`,
   },
   {
     slug: "david-with-the-head-of-goliath-guido-reni",
+    rooms: ["death", "war", "divine"],
     title: "David with the Head of Goliath",
     artist: "Guido Reni",
     year: "1605",
@@ -1089,6 +1134,7 @@ I remember the fear that came before it, the trembling I hid so no one would see
   },
   {
     slug: "salome-with-the-head-of-john-the-baptist-caravaggio",
+    rooms: ["sins", "death", "war", "divine"],
     title: "Salome with the Head of John the Baptist",
     artist: "Caravaggio",
     year: "1609",
@@ -1106,6 +1152,7 @@ Now I hold the proof of my own wanting, and I am learning, too late, that some r
   },
   {
     slug: "salome-with-the-head-of-john-the-baptist-titian",
+    rooms: ["sins", "death", "war", "divine"],
     title: "Salome with the Head of John the Baptist",
     artist: "Titian",
     year: "1515",
@@ -1125,6 +1172,7 @@ I only needed to ask sweetly, and the world handed me exactly what I wanted.`,
   },
   {
     slug: "the-beheading-of-saint-john-the-baptist-caravaggio",
+    rooms: ["sins", "death", "war", "divine"],
     title: "The Beheading of Saint John the Baptist",
     artist: "Caravaggio",
     year: "1608",
@@ -1146,6 +1194,7 @@ With a quiet efficiency that makes the horror somehow worse.`,
   },
   {
     slug: "the-taking-of-christ-caravaggio",
+    rooms: ["sins", "war", "divine"],
     title: "The Taking of Christ",
     artist: "Caravaggio",
     year: "1602",
@@ -1167,6 +1216,7 @@ Only by someone you allowed near enough to hurt you.`,
   },
   {
     slug: "the-martyrdom-of-saint-matthew-caravaggio",
+    rooms: ["sins", "death", "war", "divine"],
     title: "The Martyrdom of Saint Matthew",
     artist: "Caravaggio",
     year: "1600",
@@ -1182,6 +1232,7 @@ Most people simply become still, caught between disbelief and the sudden underst
   },
   {
     slug: "the-massacre-at-chios-eugene-delacroix",
+    rooms: ["sins", "death", "war", "longing"],
     title: "The Massacre at Chios",
     artist: "Eugène Delacroix",
     year: "1824",
@@ -1199,6 +1250,7 @@ You will forget us, sitting here, waiting for a mercy that never arrived.`,
   },
   {
     slug: "the-execution-of-lady-jane-grey-paul-delaroche",
+    rooms: ["sins", "death", "war"],
     title: "The Execution of Lady Jane Grey",
     artist: "Paul Delaroche",
     year: "1833",
@@ -1218,6 +1270,7 @@ I simply became a lesson about how dangerous other people's ambitions can be.`,
   },
   {
     slug: "the-third-of-may-1808-francisco-goya",
+    rooms: ["sins", "death", "war"],
     title: "The Third of May 1808",
     artist: "Francisco Goya",
     year: "1814",
@@ -1237,6 +1290,7 @@ War does not care about the difference between a soldier and a man who simply wa
   },
   {
     slug: "the-dog-francisco-goya",
+    rooms: ["solitude"],
     title: "The Dog",
     artist: "Francisco Goya",
     year: "1819-1823",
@@ -1258,6 +1312,7 @@ The absence of any reason to expect them.`,
   },
   {
     slug: "the-madhouse-francisco-goya",
+    rooms: ["solitude"],
     title: "The Madhouse",
     artist: "Francisco Goya",
     year: "1816",
@@ -1279,6 +1334,7 @@ From the questions we stopped pretending not to ask.`,
   },
   {
     slug: "the-colossus-francisco-goya",
+    rooms: ["war", "nightmares", "dreams"],
     title: "The Colossus",
     artist: "Francisco Goya",
     year: "1808-1812",
@@ -1336,6 +1392,7 @@ still looking up.`,
   },
   {
     slug: "the-scream-edvard-munch",
+    rooms: ["solitude", "nightmares"],
     title: "The Scream",
     artist: "Edvard Munch",
     year: "1893",
@@ -1401,6 +1458,7 @@ You are human because something became too heavy to keep silent.`,
   },
   {
     slug: "anxiety-edvard-munch",
+    rooms: ["solitude", "nightmares"],
     title: "Anxiety",
     artist: "Edvard Munch",
     year: "1894",
@@ -1462,6 +1520,7 @@ It only needs to convince you that you don't belong in the one you're standing i
   },
   {
     slug: "melancholy-edvard-munch",
+    rooms: ["longing", "solitude"],
     title: "Melancholy",
     artist: "Edvard Munch",
     year: "1894-1896",
@@ -1519,6 +1578,7 @@ Some are simply part of being human.`,
   },
   {
     slug: "evening-on-karl-johan-edvard-munch",
+    rooms: ["solitude", "nightmares"],
     title: "Evening on Karl Johan",
     artist: "Edvard Munch",
     year: "1892",
@@ -1562,6 +1622,7 @@ And still remain invisible.`,
   },
   {
     slug: "despair-edvard-munch",
+    rooms: ["solitude"],
     title: "Despair",
     artist: "Edvard Munch",
     year: "1892",
@@ -1611,6 +1672,7 @@ I simply cannot reach it from here.`,
   },
   {
     slug: "the-sick-child-edvard-munch",
+    rooms: ["death", "longing"],
     title: "The Sick Child",
     artist: "Edvard Munch",
     year: "1885-1886",
@@ -1660,6 +1722,7 @@ Forever waiting for the ending you wished you could change.`,
   },
   {
     slug: "self-portrait-with-death-playing-the-fiddle-arnold-bocklin",
+    rooms: ["death", "dreams"],
     title: "Self-Portrait with Death Playing the Fiddle",
     artist: "Arnold Böcklin",
     year: "1872",
@@ -1713,6 +1776,7 @@ And somewhere between your music and my brush, we will pretend neither of us kno
   },
   {
     slug: "the-painter-s-family-egon-schiele",
+    rooms: ["longing", "solitude"],
     title: "The Painter's Family",
     artist: "Egon Schiele",
     year: "1918",
@@ -1740,6 +1804,7 @@ Perhaps it is simply the decision to stay, even when there are parts of each oth
   },
   {
     slug: "self-portrait-with-physalis-egon-schiele",
+    rooms: ["solitude"],
     title: "Self-Portrait with Physalis",
     artist: "Egon Schiele",
     year: "1912",
@@ -1779,6 +1844,7 @@ Perhaps it is accepting that you have always had several.`,
   },
   {
     slug: "death-and-the-maiden-egon-schiele",
+    rooms: ["death", "longing", "dreams"],
     title: "Death and the Maiden",
     artist: "Egon Schiele",
     year: "1915",
@@ -1816,6 +1882,7 @@ And perhaps that moment is worth more than eternity.`,
   },
   {
     slug: "the-dead-mother-egon-schiele",
+    rooms: ["death", "longing", "dreams"],
     title: "The Dead Mother",
     artist: "Egon Schiele",
     year: "1910",
@@ -1849,6 +1916,7 @@ Learning how to walk while carrying it.`,
   },
   {
     slug: "the-agony-august-friedrich-albrecht-schenck",
+    rooms: ["death", "longing", "solitude"],
     title: "The Agony",
     artist: "August Friedrich Albrecht Schenck",
     year: "1878",
@@ -1890,6 +1958,7 @@ The world is not.`,
   },
   {
     slug: "insane-woman-theodore-gericault",
+    rooms: ["solitude"],
     title: "Insane Woman",
     artist: "Théodore Géricault",
     year: "1822",
@@ -1925,6 +1994,7 @@ What if reality is simply the name the majority gives to the world they agree up
   },
   {
     slug: "prometheus-bound-peter-paul-rubens",
+    rooms: ["war", "divine"],
     title: "Prometheus Bound",
     artist: "Peter Paul Rubens",
     year: "1611-1612",
@@ -1964,6 +2034,7 @@ Was I wrong?`,
   },
   {
     slug: "prometheus-jose-clemente-orozco",
+    rooms: ["divine"],
     title: "Prometheus",
     artist: "José Clemente Orozco",
     year: "1930",
@@ -2003,6 +2074,7 @@ Perhaps the curse is simply being human.`,
   },
   {
     slug: "ixion-peter-paul-rubens",
+    rooms: ["sins", "divine"],
     title: "Ixion",
     artist: "Peter Paul Rubens",
     year: "1615",
@@ -2044,6 +2116,7 @@ Perhaps the punishment is understanding exactly why you are on it.`,
   },
   {
     slug: "the-fall-of-the-rebel-angels-pieter-bruegel-the-elder",
+    rooms: ["sins", "war", "nightmares", "divine"],
     title: "The Fall of the Rebel Angels",
     artist: "Pieter Bruegel the Elder",
     year: "1562",
@@ -2081,6 +2154,7 @@ That is how destruction often looks from a distance.`,
   },
   {
     slug: "the-fall-of-the-rebel-angels-luca-giordano",
+    rooms: ["sins", "war", "divine"],
     title: "The Fall of the Rebel Angels",
     artist: "Luca Giordano",
     year: "1666",
@@ -2114,6 +2188,7 @@ The distance between the two is smaller than you think.`,
   },
   {
     slug: "the-punishment-of-tityus-titian",
+    rooms: ["sins", "war", "nightmares", "divine"],
     title: "The Punishment of Tityus",
     artist: "Titian",
     year: "1549",
@@ -2143,6 +2218,7 @@ and the horizon disappears with it.`,
   },
   {
     slug: "tityus-jose-de-ribera",
+    rooms: ["sins", "war", "nightmares", "divine"],
     title: "Tityus",
     artist: "José de Ribera",
     year: "1632",
@@ -2176,6 +2252,7 @@ The certainty that pain will never become memory.`,
   },
   {
     slug: "sisyphus-titian",
+    rooms: ["solitude", "divine"],
     title: "Sisyphus",
     artist: "Titian",
     year: "1549",
@@ -2215,6 +2292,7 @@ Perhaps meaning is hidden in the decision to push again when you already know wh
   },
   {
     slug: "sisyphus-franz-von-stuck",
+    rooms: ["solitude", "divine"],
     title: "Sisyphus",
     artist: "Franz von Stuck",
     year: "1920",
@@ -2246,6 +2324,7 @@ Endless hope in the face of failure.`,
   },
   {
     slug: "the-rape-of-proserpina-peter-paul-rubens",
+    rooms: ["sins", "war", "divine"],
     title: "The Rape of Proserpina",
     artist: "Peter Paul Rubens",
     year: "1636-1638",
@@ -2281,6 +2360,7 @@ And you spend the rest of your life learning how to become someone new around th
   },
   {
     slug: "the-abduction-of-proserpine-rembrandt",
+    rooms: ["sins", "war", "divine"],
     title: "The Abduction of Proserpine",
     artist: "Rembrandt",
     year: "1631",
@@ -2318,6 +2398,7 @@ Anything else is hunger wearing a beautiful name.`,
   },
   {
     slug: "oedipus-and-the-sphinx-gustave-moreau",
+    rooms: ["nightmares", "divine", "dreams"],
     title: "Oedipus and the Sphinx",
     artist: "Gustave Moreau",
     year: "1864",
@@ -2355,6 +2436,7 @@ Sometimes the truth itself is the monster.`,
   },
   {
     slug: "oedipus-cursing-his-son-polynices-henry-fuseli",
+    rooms: ["sins", "war", "divine"],
     title: "Oedipus Cursing His Son Polynices",
     artist: "Henry Fuseli",
     year: "1786",
@@ -2386,6 +2468,7 @@ And eventually the children inherit wounds they never created.`,
   },
   {
     slug: "ophelia-john-everett-millais",
+    rooms: ["death", "longing", "solitude"],
     title: "Ophelia",
     artist: "John Everett Millais",
     year: "1851-1852",
@@ -2423,6 +2506,7 @@ Because the struggle had finally become silent.`,
   },
   {
     slug: "ophelia-alexandre-cabanel",
+    rooms: ["death", "longing", "solitude"],
     title: "Ophelia",
     artist: "Alexandre Cabanel",
     year: "1883",
@@ -2458,6 +2542,7 @@ Sometimes beauty is simply the final mask sorrow wears.`,
   },
   {
     slug: "the-soul-of-the-rose-john-william-waterhouse",
+    rooms: ["longing"],
     title: "The Soul of the Rose",
     artist: "John William Waterhouse",
     year: "1908",
@@ -2489,6 +2574,7 @@ But both have thorns.`,
   },
   {
     slug: "circe-invidiosa-john-william-waterhouse",
+    rooms: ["sins", "longing", "divine"],
     title: "Circe Invidiosa",
     artist: "John William Waterhouse",
     year: "1892",
@@ -2520,6 +2606,7 @@ Until you forget what was already yours.`,
   },
   {
     slug: "circe-offering-the-cup-to-ulysses-john-william-waterhouse",
+    rooms: ["sins", "divine"],
     title: "Circe Offering the Cup to Ulysses",
     artist: "John William Waterhouse",
     year: "1891",
@@ -2553,6 +2640,7 @@ Or you can take the cup and spend the rest of your life wondering why you didn't
   },
   {
     slug: "the-monk-by-the-sea-caspar-david-friedrich",
+    rooms: ["solitude", "divine"],
     title: "The Monk by the Sea",
     artist: "Caspar David Friedrich",
     year: "1810",
@@ -2584,6 +2672,7 @@ The silence has more to say than you do.`,
   },
   {
     slug: "abbey-in-the-oakwood-caspar-david-friedrich",
+    rooms: ["death", "divine"],
     title: "Abbey in the Oakwood",
     artist: "Caspar David Friedrich",
     year: "1810",
@@ -2623,6 +2712,7 @@ Until even the places built to remember become things that need remembering.`,
   },
   {
     slug: "two-men-contemplating-the-moon-caspar-david-friedrich",
+    rooms: ["dreams"],
     title: "Two Men Contemplating the Moon",
     artist: "Caspar David Friedrich",
     year: "1819-1820",
@@ -2654,6 +2744,7 @@ For once, let the mystery remain a mystery.`,
   },
   {
     slug: "the-evening-star-caspar-david-friedrich",
+    rooms: ["death", "dreams"],
     title: "The Evening Star",
     artist: "Caspar David Friedrich",
     year: "1830",
@@ -2695,6 +2786,7 @@ Perhaps they simply remind you that the light was never promised to stay forever
   },
   {
     slug: "the-lamentation-over-the-dead-christ-andrea-mantegna",
+    rooms: ["death", "longing", "divine"],
     title: "The Lamentation over the Dead Christ",
     artist: "Andrea Mantegna",
     year: "1480",
@@ -2724,6 +2816,7 @@ It only knows that they are gone.`,
   },
   {
     slug: "the-last-judgment-fra-angelico",
+    rooms: ["sins", "death", "divine"],
     title: "The Last Judgment",
     artist: "Fra Angelico",
     year: "1425-1431",
@@ -2757,6 +2850,7 @@ The question is whether you will recognize yourself when the time comes.`,
   },
   {
     slug: "the-crucifixion-matthias-grunewald",
+    rooms: ["death", "war", "divine"],
     title: "The Crucifixion",
     artist: "Matthias Grünewald",
     year: "1512-1516",
@@ -2786,6 +2880,7 @@ Not every wound needs to be explained before it deserves compassion.`,
   },
   {
     slug: "the-apparition-gustave-moreau",
+    rooms: ["sins", "death", "nightmares", "divine", "dreams"],
     title: "The Apparition",
     artist: "Gustave Moreau",
     year: "1876",
@@ -2811,6 +2906,7 @@ Perhaps the difference was never as large as you thought.`,
   },
   {
     slug: "salome-dancing-before-herod-gustave-moreau",
+    rooms: ["sins", "longing", "divine"],
     title: "Salome Dancing Before Herod",
     artist: "Gustave Moreau",
     year: "1876",
@@ -2836,6 +2932,7 @@ The consequences do not.`,
   },
   {
     slug: "salome-in-the-garden-gustave-moreau",
+    rooms: ["sins", "death", "divine"],
     title: "Salome in the Garden",
     artist: "Gustave Moreau",
     year: "1878",
@@ -2863,6 +2960,7 @@ Because wanting can become so loud that everything else becomes quiet.`,
   },
   {
     slug: "the-kiss-gustav-klimt",
+    rooms: ["longing", "dreams"],
     title: "The Kiss",
     artist: "Gustav Klimt",
     year: "1908",
@@ -2892,6 +2990,7 @@ Perhaps some risks are worth taking.`,
   },
   {
     slug: "the-birth-of-venus-sandro-botticelli",
+    rooms: ["longing", "divine"],
     title: "The Birth of Venus",
     artist: "Sandro Botticelli",
     year: "1485",
@@ -2927,6 +3026,7 @@ Perhaps that is what makes it beautiful.`,
   },
   {
     slug: "the-son-of-man-rene-magritte",
+    rooms: ["solitude", "dreams"],
     title: "The Son of Man",
     artist: "René Magritte",
     year: "1964",
@@ -2964,6 +3064,7 @@ You may never completely see.`,
   },
   {
     slug: "the-lovers-rene-magritte",
+    rooms: ["longing", "solitude", "dreams"],
     title: "The Lovers",
     artist: "René Magritte",
     year: "1928",
@@ -2997,6 +3098,7 @@ You can love someone completely and still never reach them.`,
   },
   {
     slug: "the-human-condition-rene-magritte",
+    rooms: ["dreams"],
     title: "The Human Condition",
     artist: "René Magritte",
     year: "1933",
@@ -3026,6 +3128,7 @@ How certain are you that the world outside the painting is actually outside it?`
   },
   {
     slug: "the-empire-of-light-rene-magritte",
+    rooms: ["dreams"],
     title: "The Empire of Light",
     artist: "René Magritte",
     year: "1953-1954",
@@ -3059,6 +3162,7 @@ Perhaps opposites do not need to choose.`,
   },
   {
     slug: "the-false-mirror-rene-magritte",
+    rooms: ["dreams"],
     title: "The False Mirror",
     artist: "René Magritte",
     year: "1929",
@@ -3092,6 +3196,7 @@ Maybe the world you see is partly the world you brought with you.`,
   },
   {
     slug: "the-cyclops-odilon-redon",
+    rooms: ["longing", "solitude", "divine", "dreams"],
     title: "The Cyclops",
     artist: "Odilon Redon",
     year: "1914",
@@ -3119,6 +3224,7 @@ You never ask what it feels like to exist inside it.`,
   },
   {
     slug: "the-crying-spider-odilon-redon",
+    rooms: ["solitude", "nightmares", "dreams"],
     title: "The Crying Spider",
     artist: "Odilon Redon",
     year: "1881",
@@ -3150,6 +3256,7 @@ Perhaps that is what makes them human.`,
   },
   {
     slug: "the-dream-henri-rousseau",
+    rooms: ["dreams"],
     title: "The Dream",
     artist: "Henri Rousseau",
     year: "1910",
@@ -3179,6 +3286,7 @@ You are never completely alone in the places your mind creates.`,
   },
   {
     slug: "the-snake-charmer-henri-rousseau",
+    rooms: ["nightmares", "dreams"],
     title: "The Snake Charmer",
     artist: "Henri Rousseau",
     year: "1907",
@@ -3208,6 +3316,7 @@ And suddenly your imagination becomes more frightening than anything that could 
   },
   {
     slug: "the-sleeping-gypsy-henri-rousseau",
+    rooms: ["solitude", "dreams"],
     title: "The Sleeping Gypsy",
     artist: "Henri Rousseau",
     year: "1897",
@@ -3237,6 +3346,7 @@ And for this one moment, the unknown has not yet decided whether it will become 
   },
   {
     slug: "apollo-and-marsyas-jusepe-de-ribera",
+    rooms: ["sins", "death", "war", "divine"],
     title: "Apollo and Marsyas",
     artist: "Jusepe de Ribera",
     year: "1637",
@@ -3260,6 +3370,7 @@ The lesson was never about the sound you made.`,
   },
   {
     slug: "christs-entry-into-brussels-james-ensor",
+    rooms: ["sins", "solitude", "divine", "dreams"],
     title: "Christ's Entry into Brussels in 1889",
     artist: "James Ensor",
     year: "1888",
@@ -3287,6 +3398,7 @@ When the music stops and the confetti falls into the mud, not a single one will 
   },
   {
     slug: "dante-and-virgil-entering-hell-eugene-delacroix",
+    rooms: ["sins", "death", "war", "nightmares", "divine"],
     title: "The Barque of Dante",
     artist: "Eugène Delacroix",
     year: "1822",
@@ -3306,6 +3418,7 @@ Desperation makes monsters of everyone eventually.`,
   },
   {
     slug: "die-schachspieler-friedrich-moritz-august-retzsch",
+    rooms: ["sins", "divine", "dreams"],
     title: "The Chess Players (Die Schachspieler)",
     artist: "Friedrich Moritz August Retzsch",
     year: "1831",
@@ -3333,6 +3446,7 @@ The clock is ticking, and eternity is very patient.`,
   },
   {
     slug: "harrowing-of-hell-byzantine",
+    rooms: ["death", "divine"],
     title: "Harrowing of Hell",
     artist: "Byzantine",
     year: "12th century",
@@ -3356,6 +3470,7 @@ Take my hand anyway.`,
   },
   {
     slug: "jason-and-medea-john-william-waterhouse",
+    rooms: ["longing", "divine"],
     title: "Jason and Medea",
     artist: "John William Waterhouse",
     year: "1907",
@@ -3375,6 +3490,7 @@ Do not forget what happens when the woman who gave you your power decides she wa
   },
   {
     slug: "jealousy-edvard-munch",
+    rooms: ["longing", "solitude"],
     title: "Jealousy",
     artist: "Edvard Munch",
     year: "1895",
@@ -3404,6 +3520,7 @@ And I am drowning in the foreground, consumed by a fire that warms no one.`,
   },
   {
     slug: "masks-confronting-death-james-ensor",
+    rooms: ["death", "nightmares", "dreams"],
     title: "Masks Confronting Death",
     artist: "James Ensor",
     year: "1888",
@@ -3441,6 +3558,7 @@ Death has no reason to pretend. You do.`,
   },
   {
     slug: "medea-eugene-delacroix",
+    rooms: ["sins", "death", "war", "divine"],
     title: "Medea",
     artist: "Eugène Delacroix",
     year: "1838",
@@ -3460,6 +3578,7 @@ If I must burn the world you built to remind you of who I am, I will strike the 
   },
   {
     slug: "oedipus-and-the-sphinx-jean-auguste-dominique-ingres",
+    rooms: ["nightmares", "divine"],
     title: "Oedipus and the Sphinx",
     artist: "Jean-Auguste-Dominique Ingres",
     year: "1808",
@@ -3481,6 +3600,7 @@ Sometimes it only walks you directly into it, step by step, with your eyes wide 
   },
   {
     slug: "orestes-pursued-by-the-furies-william-adolphe-bouguereau",
+    rooms: ["sins", "death", "nightmares", "divine"],
     title: "Oestres Pursued by the Furies",
     artist: "William-Adolphe Bouguereau",
     year: "1862",
@@ -3500,6 +3620,7 @@ Guilt is a pack of wolves that follows you everywhere, waiting for the moment yo
   },
   {
     slug: "satan-watching-the-sleep-of-christ-joseph-noel-paton",
+    rooms: ["nightmares", "divine"],
     title: "Satan Watching the Sleep of Christ",
     artist: "Joseph Noel Paton",
     year: "1874",
@@ -3549,6 +3670,7 @@ Sometimes it simply waits beside you, quietly, patiently, until you wake.`,
   },
   {
     slug: "tamara-and-the-demon-mikhail-vrubel",
+    rooms: ["longing", "nightmares", "divine"],
     title: "Tamara and the Demon",
     artist: "Mikhail Vrubel",
     year: "1890",
@@ -3594,6 +3716,7 @@ That is much worse.`,
   },
   {
     slug: "the-anatomy-lesson-of-dr-deijman-rembrandt",
+    rooms: ["death"],
     title: "The Anatomy Lesson of Dr. Deijman",
     artist: "Rembrandt",
     year: "1656",
@@ -3615,6 +3738,7 @@ You will not find why any of it mattered.`,
   },
   {
     slug: "the-bad-mothers-giovanni-segantini",
+    rooms: ["sins", "longing", "solitude", "dreams"],
     title: "The Bad Mothers",
     artist: "Giovanni Segantini",
     year: "1894",
@@ -3642,6 +3766,7 @@ And here, in the winter of your own design, you will wait until your heart final
   },
   {
     slug: "the-barque-of-dante-eugene-delacroix",
+    rooms: ["sins", "death", "war", "nightmares", "divine"],
     title: "The Barque of Dante",
     artist: "Eugène Delacroix",
     year: "1822",
@@ -3667,6 +3792,7 @@ It takes only one misstep in life to fall into the same black water.`,
   },
   {
     slug: "the-bewitched-man-francisco-goya",
+    rooms: ["nightmares", "dreams"],
     title: "The Bewitched Man",
     artist: "Francisco Goya",
     year: "1798",
@@ -3696,6 +3822,7 @@ The curse was believing that fear had the final say.`,
   },
   {
     slug: "the-crucifixion-cimabue",
+    rooms: ["death", "war", "divine"],
     title: "The Crucifixion",
     artist: "Cimabue",
     year: "1288",
@@ -3717,6 +3844,7 @@ We simply change the names we give the silence.`,
   },
   {
     slug: "the-death-of-hyacinth-jean-broc",
+    rooms: ["death", "longing", "divine"],
     title: "The Death of Hyacinth",
     artist: "Jean Broc",
     year: "1801",
@@ -3742,6 +3870,7 @@ Even gods are helpless in front of a body that has gone cold.`,
   },
   {
     slug: "the-death-of-sardanapalus-eugene-delacroix",
+    rooms: ["sins", "death", "war"],
     title: "The Death of Sardanapalus",
     artist: "Eugène Delacroix",
     year: "1827",
@@ -3763,6 +3892,7 @@ Destruction, when done properly, can be just as grand as creation.`,
   },
   {
     slug: "the-death-of-seneca-jacques-louis-david",
+    rooms: ["death"],
     title: "The Death of Seneca",
     artist: "Jacques-Louis David",
     year: "1773",
@@ -3784,6 +3914,7 @@ It only asks whether you can finally sit still in front of it.`,
   },
   {
     slug: "the-death-of-the-gravedigger-carlos-schwabe",
+    rooms: ["death", "divine", "dreams"],
     title: "The Death of the Gravedigger",
     artist: "Carlos Schwabe",
     year: "1895",
@@ -3825,6 +3956,7 @@ One day, there would be one waiting for you.`,
   },
   {
     slug: "the-demon-downcast-mikhail-vrubel",
+    rooms: ["sins", "solitude", "divine", "dreams"],
     title: "The Demon Downcast",
     artist: "Mikhail Vrubel",
     year: "1902",
@@ -3856,6 +3988,7 @@ I would rather be broken upon these mountains than spend an eternity bowing in a
   },
   {
     slug: "the-demon-seated-mikhail-vrubel",
+    rooms: ["longing", "solitude", "divine", "dreams"],
     title: "The Demon Seated",
     artist: "Mikhail Vrubel",
     year: "1890",
@@ -3887,6 +4020,7 @@ And an eternity of sitting alone with thoughts that have no one to hear them.`,
   },
   {
     slug: "the-flaying-of-marsyas-titian",
+    rooms: ["sins", "death", "war", "divine"],
     title: "The Flaying of Marsyas",
     artist: "Titian",
     year: "1576",
@@ -3908,6 +4042,7 @@ Remember that, the next time you think talent alone will protect you from someon
   },
   {
     slug: "the-incantation-francisco-goya",
+    rooms: ["nightmares"],
     title: "The Incantation",
     artist: "Francisco Goya",
     year: "1798",
@@ -3937,6 +4072,7 @@ And deep down, you want to know what happens when the incantation finally ends.`
   },
   {
     slug: "the-inferno-sandro-botticelli",
+    rooms: ["sins", "death", "nightmares", "divine"],
     title: "Map of Hell",
     artist: "Sandro Botticelli",
     year: "1480s",
@@ -3960,6 +4096,7 @@ The living rarely get that kind of clarity about why they hurt.`,
   },
   {
     slug: "the-lady-of-shalott-william-holman-hunt",
+    rooms: ["longing", "solitude", "dreams"],
     title: "The Lady of Shalott",
     artist: "William Holman Hunt",
     year: "1905",
@@ -3983,6 +4120,7 @@ Some curses are worth accepting, if the alternative is a lifetime of watching li
   },
   {
     slug: "the-lamentation-giotto",
+    rooms: ["death", "longing", "divine"],
     title: "Lamentation (The Mourning of Christ)",
     artist: "Giotto",
     year: "1305",
@@ -4002,6 +4140,7 @@ We hold each other because holding is the only language left that still makes se
   },
   {
     slug: "the-last-judgment-rogier-van-der-weyden",
+    rooms: ["sins", "death", "divine"],
     title: "The Last Judgment",
     artist: "Rogier van der Weyden",
     year: "1446-1452",
@@ -4023,6 +4162,7 @@ I am here to remind you that someone, eventually, always counts.`,
   },
   {
     slug: "the-madness-of-hercules-hendrick-goltzius",
+    rooms: ["sins", "death", "war", "divine"],
     title: "The Madness of Hercules",
     artist: "Hendrick Goltzius",
     year: "1613",
@@ -4044,6 +4184,7 @@ The damage you cause is never small, and it never asks permission before it happ
   },
   {
     slug: "the-massacre-of-the-innocents-guido-reni",
+    rooms: ["sins", "death", "war", "longing", "divine"],
     title: "Massacre of the Innocents",
     artist: "Guido Reni",
     year: "1611",
@@ -4065,6 +4206,7 @@ They already understand that mercy was never something this kind of power was ca
   },
   {
     slug: "the-massacre-of-the-innocents-peter-paul-rubens",
+    rooms: ["sins", "death", "war", "longing", "divine"],
     title: "Massacre of the Innocents",
     artist: "Peter Paul Rubens",
     year: "1611-1612",
@@ -4082,6 +4224,7 @@ I am asking you to feel something at all, and to remember it the next time power
   },
   {
     slug: "the-punishment-of-lust-giovanni-segantini",
+    rooms: ["sins", "longing", "solitude", "dreams"],
     title: "The Punishment of Lust",
     artist: "Giovanni Segantini",
     year: "1891",
@@ -4133,6 +4276,7 @@ And you reached for it anyway.`,
   },
   {
     slug: "the-punishment-of-tantalus-gioacchino-assereto",
+    rooms: ["sins", "longing", "divine"],
     title: "The Punishment of Tantalus",
     artist: "Gioacchino Assereto",
     year: "1630s",
@@ -4152,6 +4296,7 @@ You have not understood longing until desire itself has been turned into your pu
   },
   {
     slug: "the-sleep-of-reason-produces-monsters-francisco-goya",
+    rooms: ["nightmares", "dreams"],
     title: "The Sleep of Reason Produces Monsters",
     artist: "Francisco Goya",
     year: "1799",
@@ -4205,6 +4350,7 @@ Perhaps they were waiting for you to close your eyes.`,
   },
   {
     slug: "the-sphinx-gustave-moreau",
+    rooms: ["nightmares", "divine", "dreams"],
     title: "Oedipus and the Sphinx",
     artist: "Gustave Moreau",
     year: "1864",
@@ -4226,6 +4372,7 @@ Perhaps that is why I am still here, waiting, wondering whether intelligence and
   },
   {
     slug: "the-temptation-of-saint-anthony-jan-brueghel-the-elder",
+    rooms: ["sins", "nightmares", "divine", "dreams"],
     title: "The Temptation of St. Anthony",
     artist: "Jan Brueghel the Elder",
     year: "1600s",
@@ -4243,6 +4390,7 @@ I won by refusing to stop believing there was something worth protecting inside 
   },
   {
     slug: "yard-with-lunatics-francisco-goya",
+    rooms: ["sins", "war", "solitude"],
     title: "Yard with Lunatics",
     artist: "Francisco Goya",
     year: "1794",
@@ -4274,6 +4422,7 @@ It is only what the world sounds like when the pretense is stripped away.`,
   },
   {
     slug: "for-what-was-i-created-william-holbrook-beard",
+    rooms: ["sins", "solitude"],
     title: "For What Was I Created?",
     artist: "William Holbrook Beard",
     year: "1886",
@@ -4313,6 +4462,7 @@ only to remind yourself how small and lonely you truly are.`,
   },
   {
     slug: "the-laughing-fool-jacob-cornelisz-van-oostsanen",
+    rooms: ["dreams"],
     title: "Laughing Fool",
     artist: "Jacob Cornelisz van Oostsanen",
     year: "c. 1500",
@@ -4345,5 +4495,3509 @@ Look closer.
 Take off the glasses.
 
 Who is laughing at whom?`,
+  },
+  {
+    slug: "norse-thor-battles-giants-winge",
+    title: "Thor's Fight with the Giants",
+    artist: "Mårten Eskil Winge",
+    year: "1872",
+    image: "/paintings/norse/norse-thor-battles-giants-winge.jpg",
+    excerpt: `I have made a weapon of the sky, and still the giants rise.
+
+Beneath my chariot the world is all teeth, stone, and reaching hands.
+
+They will call this courage because I am standing above the terror instead of underneath it.
+
+Yet each flash shows me another face that refuses to disappear.
+
+I lift the hammer again.
+
+I cannot admit that thunder is the sound I make when silence would let me hear them.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Thor%27s_Battle_Against_the_J%C3%B6tnar_(1872)_by_M%C3%A5rten_Eskil_Winge.jpg",
+    imageCredit: "Mårten Eskil Winge. Wikimedia Commons: Thor's Battle Against the Jötnar (1872) by Mårten Eskil Winge.jpg. Source credit: Second upload from Nationalmuseum (http://webart.nationalmuseum.se/work/work_image.aspx?id=18256) Third upload is a high-resolution scan from the 2003 illustrated Edda published by Gudrun.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-thor-midgard-serpent-fuseli",
+    title: "Thor Battering the Midgard Serpent",
+    artist: "Henry Fuseli",
+    year: "1790",
+    image: "/paintings/norse/norse-thor-midgard-serpent-fuseli.jpg",
+    excerpt: `I pulled until the sea seemed stitched to my fist.
+
+Now the thing beneath every voyage has lifted its head, and our little boat has become the narrow place between two kinds of ending.
+
+My arm knows the hammer better than my mind knows fear.
+
+I wish that were enough.
+
+Beneath my feet the boards complain like living creatures, and I understand how small a god can look from the water.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Johann_Heinrich_Fussli-Tor_and_Jormundgandr.jpg",
+    imageCredit: "Henry Fuseli. Wikimedia Commons: Johann Heinrich Fussli-Tor and Jormundgandr.jpg. Source credit: Royal Academy of Arts (https://www.royalacademy.org.uk/art-artists/work-of-art/thor-battering-the-midgard-serpent?artist_id=7042&form=objects&index=5&total_entries=45). Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-death-baldr-eckersberg",
+    title: "The Death of Baldr",
+    artist: "Christoffer Wilhelm Eckersberg",
+    year: "1817",
+    image: "/paintings/norse/norse-death-baldr-eckersberg.jpg",
+    excerpt: `I thought the laughter meant I was safe.
+
+Every weapon had become a harmless visitor, and I stood among my own people without the old animal caution.
+
+Now their faces lean over me as if love could call the wound back out.
+
+A little mistletoe has accomplished what iron could not.
+
+I am leaving them with an impossible question: how did a room full of gods fail to recognize the hand that wanted me gone?`,
+    mood: "melancholy",
+    collection: "norse",
+    rooms: ["divine","death","sins"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Baldr_dead_by_Eckersberg.jpg",
+    imageCredit: "Christoffer Wilhelm Eckersberg. Wikimedia Commons: Baldr dead by Eckersberg.jpg. Source credit: Self-scanned. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-night-arbo",
+    title: "Night (Nott Riding Hrimfaxi)",
+    artist: "Peter Nicolai Arbo",
+    year: "1887",
+    image: "/paintings/norse/norse-night-arbo.jpg",
+    excerpt: `I bring the dark without asking who deserves to rest.
+
+Beneath my horse, roofs and fields lose their sharp divisions; grief becomes a shape beside a bed.
+
+They fear my coming, though I cover their wounds more gently than daylight does.
+
+There is no house where I may dismount.
+
+I pass every sleeping window, carrying the mercy of not being seen, and no one thinks to leave a light for me.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","dreams","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Peter_Nicolai_Arbo_-_Natten_-_Nasjonalmuseet_-_NG.M.03666.jpg",
+    imageCredit: "Peter Nicolai Arbo. Wikimedia Commons: Peter Nicolai Arbo - Natten - Nasjonalmuseet - NG.M.03666.jpg. Source credit: Not necessary, PD by age.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-day-arbo",
+    title: "Day (Dagr Riding Skinfaxi)",
+    artist: "Peter Nicolai Arbo",
+    year: "1874",
+    image: "/paintings/norse/norse-day-arbo.jpg",
+    excerpt: `I carry the brightness others have begged for, but I cannot linger to see what it repairs.
+
+My horse scatters morning across the world, and every window becomes a small demand.
+
+Wake, work, begin again.
+
+They believe that light arrives without effort.
+
+I know the weight of this raised arm.
+
+Sometimes I envy the sleepers who can turn their faces from me and keep, for one more breath, a private night.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Dagr_by_Arbo.jpg",
+    imageCredit: "Peter Nicolai Arbo. Wikimedia Commons: Dagr by Arbo.jpg. Source credit: http://en.wikipedia.org/wiki/Image:Dagr_by_Arbo.jpg (https://en.wikipedia.org/wiki/Image:Dagr_by_Arbo.jpg). Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-punishment-loki-penrose",
+    title: "The Punishment of Loki",
+    artist: "James Doyle Penrose",
+    year: "c. 1912 (published reproduction)",
+    image: "/paintings/norse/norse-punishment-loki-penrose.jpg",
+    excerpt: `I once trusted my mouth to open any prison.
+
+A joke, a promise, a different face: there was always a way between the bars.
+
+Here the stone does not listen.
+
+The serpent takes its time, and I have learned a terrible respect for creatures that need no cleverness.
+
+I can count each breath before the pain.
+
+What I cannot count is how many people I taught to wait for my suffering.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Punishment_Of_Loki.jpg",
+    imageCredit: "James Doyle Penrose. Wikimedia Commons: The Punishment Of Loki.jpg. Source credit: http://www.sacred-texts.com/neu/tml/tml00.htm#img_front Scan from the book Teutonic Myth and Legend: An Introduction to the Eddas & Sagas, Beowulf, The Nibelungenlied, etc. Author: Donald A. Mackenzie. London: Gresham Publications, 1912? Scanned at sacred-texts.com, October 2003. J. B. Hare, redactor.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-wolves-sol-mani-dollman",
+    title: "The Wolves Pursuing Sol and Mani (Book Illustration)",
+    artist: "John Charles Dollman",
+    year: "1909 (publication)",
+    image: "/paintings/norse/norse-wolves-sol-mani-dollman.jpg",
+    excerpt: `I keep the sun moving because stopping would give the darkness a mouthful.
+
+Below, someone calls this a beautiful morning.
+
+They cannot see the hunger running level with the wheels, or hear the breath that never falls behind.
+
+I have no destination beyond another circuit.
+
+If you praise the steady order of the heavens, remember that I am not keeping time.
+
+I am fleeing, and time is what my flight leaves behind.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Wolves_Pursuing_Sol_and_Mani.jpg",
+    imageCredit: "John Charles Dollman. Wikimedia Commons: The Wolves Pursuing Sol and Mani.jpg. Source credit: Guerber, H. A. (Hélène Adeline) (1909). Myths of the Norsemen from the Eddas and Sagas . London : Harrap. This illustration facing page 8. Digitized by the Internet Archive and available from https://archive.org/details/mythsofthenorsem00gueruoft Some simple image processing by User:Haukurth. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-gefjon-ploughs-frolich",
+    title: "Gefjon Ploughs the Earth in Sweden",
+    artist: "Lorenz Frølich",
+    year: "Undated (before 1908)",
+    image: "/paintings/norse/norse-gefjon-ploughs-frolich.jpg",
+    excerpt: `I asked for land, and they imagined a gift small enough to remain harmless.
+
+Now my sons lean into the harness and the country tears along our furrow.
+
+I hear roots part beneath the strength of their altered bodies.
+
+A new shore is being born behind us.
+
+They will remember the island and forget the pulling.
+
+I cannot look at the oxen without seeing the children whose shoulders carried my impossible answer.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Gefjon_Ploughs_the_Earth_in_Sweden_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Gefjon Ploughs the Earth in Sweden by Frølich.jpg. Source credit: Jonasson, Bjorn (ed.) (2003). Snorri Sturluson : Edda . Gudrun. ISBN (https://en.wikipedia.org/wiki/ISBN) 9979-856-58-0 . Pages 34–35.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-thor-hymir-frolich",
+    title: "Thor and Hymir",
+    artist: "Lorenz Frølich",
+    year: "1870-1875",
+    image: "/paintings/norse/norse-thor-hymir-frolich.jpg",
+    excerpt: `I took the thunderer out upon water that had always obeyed older fears.
+
+A boat should teach its passengers humility; this one has carried a challenge instead.
+
+Beside me his strength makes every ordinary motion dangerous.
+
+I know what lies below, and I know the distance back to shore.
+
+He looks into the sea as if an enemy were merely a task.
+
+I look at the same water and remember how quickly it closes.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lorenz_Fr%C3%B8lich,_Thor_og_Hymer,_,_KMS7046,_Statens_Museum_for_Kunst.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Lorenz Frølich, Thor og Hymer, , KMS7046, Statens Museum for Kunst.jpg. Source credit: image. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-stranger-sigurd-horse-dollman",
+    title: "The Stranger Advises Sigurd How to Choose His Horse (Book Illustration)",
+    artist: "John Charles Dollman",
+    year: "1909 (publication)",
+    image: "/paintings/norse/norse-stranger-sigurd-horse-dollman.jpg",
+    excerpt: `I had thought a horse was something a young man chose for himself.
+
+Then the stranger spoke, and the animals before me seemed to be waiting for an older decision.
+
+His words had the patience of roads I had not traveled.
+
+I wanted the finest mount, the fastest beginning.
+
+Now I wonder whether I was choosing a companion or accepting a path.
+
+The horse can carry me forward; it cannot promise what waits there.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Stranger_advises_Sigurd_how_to_choose_his_Horse_by_J._C._Dollman.jpg",
+    imageCredit: "John Charles Dollman. Wikimedia Commons: The Stranger advises Sigurd how to choose his Horse by J. C. Dollman.jpg. Source credit: Wilmot-Buxton, Ethel Mary. 1909. Stories of Norse Heroes from the Eddas and Sagas . Thomas Y. Crowell. Page 174. Digitized version from the Internet Archive, available at https://archive.org/details/storiesofnorsehe00wilm2.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-sigurd-gunnar-fire-dollman",
+    title: "Sigurd and Gunnar at the Fire (Book Illustration)",
+    artist: "John Charles Dollman",
+    year: "1909 (publication)",
+    image: "/paintings/norse/norse-sigurd-gunnar-fire-dollman.jpg",
+    excerpt: `I stand beside a fire that knows the difference between a promise and a disguise.
+
+Gunnar needs my courage to look like his own, and I have agreed to lend more than a sword.
+
+Beyond the flames a woman waits for the truth of whoever reaches her.
+
+I tell myself this is loyalty.
+
+The heat strips that comfortable word away.
+
+Already I can feel a future in which every kindness has another man's face.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["longing","sins","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sigurd_and_Gunnar_at_the_Fire_by_J._C._Dollman.jpg",
+    imageCredit: "John Charles Dollman. Wikimedia Commons: Sigurd and Gunnar at the Fire by J. C. Dollman.jpg. Source credit: Wilmot-Buxton, Ethel Mary. 1909. Stories of Norse Heroes from the Eddas and Sagas . Thomas Y. Crowell. Page 200. Digitized version from the Internet Archive, available at https://archive.org/details/storiesofnorsehe00wilm2.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-tree-yggdrasil-collingwood",
+    title: "The Tree of Yggdrasil (Book Illustration)",
+    artist: "W. G. Collingwood",
+    year: "1908 (publication)",
+    image: "/paintings/norse/norse-tree-yggdrasil-collingwood.jpg",
+    excerpt: `I hold creatures that would destroy one another if my branches did not keep them apart.
+
+Above me wings settle; below me teeth continue their patient work.
+
+The little messenger runs my length carrying words sharper than claws.
+
+Everyone calls me the world tree, as though a name could make this burden natural.
+
+I grow around each injury.
+
+That is not the same as healing, but it is how the worlds remain aloft.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Tree_of_Yggdrasil.jpg",
+    imageCredit: "W. G. Collingwood. Wikimedia Commons: The Tree of Yggdrasil.jpg. Source credit: The Elder or Poetic Edda; commonly known as Sæmund's Edda. Edited and translated with introduction and notes by Olive Bray. Illustrated by W. G. Collingwood (1908) Page 1. Digitized by the Internet Archive and available from https://archive.org/details/elderorpoeticedd01brayuoft This image was made from the JPEG 2000 image of the relevant page via image processing (crop, rotate, color-levels, mode) with the GIMP by User:Haukurth . The image processing is probably not eligible for copyright but in case it is User:Haukurth releases his modified version into the public domain.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-rides-hel-collingwood",
+    title: "Odin Rides to Hel (Book Illustration)",
+    artist: "W. G. Collingwood",
+    year: "1908 (publication)",
+    image: "/paintings/norse/norse-odin-rides-hel-collingwood.jpg",
+    excerpt: `I ride where a father's questions should never have to go.
+
+Sleipnir finds a road in the cold, and I keep my spear upright because I do not know what else to do with my hands.
+
+Dreams have troubled my son.
+
+I have ruled enough lives to understand the shape of a warning.
+
+Still I am going to ask the dead for an answer, hoping they might tell a kinder story than the living.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","death","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_rides_to_Hel.jpg",
+    imageCredit: "W. G. Collingwood. Wikimedia Commons: Odin rides to Hel.jpg. Source credit: The Elder or Poetic Edda; commonly known as Sæmund's Edda. Edited and translated with introduction and notes by Olive Bray. Illustrated by W.G. Collingwood (1908) Page 238. Digitized by the Internet Archive and available from https://archive.org/details/elderorpoeticedd01brayuoft This image was made from the JPEG 2000 image of the relevant page via image processing (crop, rotate, color-levels, mode) with the GIMP by User:Haukurth . The image processing is probably not eligible for copyright but in case it is User:Haukurth releases his modified version into the public domain.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-ragnarok-collingwood",
+    title: "Ragnarok (Book Illustration after the Heysham Hogback Motif)",
+    artist: "W. G. Collingwood",
+    year: "1908 (publication)",
+    image: "/paintings/norse/norse-ragnarok-collingwood.jpg",
+    excerpt: `I have reached the battle that was waiting inside every earlier victory.
+
+Here the beasts are not interruptions to the world's order; they are its last appointed guests.
+
+Around me each familiar strength meets the shape that will undo it.
+
+I would like one unrecorded moment, a space outside the old design in which to lower my weapon.
+
+Instead I take my place in the knot, and pull until the pattern breaks.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war","death"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ragnar%C3%B6k_by_Collingwood.jpg",
+    imageCredit: "W. G. Collingwood. Wikimedia Commons: Ragnarök by Collingwood.jpg. Source credit: The Elder or Poetic Edda; commonly known as Sæmund's Edda. Edited and translated with introduction and notes by Olive Bray. Illustrated by W.G. Collingwood (1908) Page 276. Digitized by the Internet Archive and available from https://archive.org/details/elderorpoeticedd01brayuoft This image was made from the JPEG 2000 image of the relevant page via image processing (crop, rotate, color-levels, mode) with the GIMP by User:Haukurth . The image processing is probably not eligible for copyright but in case it is User:Haukurth releases his modified version into the public domain.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-restoration-collingwood",
+    title: "The Restoration (Book Illustration after the Heysham Hogback Motif)",
+    artist: "W. G. Collingwood",
+    year: "1908 (publication)",
+    image: "/paintings/norse/norse-restoration-collingwood.jpg",
+    excerpt: `I did not expect the world to have an afterward.
+
+I had imagined only the breaking, the mouths of beasts, the final names shouted into fire.
+
+Yet the pattern turns and leaves room for life again.
+
+I approach this new beginning with the caution of someone entering a house rebuilt after mourning.
+
+Nothing here can return what burned.
+
+Still I want to learn how to welcome a morning that is not an apology.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Restoration_by_Collingwood.jpg",
+    imageCredit: "W. G. Collingwood. Wikimedia Commons: The Restoration by Collingwood.jpg. Source credit: The Elder or Poetic Edda; commonly known as Sæmund's Edda. Edited and translated with introduction and notes by Olive Bray. Illustrated by W.G. Collingwood (1908) Page 277. Digitized by the Internet Archive and available from https://archive.org/details/elderorpoeticedd01brayuoft This image was made from the JPEG 2000 image of the relevant page via image processing (crop, rotate, color-levels, mode) with the GIMP by User:Haukurth . The image processing is probably not eligible for copyright but in case it is User:Haukurth releases his modified version into the public domain.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-hel-gehrts",
+    title: "Hel (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-hel-gehrts.jpg",
+    excerpt: `I receive the ones who were not carried into songs.
+
+No shining account of battle is required at my threshold.
+
+They come tired, frightened, ordinary, and discover that I have room.
+
+Above us they speak my name as a threat.
+
+They do not see the labor of keeping so many endings from becoming nothing.
+
+I sit among what the bright halls refuse to remember, and the silence beside me is crowded with lives.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","death","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Hel_(the_personification_of_Hel).png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Hel (the personification of Hel).png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-sigmund-sword-gehrts",
+    title: "Sigmund's Sword (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-sigmund-sword-gehrts.jpg",
+    excerpt: `I drove the blade into the living wood and watched desire move around the hall.
+
+Each man measured the hilt against his own imagined greatness.
+
+None asked why a stranger would bring such a gift, or what a gift from me might cost.
+
+I know the hand that will free it.
+
+I also know that a sword can enter a family like a guest and remain until every chair stands empty.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sigmunds_Schwert.png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Sigmunds Schwert.png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-thor-chariot-gehrts",
+    title: "Thor in His Chariot (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-thor-chariot-gehrts.jpg",
+    excerpt: `I hear the wheels before the people below hear thunder.
+
+The goats pull against the weight of heaven, and my hammer answers the trembling in my arm.
+
+A god of storms is expected to be certain.
+
+I am certain only that something must stand between the fragile roofs and what comes out of the wild.
+
+If my arrival frightens those I mean to guard, I have no gentler language large enough for the sky.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Thor_(Walhall).png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Thor (Walhall).png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-last-battle-gehrts",
+    title: "The Last Battle (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-last-battle-gehrts.jpg",
+    excerpt: `I can see the wolf's mouth and the place where my future ends.
+
+Knowledge has never been a shield; I have merely carried it longer than most.
+
+Around me the other gods meet their own foretold enemies, each battle suddenly intimate.
+
+I ride forward because retreat would not restore a single day.
+
+Let no one mistake that motion for hope.
+
+It is the last responsibility of a king who has run out of bargains.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war","death"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Der_letzte_Kampf.png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Der letzte Kampf.png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-sinfjotli-gehrts",
+    title: "Odin Receives Sinfjotli's Body (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-odin-sinfjotli-gehrts.jpg",
+    excerpt: `I carried my son until the weight stopped belonging to him and became the whole world.
+
+The stranger's boat waits with an awful calm.
+
+My arms remember a child; my eyes insist on the man who will never answer again.
+
+I should ask where the ferryman is taking him, but every shore has become the wrong one.
+
+When I release this body, there will be nothing left for my hands to understand.`,
+    mood: "melancholy",
+    collection: "norse",
+    rooms: ["divine","death","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_f%C3%BCrht_Sinfj%C3%B6tlis_Leiche.png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Odin fürht Sinfjötlis Leiche.png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-throne-gehrts",
+    title: "Odin on His Throne (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-odin-throne-gehrts.jpg",
+    excerpt: `I send thought and memory out across the world, then wait like an old man listening for footsteps.
+
+The wolves at my feet know a simpler hunger than mine.
+
+Reports arrive, kingdoms turn, and still one empty place remains beside every fact.
+
+They think the throne raises me above uncertainty.
+
+It only gives uncertainty a wider view.
+
+When the ravens return, I am grateful before I am wise, and I never let the hall notice.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odhin.png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Odhin.png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-gunnlod-gehrts",
+    title: "Odin with Gunnlod (Book Illustration)",
+    artist: "Johannes Gehrts",
+    year: "1888 (publication)",
+    image: "/paintings/norse/norse-odin-gunnlod-gehrts.jpg",
+    excerpt: `I guarded the precious drink until the stranger made guarding feel like loneliness.
+
+He spoke as though the stone around us were a temporary inconvenience, as though there were a life beyond this chamber with room for me.
+
+I wanted to believe that desire could arrive without an errand.
+
+Now I watch his face and cannot tell which part of his tenderness belongs to the woman before him, and which part belongs to the mead.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","longing","sins"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_bei_Gunnl%C3%B6d.png",
+    imageCredit: "Johannes Gehrts. Wikimedia Commons: Odin bei Gunnlöd.png. Source credit: https://archive.org/details/walhallgermanisc1888dahn/. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-vidar-shoe-henneberg",
+    title: "Vidar Fastening His Shoe (Wood Engraving)",
+    artist: "Hans Christian Henneberg after Constantin Hansen",
+    year: "1854 (publication)",
+    image: "/paintings/norse/norse-vidar-shoe-henneberg.jpg",
+    excerpt: `I bend over a shoe while the others speak of weapons.
+
+There is nothing magnificent in this preparation, only leather, pressure, and the patience of a hand that must not slip.
+
+One day my foot will need to hold against a mouth large enough to swallow a father.
+
+Today the strap is still quiet.
+
+I tighten it carefully, trying not to imagine how ordinary this moment will seem to anyone who knows what follows.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Vidar_by_Hansen.jpg",
+    imageCredit: "Hans Christian Henneberg after Constantin Hansen. Wikimedia Commons: Vidar by Hansen.jpg. Source credit: Fabricius, Adam Kristoffer. 1854. Illustreret Danmarkshistorie for Folket. Kittendorff & Aagaards Forlag. Page 143. Digitized by Google Books.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-alviss-thrud-frolich",
+    title: "Alviss and Thrud (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-alviss-thrud-frolich.jpg",
+    excerpt: `I lift the ring as though this small circle could contain the distance between us.
+
+She smiles, and for a moment the dark halls I know seem less permanent.
+
+I have collected names for everything beneath the sky, but none of them tells me what her smile promises.
+
+My hands know how to fashion lasting things.
+
+They do not know how to ask whether I am welcome in the future I have made for us.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Alv%C3%ADss_and_%C3%9Er%C3%BA%C3%B0r_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Alvíss and Þrúðr by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 198. Scanned from a 2001 reprint.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-gullveig-frolich",
+    title: "Gullveig Raised over the Fire (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-gullveig-frolich.jpg",
+    excerpt: `I felt the points beneath me before I understood what their judgment required.
+
+They raised me into fire and called the burning an answer.
+
+The hall was full of faces certain that violence could make an unwelcome power disappear.
+
+I will not give them that certainty.
+
+Each return is another wound in their explanation.
+
+Let them count the flames.
+
+I remember the hands on the spears, and the comfort those hands took in acting together.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","sins","war","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Gullveig_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Gullveig by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 6. Scanned from a 2001 reprint.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-lif-lifthrasir-frolich",
+    title: "Lif and Lifthrasir (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-lif-lifthrasir-frolich.jpg",
+    excerpt: `I stand beside the only other voice left for me to answer.
+
+Water falls between the leaves as if it has forgotten the fire, but I have not.
+
+We are supposed to be a beginning.
+
+I am still someone who survived an ending.
+
+When our hands move toward one another, there is no crowd to bless us and no old household to return to.
+
+We must make ordinary life from the terrifying fact that we remain.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["dreams","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:L%C3%ADf_and_L%C3%ADfthrasir_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Líf and Lífthrasir by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 45.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-lokasenna-frolich",
+    title: "Lokasenna: The Quarrel of the Gods (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-lokasenna-frolich.jpg",
+    excerpt: `I know where every pleasant story in this hall conceals its rot.
+
+Their cups shine, their places are assigned, and no one wants the evening interrupted by memory.
+
+So I speak.
+
+With each accusation the room grows smaller, until all that divine dignity is merely a collection of people avoiding one another's eyes.
+
+I tell myself that truth is my purpose.
+
+Yet I am listening for the hurt in their silence, and enjoying it.`,
+    mood: "madness",
+    collection: "norse",
+    rooms: ["divine","sins"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lokasenna_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Lokasenna by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 185.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-vidar-horseback-frolich",
+    title: "Vidar on Horseback (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-vidar-horseback-frolich.jpg",
+    excerpt: `I ride without making a speech of my departure.
+
+The horse knows the weight upon its back and asks for nothing more.
+
+Others fill the halls with plans, boasts, and the bright clash of promises.
+
+I have learned to leave space around the things I cannot change.
+
+My silence is not emptiness.
+
+It is a room I keep ready for the grief that has not yet arrived, though I already know its name.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:V%C3%AD%C3%B0arr_on_horseback_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Víðarr on horseback by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 66.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-vidar-fenrir-frolich",
+    title: "Vidar and Fenrir (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-vidar-fenrir-frolich.jpg",
+    excerpt: `I put my foot where no living foot should stand.
+
+The jaw strains against it, and all the careful years of preparation become this single pressure.
+
+My father is gone inside the creature before me.
+
+No force I bring can turn that fact backward.
+
+Still my hands pull.
+
+They will call this vengeance fulfilled, but the space I open in the wolf's mouth is not a door through which anyone can come home.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war","death"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Fenrir_and_V%C3%AD%C3%B0arr_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Fenrir and Víðarr by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 48.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-mani-sol-frolich",
+    title: "Mani and Sol (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-mani-sol-frolich.jpg",
+    excerpt: `I share the heavens with someone I can never keep beside me.
+
+Our paths make an order the world depends upon, and that order is another name for parting.
+
+Below us lovers measure their meetings by our light.
+
+I want to tell them how fortunate they are to be allowed an hour together.
+
+Instead I hold my course.
+
+Even the sky has duties that look beautiful only when seen from far away.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:M%C3%A1ni_and_S%C3%B3l_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Máni and Sól by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 22.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-frigg-counsel-frolich",
+    title: "Odin and Frigg before the Wisdom Contest (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-odin-frigg-counsel-frolich.jpg",
+    excerpt: `I have watched him prepare to leave often enough to recognize the stillness before it.
+
+He asks my counsel, yet the road has already entered his eyes.
+
+Wisdom is the word he gives this hunger.
+
+I know how much it has cost him, and how eagerly he mistakes another danger for an answer.
+
+I can warn him, bless him, or remain silent.
+
+None of these choices puts my hand upon the door.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_and_Frigg_from_Vaf%C3%BEr%C3%BA%C3%B0nism%C3%A1l_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Odin and Frigg from Vafþrúðnismál by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , page 48.. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-fenrir-frolich",
+    title: "Odin Rides against Fenrir (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-odin-fenrir-frolich.jpg",
+    excerpt: `I have seen this meeting in words before I see it in flesh.
+
+The wolf is larger than a prophecy sounds when spoken safely in a hall.
+
+My horse gathers itself beneath me, trusting the direction of my hands.
+
+That trust is the last thing here that hurts.
+
+I could turn, but the ending would only find a different road.
+
+So I lower the spear toward the mouth that has been waiting through my whole life.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war","death"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Fenrir_and_Odin_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Fenrir and Odin by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 17. Photographed from a 2001 reprint by User:Haukurth .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-freyr-surtr-frolich",
+    title: "Freyr and Surtr (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-freyr-surtr-frolich.jpg",
+    excerpt: `I remember what I gave away for love when the fire comes toward me.
+
+Once that bargain seemed to open the world; now it leaves an absence in my hand.
+
+Surtr does not need to know the story.
+
+His burning blade will meet whatever courage I have left, and courage will have to stand where the lost sword should be.
+
+I do not regret wanting her.
+
+I regret that wanting and surviving were made to quarrel.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","war","death","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Freyr_and_Surtr_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Freyr and Surtr by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 16. Photographed from a 2001 reprint by User:Haukurth .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-aesir-vanir-war-frolich",
+    title: "The Aesir-Vanir War (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-aesir-vanir-war-frolich.jpg",
+    excerpt: `I throw the spear, and the air divides into before and after.
+
+Until this motion there were still words we had not tried.
+
+Now every raised shield answers for us.
+
+A ruler can make war look like one clean gesture, but he cannot gather back the scattered hours of pain that follow it.
+
+My hand is empty after the cast.
+
+The terrible thing is how light it feels, while everyone below me begins to pay.`,
+    mood: "chaos",
+    collection: "norse",
+    rooms: ["divine","war"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:%C3%86sir-Vanir_war_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Æsir-Vanir war by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 7. Photographed from a 2001 reprint by User:Haukurth .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-loki-sigyn-frolich",
+    title: "Loki and Sigyn (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-loki-sigyn-frolich.jpg",
+    excerpt: `I cannot hold the bowl forever, and that is the cruelty hidden inside my mercy.
+
+It fills.
+
+My arms tremble.
+
+To protect him again I must turn away for the instant that will hurt him most.
+
+I have become an expert in that impossible interval.
+
+No one sings of the walk to empty a vessel.
+
+They remember the poison and the god beneath it, not the woman measuring love in what her hands can carry.`,
+    mood: "melancholy",
+    collection: "norse",
+    rooms: ["divine","longing","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Loki_and_Sigyn_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Loki and Sigyn by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 9. Photographed from a 2001 reprint by User:Haukurth .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-saga-frolich",
+    title: "Odin and Saga Drinking Together (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-odin-saga-frolich.jpg",
+    excerpt: `I offer a cup, not an answer.
+
+Beside the water we can let a story unfold without forcing it to become a warning.
+
+He is accustomed to asking what happens next; I ask what he remembers.
+
+There is a difference, and for a little while he accepts it.
+
+The drink catches the light between us.
+
+I wish the worlds could be held this way, passed from hand to hand without conquest, and set down gently.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_and_S%C3%A1ga_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Odin and Sága by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange , p. 65. Photographed from a 2001 reprint by User:Haukurth .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-sol-daughter-fenrir-frolich",
+    title: "Sol, Her Daughter, and Fenrir (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-sol-daughter-fenrir-frolich.jpg",
+    excerpt: `I cannot promise my child that the wolf will miss me.
+
+The old words are clear about the hunger following my course.
+
+What I can give her is the road itself, the knowledge of how to carry light when everyone below has learned to fear the dark.
+
+I look toward her and try to make inheritance sound like hope.
+
+A mother should leave more than unfinished work, but morning is the only treasure I possess.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","death","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:S%C3%B3l,_her_daughter,_and_Fenrir_by_Lorenz_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Sól, her daughter, and Fenrir by Lorenz Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange .. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-ask-embla-frolich",
+    title: "Odin, Lodur, and Hoenir Create Ask and Embla (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-ask-embla-frolich.jpg",
+    excerpt: `I remember nothing before the breath, yet the wood seems to remember me.
+
+Hands bend toward us, granting the things that will let us stand apart from the shore.
+
+I do not know their names.
+
+I know only the astonishing trouble of having a body and another body beside mine.
+
+The world was already here, but now it can be lonely.
+
+I turn toward my companion before I understand that turning as a kind of prayer.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin,_Lodur,_Hoenir_skabe_Ask_og_Embla_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Odin, Lodur, Hoenir skabe Ask og Embla by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-three-norns-frolich",
+    title: "The Three Norns at the Well (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-three-norns-frolich.jpg",
+    excerpt: `I sit beside the well with my sisters, listening to the roots take what we give.
+
+Those above us imagine fate as a sentence spoken once.
+
+They do not see the tending, the daily nearness of what grows and what gnaws.
+
+I know the shape of lives that have not begun.
+
+Sometimes I pause with my task unfinished, wishing that a little silence in my hands could become freedom in someone else's world.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Three_Norns_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Three Norns by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-volva-frolich",
+    title: "Odin and the Seeress (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-odin-volva-frolich.jpg",
+    excerpt: `I see the bracelets before I meet his eye.
+
+He has brought payment for a truth he hopes will still be negotiable.
+
+The steam rises between us, briefly giving every warning a softer outline.
+
+I could let him mistake that softness for mercy.
+
+Instead I speak what I know.
+
+Powerful men believe a question becomes different when they ask it.
+
+Before my kettle, even this god is only someone afraid to hear an answer.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_og_V%C3%B6lven_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Odin og Völven by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-jarnvidr-eggther-frolich",
+    title: "The Iron Wood and Eggther (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-jarnvidr-eggther-frolich.jpg",
+    excerpt: `I play while the wolves grow in the wood.
+
+A visitor might hear the strings and think this a peaceful occupation, the herdsman's reward at evening.
+
+But the rooster knows what hour approaches, and the old woman has not raised her brood for gentle weather.
+
+Music does not always comfort.
+
+Sometimes it is the sound of waiting becoming pleased with itself.
+
+I keep the tune moving because I know who will dance when it ends.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["nightmares","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:J%C3%A1rnvi%C3%B0r_and_Eggth%C3%A9r_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Járnviðr and Eggthér by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-nastrond-frolich",
+    title: "Nastrond: The Shore of Corpses (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-nastrond-frolich.jpg",
+    excerpt: `I used to think an oath vanished when no one could enforce it.
+
+Here every broken word has found a body, and the serpents overhead have all the patience I denied the people I deceived.
+
+We wade because there is nowhere dry to stand.
+
+Venom touches my shoulders with the intimacy of remembered speech.
+
+I search for an excuse and hear it dissolve.
+
+Nothing in this hall is more poisonous than the promises I once made freely.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["death","nightmares"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:N%C3%A1str%C3%B6nd_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Náströnd by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-bragi-idunn-frolich",
+    title: "Bragi and Idunn (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-bragi-idunn-frolich.jpg",
+    excerpt: `I sing beside the apples that keep our listeners young.
+
+My fingers return to familiar strings, while she holds a remedy no verse can equal.
+
+Between us the hall receives two kinds of forgetting: a body released from age, a heart distracted from its wounds.
+
+I sometimes wonder which gift they would miss first.
+
+Then she moves behind me, and I play for the one person whose quiet presence makes the song worth finishing.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","longing","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Bragi_and_I%C3%B0unn_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Bragi and Iðunn by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-sacrifice-odin-frolich",
+    title: "The Sacrifice of Odin (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-sacrifice-odin-frolich.jpg",
+    excerpt: `I have given myself to myself, which leaves no one to petition for release.
+
+The branches hold me where hunger can strip every grand intention down to its bones.
+
+Below, the roots continue their older labor.
+
+I came seeking signs powerful enough to master the world, yet the first lesson is how little of my own body obeys me.
+
+If wisdom arrives, it will find me without a throne, unable even to reach the ground.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","death","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Sacrifice_of_Odin_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: The Sacrifice of Odin by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-freyja-hyndla-frolich",
+    title: "Freyja Visits Hyndla (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-freyja-hyndla-frolich.jpg",
+    excerpt: `I have come for the names that make a life recognizable.
+
+Beside my boar I wait while the old knower weighs what she will tell me.
+
+A lineage can sound like dry leaves in the mouth, but to the one who has lost it each name is a door.
+
+I will not leave with empty hands.
+
+Let her resent the visit.
+
+I know how much of a person can disappear when no one remembers where he belongs.`,
+    mood: "longing",
+    collection: "norse",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Hyndla_og_Freia_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Hyndla og Freia by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-yggdrasil-frolich",
+    title: "Yggdrasil (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-yggdrasil-frolich.jpg",
+    excerpt: `I stand where roads become branches and depths become roots.
+
+Every traveler borrows my shape to explain the worlds, but none asks what it is to remain here through their changes.
+
+The well keeps its dark counsel at my feet.
+
+My leaves answer weather that no single kingdom owns.
+
+I do not move toward anyone, and still everyone passes through me.
+
+Perhaps that is why shelter and loneliness have learned to grow from the same trunk.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","dreams","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Om_Yggdrasil_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Om Yggdrasil by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Photographed from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-skirnir-gerd-frolich",
+    title: "Skirnir Threatens Gerd (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-skirnir-gerd-frolich.jpg",
+    excerpt: `I thought refusal was a word I was permitted to use.
+
+The messenger has brought his master's desire into my home as though it were a law of nature.
+
+When gifts fail, his voice changes.
+
+I begin to understand that the choice offered to me has walls.
+
+They may later call this a courtship.
+
+I want someone to remember the moment before agreement, when I was standing in my own place and being taught to fear it.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","longing","sins"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sk%C3%ADrnir_and_Ger%C3%B0r_I_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Skírnir and Gerðr I by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Scanned from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-baldr-death-frolich",
+    title: "Baldr's Death (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-baldr-death-frolich.jpg",
+    excerpt: `I gather him against me, though gathering is no longer a way to keep him.
+
+His weight has changed without changing at all.
+
+A moment ago the world contained his next breath; now it has become a place that will go on without it.
+
+I search his face for a small refusal, a sign that death has misunderstood.
+
+Around us the story is already forming.
+
+In my arms there is only someone I cannot persuade to stay.`,
+    mood: "melancholy",
+    collection: "norse",
+    rooms: ["divine","death","longing"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Baldr%27s_Death_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Baldr's Death by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Scanned from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-odin-vafthrudnir-frolich",
+    title: "Odin and Vafthrudnir (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-odin-vafthrudnir-frolich.jpg",
+    excerpt: `I welcomed the stranger into a contest of knowing.
+
+Across from me he sits with the calm of someone who has hidden the sharpest question until the end.
+
+I can name the beginnings of worlds and the fates of gods, yet the room grows colder with each answer.
+
+Knowledge is a dangerous thing to wager when the stake is your own head.
+
+I listen to his next words and begin to hear the name he has withheld.`,
+    mood: "dread",
+    collection: "norse",
+    rooms: ["divine","death"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Odin_and_Vaf%C3%BEr%C3%BA%C3%B0nir_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Odin and Vafþrúðnir by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Scanned from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "norse-thor-wades-frolich",
+    title: "Thor Wades while the Aesir Ride (Book Illustration)",
+    artist: "Lorenz Frølich",
+    year: "1895 (publication)",
+    image: "/paintings/norse/norse-thor-wades-frolich.jpg",
+    excerpt: `I take the river while the others ride above it.
+
+Their way is bright and measured; mine presses cold against the body and demands another step.
+
+No one watching from the bridge can feel the current testing my knees.
+
+Strength is useful because it makes this look easy.
+
+It is lonely for the same reason.
+
+I keep moving toward the gathering, carrying the water's resistance with me into a hall where everyone else will arrive dry.`,
+    mood: "isolation",
+    collection: "norse",
+    rooms: ["divine","solitude"],
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Thor_wades_while_the_%C3%A6sir_ride_by_Fr%C3%B8lich.jpg",
+    imageCredit: "Lorenz Frølich. Wikimedia Commons: Thor wades while the æsir ride by Frølich.jpg. Source credit: Published in Gjellerup, Karl (1895). Den ældre Eddas Gudesange . Scanned from a 2001 reprint by bloodofox ( talk · contribs ).. Local JPEG resized from the Commons image.",
+    license: "Public domain (as marked by Wikimedia Commons; territorial restrictions may apply to reproductions).",
+  },
+  {
+    slug: "indian-krishna-summoning-the-cows",
+    title: "Krishna summoning the cows",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1780–90",
+    image: "/paintings/indian/indian-krishna-summoning-the-cows.jpg",
+    excerpt: `I carry the red staff, but my brother needs only a breath through his flute.
+
+The cows turn toward him as though each has heard its own name.
+
+Beside the Yamuna, I watch the herd gather and wonder whether belonging always begins this quietly.
+
+My cloak shields me from the air; his music seems to shelter everything else.
+
+Before we return to the village, I want to remain his brother a little longer, without anyone asking us to be more.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1989.339",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin, 1989.339. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-adoration-of-young-krishna",
+    title: "Adoration of young Krishna",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1720–25",
+    image: "/paintings/indian/indian-adoration-of-young-krishna.jpg",
+    excerpt: `I came beneath the pipal tree with the marks of Shiva on my forehead.
+
+Now a child holding a rattle receives the devotion I thought I knew how to direct.
+
+Garlands hang above his yellow tunic, and my practiced distinctions grow less certain.
+
+Nothing has been taken from my faith.
+
+Something has opened within it.
+
+I lower my head, allowing wonder to arrive before explanation, while the small instrument in his hand waits to make its ordinary sound.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.97",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.97. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-playing-in-the-yamuna",
+    title: "Krishna Playing with the Gopis in the Yamuna",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1770",
+    image: "/paintings/indian/indian-krishna-playing-in-the-yamuna.jpg",
+    excerpt: `I turn my face from the splash, laughing before I can decide to preserve my dignity.
+
+Our clothes wait in the tree, his crown beside the bank; the scorching day has finally found an answer in the river.
+
+Here, nearness is measured in the water passing between our hands.
+
+I know the afternoon cannot stay like this.
+
+That knowledge makes every drop more precious, not because it lasts, but because for this moment none of us is standing apart.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.118",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.118. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-yasoda-krishna-churning-butter",
+    title: "Yasoda with Krishna Churning Butter",
+    artist: "Unknown artist (Eastern India, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-yasoda-krishna-churning-butter.jpg",
+    excerpt: `I pull the churn through the milk and feel his small hand interrupt the household again.
+
+Krishna has found the cream before the butter is ready.
+
+There will be work to repeat, a pot to guard, another attempt at a stern voice.
+
+Yet the hand that steals from me is also the hand I reach for without thinking.
+
+Let others describe the mysteries of this child.
+
+I know the particular weight of feeding him, and how quickly hunger becomes an excuse for closeness.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.160",
+    imageCredit: "Unknown artist (Eastern India, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.160. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-cowherds-return-to-braj",
+    title: "Krishna returns with the cowherds to Braj, from a Bhagavata Purana",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1830",
+    image: "/paintings/indian/indian-krishna-cowherds-return-to-braj.jpg",
+    excerpt: `I eat rice from a banana leaf with the others, grateful for an appetite that asks no difficult questions.
+
+We were hidden, then restored; Brahma has departed, and Krishna sits among us as though friendship were still the simplest thing.
+
+Soon we will drive the cattle back to Braj.
+
+I try to hold the taste of this meal in my memory.
+
+After being misplaced by a god, even the familiar road home feels like something I must learn to trust again.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1971.301",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Gift of Mr. and Mrs. John D. MacDonald, 1971.301. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-under-a-canopy",
+    title: "Krishna Under a Canopy",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Raghogarh)",
+    year: "c. 1680",
+    image: "/paintings/indian/indian-krishna-under-a-canopy.jpg",
+    excerpt: `I hold a rose because its small shape gives my hand a purpose.
+
+Across the carpeted terrace, Krishna holds another, while the attendant keeps the air moving between us.
+
+The open doorway is not an invitation I can hear, yet I cannot stop noticing it.
+
+Marble, canopy, flowers: everything has been arranged for ease.
+
+Only my heart refuses the arrangement.
+
+I stand near enough to speak and discover how much a silence can contain before either person breaks it.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.184",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Raghogarh); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.184. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-vanquishing-bakasura",
+    title: "Krishna Vanquishing the Crane-Demon Bakasura",
+    artist: "Unknown artist (Southern India, Andhra Pradesh, Tirupati)",
+    year: "late 1700s",
+    image: "/paintings/indian/indian-krishna-vanquishing-bakasura.jpg",
+    excerpt: `I trusted the long beak to make a weapon of my disguise.
+
+The king sent me against a child, and I mistook smallness for an absence of power.
+
+Now the bird cannot contain what I am.
+
+My hidden form tumbles out, stripped of the shape that made the attack possible.
+
+There is no cleverness left in this falling.
+
+I have become the distance between the harmless creature I pretended to be and the violence I carried inside it.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["nightmares","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1966.29",
+    imageCredit: "Unknown artist (Southern India, Andhra Pradesh, Tirupati); The Cleveland Museum of Art, John L. Severance Fund, 1966.29. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-sakhi-persuades-radha",
+    title: "Sakhi persuades Radha to meet Krishna, from a Gita Govinda (Song of the Cowherd) of Jayadeva",
+    artist: "Attributed to Purkhu",
+    year: "c. 1820–25",
+    image: "/paintings/indian/indian-sakhi-persuades-radha.jpg",
+    excerpt: `I have carried his longing through the forest, and now I must find words gentle enough for hers.
+
+Radha listens beside me while Krishna prepares a bed of leaves beyond our conversation.
+
+In the flute melody, her name has become something the air can hold.
+
+I cannot decide for either of them.
+
+A confidante can lead the way, not take the final step.
+
+So I speak of his waiting and leave room for her answer to remain her own.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1989.334",
+    imageCredit: "Attributed to Purkhu; The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin, 1989.334. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-quells-kaliya",
+    title: "Krishna Quells the Serpent Kaliya, from a Bhagavata Purana",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar)",
+    year: "c. 1710",
+    image: "/paintings/indian/indian-krishna-quells-kaliya.jpg",
+    excerpt: `I lift a flower in my mouth where poison once made the water mine.
+
+Above me, Krishna dances, and every head I raise meets the measure of his feet.
+
+My palace cannot protect me from what I have done to this pool.
+
+The cowherds need to drink; the river must belong to more than my fear of losing it.
+
+If I am permitted to leave for the ocean, I will carry the memory of this weight farther than my venom ever traveled.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["sins","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.141",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.141. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-stealing-curds",
+    title: "Krishna Stealing Curds",
+    artist: "Unknown artist (Southern India, Andhra Pradesh, Tirupati)",
+    year: "late 1700s",
+    image: "/paintings/indian/indian-krishna-stealing-curds.jpg",
+    excerpt: `I raise the stick, but my eyes remain on the ladder.
+
+One unsteady movement could turn this scolding into a cry.
+
+Krishna reaches for the curds with the confidence of someone who has never considered that a mother can be angry and frightened at once.
+
+Balarama stands nearby holding his snake, another wonder I have no time to understand.
+
+In this house, even the divine must be kept from falling.
+
+I wish he would let me finish one warning before smiling.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1966.28",
+    imageCredit: "Unknown artist (Southern India, Andhra Pradesh, Tirupati); The Cleveland Museum of Art, John L. Severance Fund, 1966.28. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-cremation-of-putana",
+    title: "Cremation of the demon Putana, from a Krishna-Lila",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1790",
+    image: "/paintings/indian/indian-cremation-of-putana.jpg",
+    excerpt: `I bathe the baby while the men carry the enormous remains toward the fire.
+
+My hands know how to wash a child; they do not know how to measure the danger that has passed through him.
+
+Putana came as a nurse.
+
+That borrowed tenderness is what I cannot stop remembering.
+
+Krishna lives, and everyone says we are safe.
+
+Still, I pour the water carefully, as though an ordinary act of care might restore the difference between protection and its disguise.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["death","nightmares","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1984.4",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Delia E. Holden Fund, 1984.4. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-awaiting-radha",
+    title: "Krishna Awaiting Radha",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1750–60",
+    image: "/paintings/indian/indian-krishna-awaiting-radha.jpg",
+    excerpt: `I have a bed, a fan, and attendants who understand every comfort except the one I need.
+
+My eyes stay fixed on the place where Radha might appear.
+
+Waiting makes even a generous room feel unfinished.
+
+Nothing here can hurry her without changing the meaning of her arrival.
+
+I want the step she chooses freely, not the certainty power could provide.
+
+Until then, the whisk moves, the air changes, and the empty space before me keeps its stubborn shape.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1936.685",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Edward L. Whittemore Fund, 1936.685. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-toll-from-the-milkmaids",
+    title: "Krishna Exacts a Toll from the Milkmaids: Dana-Lila, from a Bhagavata Purana",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Bikaner)",
+    year: "c. 1600",
+    image: "/paintings/indian/indian-krishna-toll-from-the-milkmaids.jpg",
+    excerpt: `I balance the pot and try not to laugh when Krishna announces that the path belongs to him.
+
+We have milk and yogurt to deliver, and suddenly the road has acquired a toll collector with a threat as light as his smile.
+
+My arms cannot afford his game even if my heart welcomes the interruption.
+
+Behind us, the cowherd grows impatient.
+
+I ask what payment could possibly satisfy someone who already knows how completely he has stopped our afternoon.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.186",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Bikaner); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.186. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-balarama-reunite-with-parents",
+    title: "Krishna and Balarama touching the feet of Vasudeva and Devaki, from the “Vertical” Bhagavata Purana",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1700–1725",
+    image: "/paintings/indian/indian-krishna-balarama-reunite-with-parents.jpg",
+    excerpt: `I recognize my son in the gesture before I can believe the years have ended.
+
+He bends to touch our feet, and the white wall behind us seems to hold every day we spent apart.
+
+Fine garments cannot return his childhood to this room.
+
+Freedom has come with grown sons whose lives I must learn almost from the beginning.
+
+I reach toward him, not to claim what prison stole, but to welcome the person who survived beyond my sight.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.85",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.85. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-radha-quarreling",
+    title: "Krishna and Radha Quarreling: Shatha Nayaka, from a Rasikapriya",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Bundi)",
+    year: "c. 1680",
+    image: "/paintings/indian/indian-krishna-radha-quarreling.jpg",
+    excerpt: `I ask where he has been, and he answers by comparing my eyes to lotus petals.
+
+Dawn rises behind the leaves with less hesitation than the truth between us.
+
+I do not want my anger made beautiful before it has been heard.
+
+The night was long; I lived through every part he now tries to soften with a compliment.
+
+If reconciliation is to enter this morning, it must come through the question I asked, not around it.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["longing","sins"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.158",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Bundi); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.158. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-celebrates-holi",
+    title: "Krishna celebrates Holi",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1770",
+    image: "/paintings/indian/indian-krishna-celebrates-holi.jpg",
+    excerpt: `I hear the drum before the color reaches me.
+
+Then Krishna sends a bright stream across the space I thought would keep me composed, and the whole festival seems to arrive at my chest.
+
+Flutes, horns, and laughter refuse to take turns.
+
+Powder freckles the air until nobody can stand outside the celebration untouched.
+
+I came prepared to watch the spring return.
+
+Now my clothes carry its evidence, and the careful distance I kept has vanished into the crowd.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.104",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.104. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-lifting-govardhan",
+    title: "Krishna Lifting Mount Govardhan",
+    artist: "Unknown artist (Northern India, Himachal Pradesh, Pahari Kingdom of Kangra)",
+    year: "c. 1780–90",
+    image: "/paintings/indian/indian-krishna-lifting-govardhan.jpg",
+    excerpt: `I press close with the cattle beneath a mountain held on one little finger.
+
+Above us, Indra rides through the storm he has sent, while Balarama adds his staff to the shelter as though love must always offer whatever it carries.
+
+Krishna touches a child with his free hand.
+
+That small kindness steadies me more than the impossible roof.
+
+The rain has not stopped, but I can breathe beside my neighbors without wondering which of us the sky will take first.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/2001.45",
+    imageCredit: "Unknown artist (Northern India, Himachal Pradesh, Pahari Kingdom of Kangra); The Cleveland Museum of Art, John L. Severance Fund, 2001.45. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-cowherds-dive-into-river",
+    title: "Krishna and the Cowherds Dive into the River, from a Rasikapriya",
+    artist: "Unknown artist (Central India, Madhya Pradesh, Malwa)",
+    year: "c. 1640",
+    image: "/paintings/indian/indian-krishna-cowherds-dive-into-river.jpg",
+    excerpt: `I am between the bank and the river, committed to the leap before I have learned its ending.
+
+Krishna is already in the air with the others; three boys still wait behind us.
+
+Across the water, Radha and her friends watch from the platform.
+
+Their amusement reaches me in the instant when courage and embarrassment feel exactly alike.
+
+Soon there will be a splash.
+
+For now, I belong to neither shore nor current, only to the decision my feet have made.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.126",
+    imageCredit: "Unknown artist (Central India, Madhya Pradesh, Malwa); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.126. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-rukmini-pleads-for-rukma",
+    title: "Abduction of Rukmini: Krishna Tied the Hands of Rukma, from a Bhagavata Purana",
+    artist: "Unknown artist (Central India, Madhya Pradesh, Malwa)",
+    year: "c. 1640",
+    image: "/paintings/indian/indian-rukmini-pleads-for-rukma.jpg",
+    excerpt: `I chose Krishna, but I did not choose my brother dying for his refusal to accept it.
+
+Rukma stands bound in the striped tunic I recognize, defeated and still unbearably familiar.
+
+My plea has kept him alive.
+
+It has not made this meeting gentle.
+
+Around us, victory has already taken lives that no appeal can return.
+
+I try to imagine a future large enough for my chosen love and the family it has wounded, without pretending those loyalties no longer hurt.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["war","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.127",
+    imageCredit: "Unknown artist (Central India, Madhya Pradesh, Malwa); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.127. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-receives-rukmini-invitation",
+    title: "A Brahmin gives Krishna the Message or Invitation for the Competition to Rukmini’s Svayamvara, from a Bhagavata Purana",
+    artist: "Unknown artist (Central India, Madhya Pradesh, Malwa)",
+    year: "c. 1650–60",
+    image: "/paintings/indian/indian-krishna-receives-rukmini-invitation.jpg",
+    excerpt: `I have brought the letter as far as my own hands can carry it.
+
+Krishna sits before me in Dvaraka, and beneath the palace the ocean keeps moving as though no decision could alter its course.
+
+Yet a princess waits beyond these waters for an answer that will change hers.
+
+I watch him receive the message.
+
+The journey here was long, but this pause is harder: I have become the witness to a hope I cannot fulfill myself.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.133",
+    imageCredit: "Unknown artist (Central India, Madhya Pradesh, Malwa); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.133. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-receives-a-flower-garland",
+    title: "Krishna Receives a Flower Garland",
+    artist: "Sitaram",
+    year: "c. 1750–60",
+    image: "/paintings/indian/indian-krishna-receives-a-flower-garland.jpg",
+    excerpt: `I offer flowers because my voice cannot arrange its gratitude so neatly.
+
+Each blossom was small in my hand; together they make a circle large enough to carry what I have brought to Krishna.
+
+The garland will fade.
+
+I knew that while preparing it, and still I chose living things instead of something permanent.
+
+Perhaps an offering does not need to outlast the moment of being received.
+
+Perhaps it is enough that I have come near without asking to possess what I love.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1982.65",
+    imageCredit: "Sitaram; The Cleveland Museum of Art, John L. Severance Fund, 1982.65. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-markandeya-cosmic-ocean",
+    title: "Markandeya Viewing Krishna in the Cosmic Ocean",
+    artist: "Unknown artist (Northern India, Jammu and Kashmir, Pahari Kingdom of Basohli)",
+    year: "c. 1680",
+    image: "/paintings/indian/indian-markandeya-cosmic-ocean.jpg",
+    excerpt: `I have survived the world, and survival has become an ocean without a shore.
+
+Every creature I could name has disappeared into the end of its cycle.
+
+Then a banyan leaf carries a child across the darkness, his toe lifted to his mouth.
+
+I look closer and find the universe where I expected only a small body.
+
+Immortality had taught me the exhaustion of remaining.
+
+This impossible infant teaches me that remaining need not be the same as being alone.`,
+    mood: "isolation",
+    collection: "indian",
+    rooms: ["solitude","dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1967.241",
+    imageCredit: "Unknown artist (Northern India, Jammu and Kashmir, Pahari Kingdom of Basohli); The Cleveland Museum of Art, Gift of Dr. and Mrs. Sherman E. Lee, 1967.241. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-birth-of-krishna",
+    title: "The Birth of Krishna, from a Sursagar of Surdas (Indian, c. 1480–1580)",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar)",
+    year: "1705–10",
+    image: "/paintings/indian/indian-birth-of-krishna.jpg",
+    excerpt: `I lie beside the newborn while the village celebrates beyond the chamber.
+
+Women gather at the door, coins pass among the men, and somewhere the drums persuade another pair of feet to dance.
+
+All that abundance begins with the small breathing body next to mine.
+
+I want to welcome every visitor and close the door at the same time.
+
+Let the world have its festival.
+
+For a little longer, I want to learn the sound he makes before waking.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1984.65",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar); The Cleveland Museum of Art, Edwin R. and Harriet Pelton Perkins Memorial Fund, 1984.65. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-vasudeva-carries-infant-krishna",
+    title: "A Serpent Protects Vasudeva Taking His Infant Son Krishna to Safety",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-vasudeva-carries-infant-krishna.jpg",
+    excerpt: `I carry my son into the storm while the guards sleep behind us.
+
+Each step must take him farther from Kamsa and closer to a home where nobody will know him by my fear.
+
+Above the child, the serpent spreads its shelter.
+
+I accept the protection without understanding how to thank it.
+
+A father should be allowed to keep his newborn close.
+
+Tonight, love requires that I deliver him safely into arms other than my own.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["nightmares","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.153",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.153. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-gopis-rasamandala",
+    title: "Krishna and the Gopis Gather for Rasamandala",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Kota)",
+    year: "c. 1720–30",
+    image: "/paintings/indian/indian-krishna-gopis-rasamandala.jpg",
+    excerpt: `I came to the lotus-covered river smiling, certain that being near him would be enough for the night.
+
+The full moon shone above us while we called him the god of love.
+
+Then Krishna spoke of leaving.
+
+Around me, women sank to the ground, and the same bank became a place I no longer knew how to stand upon.
+
+We had arrived in different colors, with different faces.
+
+Grief found us together before any of us could answer him.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1960.45",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Kota); The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1960.45. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishna-asks-for-sweets",
+    title: "Krishna asks for sweets, from a Sursagar of Surdas (Indian, c. 1480–1580)",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar)",
+    year: "1705–10",
+    image: "/paintings/indian/indian-krishna-asks-for-sweets.jpg",
+    excerpt: `I listen as he explains why another sweet is necessary for the future.
+
+There will be cattle to herd, demons to defeat, wrestlers, even a throne; apparently none of it can be managed on the food he has already eaten.
+
+His argument grows larger than the boy before me.
+
+I am his mother, not the keeper of all those coming victories.
+
+Still, I reach toward the treats, wishing that everything ahead could be helped so simply by feeding him.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1984.172",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar); The Cleveland Museum of Art, Gift of Dr. Norman Zaworski, 1984.172. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-music-for-radha-and-krishna",
+    title: "Women Play Music for Radha and Krishna: Chitrini Nayika, from a Rasikapriya",
+    artist: "Unknown artist (Central India, Madhya Pradesh, Malwa)",
+    year: "c. 1650",
+    image: "/paintings/indian/indian-music-for-radha-and-krishna.jpg",
+    excerpt: `I keep the rhythm while Radha and Krishna listen with their arms around each other.
+
+The strings travel farther than my hands, into the forest and the quiet they share.
+
+A performer learns to watch for the moment an audience stops noticing the effort.
+
+Tonight I find it in their ease.
+
+I am not inside that embrace, but the music gives me a way to belong beside it.
+
+When the last note comes, I will miss the room it made among us.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.132",
+    imageCredit: "Unknown artist (Central India, Madhya Pradesh, Malwa); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.132. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-radha-krishna-forest-storm",
+    title: "Radha and Krishna meet in the forest during a storm",
+    artist: "Unknown artist (India, Bengal, Mughal, 18th century)",
+    year: "c. 1770",
+    image: "/paintings/indian/indian-radha-krishna-forest-storm.jpg",
+    excerpt: `I hurry with the coverlet because the rain has reached him.
+
+Perhaps someone wiser would remember that Krishna can lift a mountain, that our little shelter cannot be necessary.
+
+My hands do not wait for such reasoning.
+
+Birds and monkeys crowd the trees while we raise the cloth above him.
+
+There is a tenderness in doing what may not be needed.
+
+I would rather offer this corner of dry air than stand aside admiring a power that asks nothing of me.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2013.352",
+    imageCredit: "Unknown artist (India, Bengal, Mughal, 18th century); The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection, 2013.352. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-akrura-drives-krishna-to-mathura",
+    title: "Akrura Drives Krishna and Balarama to Mathura, from the “Isarda Bhagavata Purana”",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Isarda)",
+    year: "c. 1560–70",
+    image: "/paintings/indian/indian-akrura-drives-krishna-to-mathura.jpg",
+    excerpt: `I guide the chariot away from the village, feeling the urgency of the brothers behind me.
+
+Mathura holds their imprisoned parents and the uncle they must confront.
+
+Behind us remain the companions who knew them first as boys.
+
+The road cannot face both directions, but my thoughts keep trying.
+
+I have been entrusted with an arrival that may undo a kingdom.
+
+For now, my task is smaller and no less serious: keep the wheels moving while the familiar world falls away.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["war","longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1971.234",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Isarda); The Cleveland Museum of Art, John L. Severance Fund, 1971.234. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-krishnas-insomnia",
+    title: "Krishna's Insomnia, Page from a Rasikapriya",
+    artist: "Unknown artist (Central India, Malwa school, 17th century)",
+    year: "1634",
+    image: "/paintings/indian/indian-krishnas-insomnia.jpg",
+    excerpt: `I cannot persuade the night to become rest.
+
+Every thought of Radha returns with the persistence of a name remembered just before sleep.
+
+There is no battle to settle this wakefulness, no distance I can cross by turning over once more.
+
+The hours belong to waiting, and waiting refuses to be commanded.
+
+I had imagined longing as a movement toward someone.
+
+Tonight it is the stillness of remaining here, listening to a world that seems able to sleep without her.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["solitude","longing","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1938.303",
+    imageCredit: "Unknown artist (Central India, Malwa school, 17th century); The Cleveland Museum of Art, Gift of N. M. Heeramaneck, 1938.303. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-shiva-enthroned-in-landscape",
+    title: "Shiva Seated on a Throne in a Landscape",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1755",
+    image: "/paintings/indian/indian-shiva-enthroned-in-landscape.jpg",
+    excerpt: `I sit where the serpents coil upon the royal seat, with rock and trees for company.
+
+The tiger hide at my waist remembers a life outside the language of palaces.
+
+A throne need not mean a court; here it holds a stillness no procession could improve.
+
+Those who approach may see distance in my quiet.
+
+I leave space for them to discover another possibility: that nothing must be performed before they are allowed to stand in the presence of the sacred.`,
+    mood: "isolation",
+    collection: "indian",
+    rooms: ["solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.113",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.113. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-shiva-devi-on-gajasuras-hide",
+    title: "Shiva and Devi on Gajasura's hide",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1675–80",
+    image: "/paintings/indian/indian-shiva-devi-on-gajasuras-hide.jpg",
+    excerpt: `I sit upon his lap while the elephant hide carries us through the monsoon clouds.
+
+The skull cup, sword, and drum remain in his hands; none has to disappear for his other hand to rest gently on my shoulder.
+
+I meet his gaze without asking him to become only tender.
+
+Creation and destruction travel together above the earth.
+
+Here, in the closeness between us, I feel no need to deny either one in order to recognize love.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing","death"],
+    sourceUrl: "https://www.clevelandart.org/art/1952.587",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Edward L. Whittemore Fund, 1952.587. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-shiva-under-trees",
+    title: "Shiva under trees",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1780",
+    image: "/paintings/indian/indian-shiva-under-trees.jpg",
+    excerpt: `I stand beneath two trees that have found a way to grow around each other.
+
+The trident is familiar in my hand, the serpent familiar at my neck, yet their entwined branches hold my attention.
+
+On earth, even shade can suggest companionship.
+
+I have come down among living things, and the quiet here is different from withdrawal.
+
+It is a quiet with room beside it, a space where another presence might stand without disturbing what I am.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["solitude","longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1960.48",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1960.48. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-descent-of-the-ganges",
+    title: "Descent of the Ganges",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1700–1710",
+    image: "/paintings/indian/indian-descent-of-the-ganges.jpg",
+    excerpt: `I balance on one leg until the years cease to resemble a human measure.
+
+Above me, Shiva turns his attention from the offered cup.
+
+I have asked for the Ganges with a body that can do little except remain faithful to its asking.
+
+Now the river flows from his hair, and my long discipline meets something greater than endurance.
+
+Water will travel where my feet could not.
+
+What began as a solitary vigil can finally become a gift for others.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.111",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.111. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-shiva-bearing-sati",
+    title: "Shiva Bearing Aloft the Body of His Sati",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-shiva-bearing-sati.jpg",
+    excerpt: `I bear Sati above me, and the distance between carrying and keeping has become unbearable.
+
+The trident can raise her body; it cannot restore the answering presence I knew.
+
+Let no one call this loss beautiful merely because a god must endure it.
+
+What I hold is not an emblem that makes grief easier to explain.
+
+It is the person whose absence changes every place I enter, even while I am unable to put her down.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["death","longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.131",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.131. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-shiva-mahakala-dancing",
+    title: "God Shiva in His Ferocious Aspect as Mahakala Dancing",
+    artist: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar)",
+    year: "c. 1700–1710",
+    image: "/paintings/indian/indian-shiva-mahakala-dancing.jpg",
+    excerpt: `I watch Mahakala dance and feel the limits of every promise I have made against change.
+
+This is not a still image of time waiting politely beyond my door.
+
+Movement gives it presence, and the ferocious aspect of Shiva allows no bargain with permanence.
+
+I had come hoping that devotion might make me exempt from endings.
+
+Instead, I stand before a rhythm in which endings belong, trying to learn reverence without pretending I have stopped being afraid.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["death","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1955.296",
+    imageCredit: "Unknown artist (Northwestern India, Rajasthan, Rajput Kingdom of Mewar); The Cleveland Museum of Art, Gift of George P. Bickford, 1955.296. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-parvati-garlands-shiva",
+    title: "Parvati Placing a Wedding Garland on Shiva (recto), from a Kalighat album",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-parvati-garlands-shiva.jpg",
+    excerpt: `I lift the wedding garland toward Shiva, aware of how much intention can gather in a simple motion.
+
+The flowers do not explain our differences, and they need not erase them.
+
+My hands bring an answer rather than an argument.
+
+In the space before the garland settles, I feel the seriousness of choosing closeness: not a promise that nothing will change, but a willingness to meet what comes without making distance our first refuge.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["longing","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.108.a",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.108.a. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-ganesha-janani",
+    title: "Ganesha-Janani (Mother of Ganesh)",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-ganesha-janani.jpg",
+    excerpt: `I hold Ganesh as a child, not as the beginning of someone else's prayer.
+
+His elephant head rests within the circle of my care, and the world may wait before asking him to remove its obstacles.
+
+There is a history of hurt behind this embrace, but hurt is not the only thing a mother is permitted to remember.
+
+I know him also through nearness, through the ordinary devotion of making my arms a place where he belongs.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.169",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.169. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-rama-lakshmana-fighting-ravana",
+    title: "Rama and Lakshmana Fighting Ravana, from a Dashavatara (Ten Incarnations [of Vishnu]) series",
+    artist: "Unknown artist (Northern India, Pahari Region, Himachal Pradesh, Rajput Kingdom of Chamba, Court of Raj Singh (reigned 1764–94))",
+    year: "c. 1765",
+    image: "/paintings/indian/indian-rama-lakshmana-fighting-ravana.jpg",
+    excerpt: `I stand beside my brother while Ravana raises more weapons than any single body should be able to bear.
+
+Even a snake has become part of his arsenal.
+
+Rama aims the crescent-shaped arrow toward the strange swarm above the crowns, and the dark landscape seems to narrow around that line of purpose.
+
+I cannot fight the whole terror at once.
+
+I can remain at his side, draw my bow, and refuse to let the number of threats decide the measure of our resolve.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["war","divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1953.357",
+    imageCredit: "Unknown artist (Northern India, Pahari Region, Himachal Pradesh, Rajput Kingdom of Chamba, Court of Raj Singh (reigned 1764–94)); The Cleveland Museum of Art, Edward L. Whittemore Fund, 1953.357. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-rama-sita-lakshmana-in-forest",
+    title: "Rama, Sita, and Lakshmana in the forest",
+    artist: "Unknown artist (Northern India, Pahari Region, Himachal Pradesh, Rajput Kingdom of Kangra, Court of Aniruddh Chand (reigned 1823–1833))",
+    year: "c. 1830",
+    image: "/paintings/indian/indian-rama-sita-lakshmana-in-forest.jpg",
+    excerpt: `I turn the food above the fire while Rama and Sita rest near our small forest home.
+
+Exile has taught my hands tasks that a palace would have kept from them.
+
+Bark cloth, gathered food, a hut: none resembles the life we left, yet an evening can still be made hospitable.
+
+I cannot return my brother to his kingdom tonight.
+
+I can prepare a meal carefully enough that, for a while, being banished is not the only thing we know about ourselves.`,
+    mood: "melancholy",
+    collection: "indian",
+    rooms: ["solitude","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1989.332",
+    imageCredit: "Unknown artist (Northern India, Pahari Region, Himachal Pradesh, Rajput Kingdom of Kangra, Court of Aniruddh Chand (reigned 1823–1833)); The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin, 1989.332. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-rama-visits-bharadvajas-hermitage",
+    title: "Rama, Sita, and Lakshmana visit the hermitage of the sage Bharadvaja at Prayaga, from Chapter 48 of the Ayodhya Kanda (Book of Ayodhya) of a Ramayana (Rama’s Journey)",
+    artist: "Unknown artist (Central India, Malwa Region, Madhya Pradesh)",
+    year: "c. 1650",
+    image: "/paintings/indian/indian-rama-visits-bharadvajas-hermitage.jpg",
+    excerpt: `I fold my hands as the travelers arrive, knowing that welcome need not wait for a throne to recognize dignity.
+
+Rama, Sita, and Lakshmana bow before me, carrying exile into a place where rivers meet.
+
+The ornamented walls cannot undo their separation from home.
+
+But a threshold can choose what kind of encounter happens upon it.
+
+I offer the hermitage without asking them to disguise their weariness, and for this meeting the forest road is allowed to pause.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.129",
+    imageCredit: "Unknown artist (Central India, Malwa Region, Madhya Pradesh); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.129. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-sita-in-the-garden-of-lanka",
+    title: "Ravana addresses Sita in the garden of Lanka, from Chapters 53 and 54 of the Aranya Kanda (Book of the Forest) of a Ramayana (Rama’s Journey)",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1725",
+    image: "/paintings/indian/indian-sita-in-the-garden-of-lanka.jpg",
+    excerpt: `I kneel beneath the ashoka tree, surrounded by guards and a city that mistakes golden walls for generosity.
+
+Ravana comes with his demand, and I answer from the one place he has not enclosed: my refusal.
+
+Beyond Lanka lies the sea, another boundary I cannot cross by wishing.
+
+I do not confuse being unharmed with being free.
+
+Until rescue reaches this garden, I keep my answer intact, a small unyielding country no crown here has the right to govern.`,
+    mood: "isolation",
+    collection: "indian",
+    rooms: ["solitude","longing","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1966.143",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Gift of George P. Bickford, 1966.143. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-hanuman-carries-rama-lakshmana",
+    title: "Hanuman with Rama and Lakshmana on his shoulders, from a Kalighat album",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-hanuman-carries-rama-lakshmana.jpg",
+    excerpt: `I make my shoulders a road for Rama and Lakshmana.
+
+Their search for Sita gives my strength a direction; without that purpose, becoming enormous would only make me large.
+
+I feel the responsibility of their weight and welcome it.
+
+Devotion is not always a word spoken with folded hands.
+
+Sometimes it is the work of carrying someone farther than they could go alone, keeping steady beneath them while the place they need remains beyond the next step.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["divine","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.120",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.120. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-hanuman-mountain-of-healing-plants",
+    title: "Hanuman Brings the Mountain of Healing Plants; Rama Extracts the Arrow from Lakshmana as Hanuman and a Bear Prepare to Treat Him (recto), from a Romance of Chandrabhanu and Lavanyavati of Upendra Bhanja (Indian, died 1740)",
+    artist: "Unknown artist (Eastern India, Odisha)",
+    year: "late 1700s",
+    image: "/paintings/indian/indian-hanuman-mountain-of-healing-plants.jpg",
+    excerpt: `I have brought the mountain because hesitation might cost the life we are trying to save.
+
+Rama works to remove the arrow from Lakshmana while the bear and I prepare to help.
+
+My strength has carried the plants here; now it must yield to the careful work of healing.
+
+The battlefield taught us to act with force.
+
+Beside the wounded body, I learn another urgency, one that measures success not by what falls, but by whether someone rises again.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["war","death","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1979.21.a",
+    imageCredit: "Unknown artist (Eastern India, Odisha); The Cleveland Museum of Art, Edward L. Whittemore Fund, 1979.21.a. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-durga-slaying-mahisha",
+    title: "Durga Slaying Mahisha",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1830",
+    image: "/paintings/indian/indian-durga-slaying-mahisha.jpg",
+    excerpt: `I look toward Mahisha from the chariot, where the creatures drawing me hold their course.
+
+Above him, the clouds turn; below, dust gathers around the violence he has brought into the world.
+
+Flowering trees remain behind me, a reminder of what force must serve if it is to mean anything beyond itself.
+
+The clash has not yet come.
+
+In this charged distance, I keep my purpose clear: the world is not his to ravage, and protection cannot remain only a wish.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["war","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1955.667",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, Edward L. Whittemore Fund, 1955.667. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-goddess-annihilates-raktabija",
+    title: "The Goddess Annihilates the Demon Raktabija, from a Devi-Mahatmya",
+    artist: "Unknown artist (Central India, Madhya Pradesh, Malwa)",
+    year: "c. 1640",
+    image: "/paintings/indian/indian-goddess-annihilates-raktabija.jpg",
+    excerpt: `I fight beside the Goddess and see why our ordinary blows cannot end this battle.
+
+Each drop of Raktabija's blood makes another enemy wherever it touches earth.
+
+Victory seems to multiply the danger until she catches what must not fall.
+
+I have never witnessed such fierce precision.
+
+Her terrible form is not destruction without purpose; it is the answer to a violence that reproduces itself.
+
+I keep fighting, grateful that protection can take a shape larger than my understanding.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["war","nightmares","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.128",
+    imageCredit: "Unknown artist (Central India, Madhya Pradesh, Malwa); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.128. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-vishnu-on-ananta",
+    title: "Vishnu on Ananta, the Endless Serpent",
+    artist: "Unknown artist (Northern India, Himachal Pradesh, Pahari Region, Rajput Kingdom of Chamba)",
+    year: "c. 1700",
+    image: "/paintings/indian/indian-vishnu-on-ananta.jpg",
+    excerpt: `I touch Vishnu's feet gently while Ananta bears his rest upon the cosmic waters.
+
+Before there are days to count, there is this care, patient enough not to mistake waking for a command.
+
+Lotuses spread across the painted ocean; another will carry Brahma into the work of creation.
+
+The world is approaching, but it has not yet filled the silence with needs.
+
+I remain beside the sleeper, knowing that an immense beginning can arrive through a gesture almost too tender to notice.`,
+    mood: "longing",
+    collection: "indian",
+    rooms: ["dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/2018.155",
+    imageCredit: "Unknown artist (Northern India, Himachal Pradesh, Pahari Region, Rajput Kingdom of Chamba); The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund, 2018.155. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-vishnu-battles-madhu-kaitabha",
+    title: "Vishnu Battles Madhu and Kaitabha, from a Markandeya Purana",
+    artist: "Unknown artist (Northern India, Pahari kingdoms)",
+    year: "c. 1760",
+    image: "/paintings/indian/indian-vishnu-battles-madhu-kaitabha.jpg",
+    excerpt: `I wake upon the serpent bed to a struggle already seeking its place in a world not yet made.
+
+Madhu and Kaitabha rise against me above the cosmic ocean, and rest gives way to the work of preserving possibility.
+
+There are no cities to defend, no fields that can name their need.
+
+Still, creation requires this resistance.
+
+Before a single ordinary life begins, I must confront what would deny it room, here among the waters from which its future will emerge.`,
+    mood: "chaos",
+    collection: "indian",
+    rooms: ["war","dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1974.46",
+    imageCredit: "Unknown artist (Northern India, Pahari kingdoms); The Cleveland Museum of Art, John L. Severance Fund, 1974.46. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-matsya-fish-avatara-of-vishnu",
+    title: "Matsya, Fish Avatara of Vishnu",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-matsya-fish-avatara-of-vishnu.jpg",
+    excerpt: `I look to Matsya and remember how quickly water can change from sustenance into a world without footing.
+
+Vishnu takes the form of a fish, meeting danger within the element that frightens me rather than promising it will disappear.
+
+I have spent my life trusting solid ground.
+
+This sacred form asks me to imagine preservation differently: not always as remaining where I am, but as being guided through a change too vast for my own strength to navigate.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.102",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.102. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "indian-three-steps-of-vishnu",
+    title: "Trivikramapada (Three Steps of Vishnu)",
+    artist: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat)",
+    year: "c. 1890",
+    image: "/paintings/indian/indian-three-steps-of-vishnu.jpg",
+    excerpt: `I thought three steps could be measured by the land I owned.
+
+Before Vishnu, that certainty becomes smaller than the promise I made.
+
+What seemed a modest request reveals the limits of calling anything mine.
+
+I can count boundaries, but I cannot contain the one who crosses them.
+
+Standing before this immense measure, I begin to understand surrender as something harder than losing a possession: the relinquishing of the belief that possession ever made me master of the world.`,
+    mood: "dread",
+    collection: "indian",
+    rooms: ["divine","sins"],
+    sourceUrl: "https://www.clevelandart.org/art/2003.165",
+    imageCredit: "Unknown artist (Eastern India, Bengal, Kolkata, Kalighat); The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward, 2003.165. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-the-race-track-ryder",
+    title: "The Race Track (Death on a Pale Horse)",
+    artist: "Albert Pinkham Ryder",
+    year: "c. 1896–1908",
+    image: "/paintings/classical/classical-the-race-track-ryder.jpg",
+    excerpt: `I keep to the curve because there is nowhere left to arrive.
+
+My pale horse carries no wager, only the rider every wager forgets to count.
+
+The scythe leans above us; a snake rehearses our movement in the grass.
+
+Once, this oval promised a finish.
+
+Now the same earth passes beneath the same hooves, and the empty sky refuses to announce a winner.
+
+I can hear the spectators who are no longer here.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["death","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1928.8",
+    imageCredit: "Albert Pinkham Ryder; The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1928.8. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-crucifixion-of-saint-andrew-caravaggio",
+    title: "The Crucifixion of Saint Andrew",
+    artist: "Caravaggio",
+    year: "1606–7",
+    image: "/paintings/classical/classical-crucifixion-of-saint-andrew-caravaggio.jpg",
+    excerpt: `I can feel their hands trying to undo what other hands have fastened.
+
+Below me, faces emerge from the dark as if the night itself has come to watch.
+
+There is no distance left between my body and their uncertainty.
+
+The rope has become a question neither strength nor pity can answer.
+
+Do not turn this wood into an ornament yet.
+
+I am still upon it, and the people beneath me are still deciding what mercy means.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["death","divine","sins"],
+    sourceUrl: "https://www.clevelandart.org/art/1976.2",
+    imageCredit: "Caravaggio; The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund, 1976.2. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-ruin-by-the-sea-bocklin",
+    title: "Ruin by the Sea",
+    artist: "Arnold Böcklin",
+    year: "1881",
+    image: "/paintings/classical/classical-ruin-by-the-sea-bocklin.jpg",
+    excerpt: `I used to keep the sea outside.
+
+Now it speaks through every opening in me.
+
+The cypresses bend like visitors who cannot bring themselves to enter, and that sick green light finds rooms I thought I had buried.
+
+You ask who lived here.
+
+I remember footsteps, but not the names attached to them.
+
+Stay on the shore if you must.
+
+From there, my emptiness can still be mistaken for a view.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1979.57",
+    imageCredit: "Arnold Böcklin; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1979.57. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-saint-peter-repentant-la-tour",
+    title: "Saint Peter Repentant",
+    artist: "Georges de La Tour",
+    year: "1645",
+    image: "/paintings/classical/classical-saint-peter-repentant-la-tour.jpg",
+    excerpt: `I have outlived the words I said, but not the moment of saying them.
+
+The lantern keeps a little country of light around my knees.
+
+Beyond it waits the rooster, a small ordinary creature with a voice large enough to divide my life.
+
+My hands clasp nothing.
+
+I hold them together because I remember how easily I once let go.
+
+Forgiveness has reached this room.
+
+Sleep has not yet found the door.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["sins","solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1951.454",
+    imageCredit: "Georges de La Tour; The Cleveland Museum of Art, Gift of the Hanna Fund, 1951.454. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-scenes-of-witchcraft-night-rosa",
+    title: "Scenes of Witchcraft: Night",
+    artist: "Salvator Rosa",
+    year: "c. 1645–1649",
+    image: "/paintings/classical/classical-scenes-of-witchcraft-night-rosa.jpg",
+    excerpt: `I thought the trees would hide us from whatever answered.
+
+Now I stand among the travelers and watch the conjurer make an opening in the night.
+
+The column beside him belongs to an older ruin; the things gathering below it seem older still.
+
+Nobody speaks of leaving.
+
+We have become afraid that movement might count as an invitation.
+
+I came to witness a trick.
+
+My body has stopped believing in tricks.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["nightmares","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1977.37.4",
+    imageCredit: "Salvator Rosa; The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1977.37.4. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-eve-of-the-deluge-linnell",
+    title: "Noah: The Eve of the Deluge",
+    artist: "John Linnell",
+    year: "1848",
+    image: "/paintings/classical/classical-eve-of-the-deluge-linnell.jpg",
+    excerpt: `I look at the burning color above the land and try to remember an ordinary evening.
+
+There must have been one when clouds were only clouds, when gathering the living did not mean counting everything that would be lost.
+
+The world is still solid beneath me.
+
+That is what makes the warning unbearable.
+
+Nothing has fallen yet, and already I cannot look at a tree without imagining the water taking its place.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1972.119",
+    imageCredit: "John Linnell; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1972.119. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-saint-jerome-ribera",
+    title: "Saint Jerome",
+    artist: "Jusepe de Ribera",
+    year: "c. 1638–40",
+    image: "/paintings/classical/classical-saint-jerome-ribera.jpg",
+    excerpt: `I have translated words that promise eternity, yet the skull requires no translation.
+
+It waits beside the book with its patient, toothless certainty.
+
+Light catches my skin and makes the years upon it impossible to conceal.
+
+The stone in my hand is easier to carry than the life I have brought into this wilderness.
+
+I wanted silence to make me pure.
+
+Instead, it has made every unspoken thought painfully easy to hear.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1961.219",
+    imageCredit: "Jusepe de Ribera; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1961.219. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-lazarus-and-the-rich-man-bassano",
+    title: "Lazarus and the Rich Man",
+    artist: "Jacopo Bassano",
+    year: "c. 1550",
+    image: "/paintings/classical/classical-lazarus-and-the-rich-man-bassano.jpg",
+    excerpt: `I lie close enough to smell the meal and too far away to belong to it.
+
+Above the floor, dishes pass between hands that have learned not to notice mine.
+
+A dog approaches without asking what I own.
+
+Its rough attention is the only welcome this house has offered.
+
+You might call the distance between us a few steps.
+
+From where I am lying, it is the whole shape of their world.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["sins","solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1939.68",
+    imageCredit: "Jacopo Bassano; The Cleveland Museum of Art, Delia E. Holden and L. E. Holden Funds, 1939.68. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-samson-and-delilah-honthorst",
+    title: "Samson and Delilah",
+    artist: "Gerrit van Honthorst",
+    year: "c. 1616",
+    image: "/paintings/classical/classical-samson-and-delilah-honthorst.jpg",
+    excerpt: `I hold the light close enough to see what trust has made possible.
+
+His sleeping weight rests against us without suspicion.
+
+The old woman asks for silence, and suddenly the smallest noise seems capable of waking the person I was before this bargain.
+
+A lock of hair should weigh almost nothing.
+
+Tonight it contains a life.
+
+I have not raised a sword, yet everything around this candle has become a weapon.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["sins","longing","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1968.23",
+    imageCredit: "Gerrit van Honthorst; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1968.23. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-samson-valentin",
+    title: "Samson",
+    artist: "Valentin de Boulogne",
+    year: "1630–31",
+    image: "/paintings/classical/classical-samson-valentin.jpg",
+    excerpt: `I can rest my head in one hand, but I cannot put down what the other has done.
+
+The jawbone lies near me, absurdly small for the number of lives attached to it.
+
+The lion has become another object in a room that calls me victorious.
+
+My armor holds its shape better than I do.
+
+Everyone knows the story of my strength.
+
+Nobody has asked why strength should leave a man sitting this quietly.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["war","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1972.50",
+    imageCredit: "Valentin de Boulogne; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1972.50. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-sleep-restout",
+    title: "Sleep",
+    artist: "Jean Bernard Restout",
+    year: "c. 1771",
+    image: "/paintings/classical/classical-sleep-restout.jpg",
+    excerpt: `I fold my wings into a sleep that cannot carry me anywhere.
+
+The poppies keep their counsel beside my body; even the air seems drugged by their stillness.
+
+You may think a god has nothing to fear in closing his eyes.
+
+But I make the country you enter when the room disappears, and I know how easily its roads change.
+
+Tonight I want only a darkness that asks nothing of me.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["dreams","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1963.502",
+    imageCredit: "Jean Bernard Restout; The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund, 1963.502. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-david-leighton",
+    title: "David: \"Oh, that I had wings like a Dove! For then would I fly away, and be at rest.\" Psalm 55:6",
+    artist: "Frederic Leighton",
+    year: "1865",
+    image: "/paintings/classical/classical-david-leighton.jpg",
+    excerpt: `I let the crown fall because it could not tell me how to remain a father.
+
+Beyond this chamber, they can speak of armies and obedience.
+
+Here, the victory has only one name missing from it.
+
+My body leans toward an escape the walls cannot provide.
+
+If I were small enough to leave through the air, perhaps I could stop hearing the country celebrate what has broken the room inside me.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","war","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1986.74",
+    imageCredit: "Frederic Leighton; The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund, 1986.74. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-oedipus-at-colonus-harriet",
+    title: "Oedipus at Colonus",
+    artist: "Fulchran Jean Harriet",
+    year: "1798",
+    image: "/paintings/classical/classical-oedipus-at-colonus-harriet.jpg",
+    excerpt: `I reach for my daughter as though my arm could shelter her from the history attached to it.
+
+The world beyond my blindness is full of people who know my story before they know my voice.
+
+Antigone remains close enough for me to recognize the shape of loyalty.
+
+I cannot offer her a kingdom.
+
+I can barely offer a road.
+
+Still, she stands beside me, and exile has not yet taken everything.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["solitude","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2002.3",
+    imageCredit: "Fulchran Jean Harriet; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 2002.3. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-memento-mori-harnett",
+    title: "Memento Mori, \"To This Favour\"",
+    artist: "William Michael Harnett",
+    year: "1879",
+    image: "/paintings/classical/classical-memento-mori-harnett.jpg",
+    excerpt: `I have finished measuring you.
+
+The last sand has fallen, the candle has spent its little weather, and the book keeps opening at a thought you would rather postpone.
+
+Beside them I grin without amusement.
+
+Once I had a face that needed a mirror.
+
+Now every surface on this table reflects the same ending.
+
+You are welcome to linger over the workmanship.
+
+I know how carefully the living inspect anything except the warning.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["death","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1965.235",
+    imageCredit: "William Michael Harnett; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1965.235. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-sweet-melancholy-vien",
+    title: "Sweet Melancholy",
+    artist: "Joseph-Marie Vien",
+    year: "1756",
+    image: "/paintings/classical/classical-sweet-melancholy-vien.jpg",
+    excerpt: `I have read the letter often enough to know where hope stops between its lines.
+
+The room offers lovely things to occupy my hands: pearls, a table, the careful furniture of a life that ought to satisfy me.
+
+Instead, my head sinks into my palm.
+
+Nothing here is broken in a way a visitor could repair.
+
+Even the brazier has a purpose.
+
+I remain beside it, warming a future that will not arrive.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["longing","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1996.1",
+    imageCredit: "Joseph-Marie Vien; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1996.1. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-a-eunuchs-dream-lecomte-du-nouy",
+    title: "A Eunuch's Dream",
+    artist: "Jean Lecomte du Nouÿ",
+    year: "1874",
+    image: "/paintings/classical/classical-a-eunuchs-dream-lecomte-du-nouy.jpg",
+    excerpt: `I watch the smoke offer what the room withholds.
+
+She gathers out of it, almost near enough to answer, but the little figure with the blade has entered the vision too.
+
+Even my dreaming cannot leave my wounds outside.
+
+They have made a spectacle of my wanting; I wanted only to be wanted in return.
+
+The pipe grows quiet in my hand.
+
+Above me, tenderness and terror refuse to separate.`,
+    mood: "madness",
+    collection: "classical",
+    rooms: ["dreams","nightmares","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1991.173",
+    imageCredit: "Jean Lecomte du Nouÿ; The Cleveland Museum of Art, Seventy-fifth anniversary gift of Mrs. Noah L. Butkin, 1991.173. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-esther-ahasuerus-and-haman-steen",
+    title: "Esther, Ahasuerus, and Haman",
+    artist: "Jan Steen",
+    year: "c. 1668",
+    image: "/paintings/classical/classical-esther-ahasuerus-and-haman-steen.jpg",
+    excerpt: `I arranged the destruction of strangers as though it were another matter for the table.
+
+Now Esther has spoken, and the king turns toward me.
+
+The glass still shines.
+
+The lemon still curls its bright skin beside the dishes.
+
+How can such small luxuries remain unchanged when the room has become a sentence?
+
+I sink into my seat, searching for the authority that was mine a moment ago.
+
+Nobody returns it.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["sins","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1964.153",
+    imageCredit: "Jan Steen; The Cleveland Museum of Art, John L. Severance Fund, 1964.153. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-storm-in-the-mountains-church",
+    title: "Storm in the Mountains",
+    artist: "Frederic Edwin Church",
+    year: "1847",
+    image: "/paintings/classical/classical-storm-in-the-mountains-church.jpg",
+    excerpt: `I am the tree the lightning chose.
+
+The mountain behind me still wears its vast composure, but my branches have forgotten how to hold a sky.
+
+Clouds pass as though nothing has happened.
+
+Beneath them, the living wood continues its slow business around my ruin.
+
+You can call this a cycle if you need the comfort of a shape.
+
+From inside the split trunk, it feels like an interruption that will never finish.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["death","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1969.52",
+    imageCredit: "Frederic Edwin Church; The Cleveland Museum of Art, Gift of various donors by exchange and Purchase from the J. H. Wade Fund, 1969.52. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-wisdom-and-destiny-keller",
+    title: "Wisdom and Destiny",
+    artist: "Henry Keller",
+    year: "1913",
+    image: "/paintings/classical/classical-wisdom-and-destiny-keller.jpg",
+    excerpt: `I stand where the shepherd does not look.
+
+His small peace depends upon the distance between his day and the figures waiting at its edge.
+
+Beside Wisdom, I have no need to hurry.
+
+The landscape is generous enough to hold his innocence and my certainty without letting either touch the other.
+
+You see an allegory.
+
+I see how gently a life can proceed while everything that will change it remains already present.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["dreams","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1928.580",
+    imageCredit: "Henry Keller; The Cleveland Museum of Art, Gift of Mrs. Henry A. Everett for the Dorothy Burnham Everett Memorial Collection, 1928.580. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-the-ghost-story-macewen",
+    title: "The Ghost Story",
+    artist: "Walter MacEwen",
+    year: "1887",
+    image: "/paintings/classical/classical-the-ghost-story-macewen.jpg",
+    excerpt: `I squeeze my doll until its little body seems steadier than mine.
+
+The woman at the spinning wheel has not moved far from her ordinary work, yet her story has changed every shadow in the room.
+
+The others listen with faces I cannot read.
+
+I want someone to laugh and break the spell.
+
+Nobody does.
+
+A moment ago, the door was only a door.
+
+Now I keep watching the space beneath it.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["nightmares","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1923.416",
+    imageCredit: "Walter MacEwen; The Cleveland Museum of Art, Gift of Mrs. Edward S. Harkness, 1923.416. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-the-contemplator-carriere",
+    title: "The Contemplator",
+    artist: "Eugène Carrière",
+    year: "1901",
+    image: "/paintings/classical/classical-the-contemplator-carriere.jpg",
+    excerpt: `I place a hand over my heart to prove that something here still answers.
+
+Above me, the crescent keeps its thin, unreachable promise.
+
+My other hand moves toward it before I remember the distance.
+
+In this brown half-light, even my body seems to be turning into a thought.
+
+I do not know whether I am watching the heavens or remembering them.
+
+Either way, the stars have more room than I do.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["dreams","solitude","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1946.283",
+    imageCredit: "Eugène Carrière; The Cleveland Museum of Art, In memory of Ralph King, gift of Mrs. Ralph King; Ralph T. Woods, Charles G. King; and Frances King Schafer, 1946.283. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-symbolic-head-redon",
+    title: "Symbolic Head",
+    artist: "Odilon Redon",
+    year: "c. 1890",
+    image: "/paintings/classical/classical-symbolic-head-redon.jpg",
+    excerpt: `I turn inward because the frames keep closing.
+
+One rectangle contains another, and none of them leads out.
+
+My helmet is a strange protection against a danger that has no direction.
+
+I hold the green staff as if there were ground beyond this thought on which to plant it.
+
+You may search my profile for a destination.
+
+I have become the pause between seeing a world and consenting to live inside it.`,
+    mood: "madness",
+    collection: "classical",
+    rooms: ["dreams","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1988.91",
+    imageCredit: "Odilon Redon; The Cleveland Museum of Art, Gift of the Mildred Andrews Fund, 1988.91. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-ruins-of-an-ancient-city-martin",
+    title: "Ruins of an Ancient City",
+    artist: "John Martin",
+    year: "c. 1810–20",
+    image: "/paintings/classical/classical-ruins-of-an-ancient-city-martin.jpg",
+    excerpt: `I built my streets to make arrival feel inevitable.
+
+Now they guide the evening through buildings that cannot remember their inhabitants.
+
+The valley opens beneath me with a depth no monument can argue against.
+
+From far away, ruin looks orderly: a column here, a wall there, gold settling over everything.
+
+Come closer and count the thresholds.
+
+Each one was once crossed by somebody who believed there would always be a home to return to.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1981.13",
+    imageCredit: "John Martin; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1981.13. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-cordelia-parting-from-her-sisters-brown",
+    title: "Cordelia Parting from her Sisters",
+    artist: "Ford Madox Brown",
+    year: "1854",
+    image: "/paintings/classical/classical-cordelia-parting-from-her-sisters-brown.jpg",
+    excerpt: `I leave them the words that purchased their inheritance.
+
+My own would not grow sweet enough to serve the bargain, and now parting must do the work affection could not.
+
+I look at my sisters and try to find the girls who once shared a room with me.
+
+Ceremony stands between us in splendid colors.
+
+It would be easier if they looked like strangers.
+
+They still look like people I expected to love me.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["sins","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/2013.261",
+    imageCredit: "Ford Madox Brown; The Cleveland Museum of Art, Gift in memory of Helen Borowitz, 2013.261. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-vision-of-saint-jerome-langetti",
+    title: "The Vision of Saint Jerome",
+    artist: "Giovanni Battista Langetti",
+    year: "c. 1660",
+    image: "/paintings/classical/classical-vision-of-saint-jerome-langetti.jpg",
+    excerpt: `I withdrew from the world, but the summons has followed me here.
+
+The angel enters my solitude with a force no closed eye can keep outside.
+
+My old body turns toward a judgment I had hoped to prepare for in private.
+
+Books cannot make an answer for me now.
+
+I had imagined revelation as a light falling gently across a page.
+
+Instead, the page has vanished, and the light is asking for me.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1951.334",
+    imageCredit: "Giovanni Battista Langetti; The Cleveland Museum of Art, Delia E. Holden and L. E. Holden Funds, 1951.334. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-death-of-sophonisba-guerin",
+    title: "The Death of Sophonisba",
+    artist: "Attributed to Pierre Guérin",
+    year: "c. 1810",
+    image: "/paintings/classical/classical-death-of-sophonisba-guerin.jpg",
+    excerpt: `I keep the pen moving because the page is the last place where my hand can still decide something.
+
+They have spoken of dignity as though it could undo captivity, as though a noble word could make this room less cruel.
+
+My body begins to withdraw from the chair.
+
+Do not admire my composure without noticing what demanded it.
+
+I wanted a life beyond their victory, not a beautiful pose at its edge.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","war"],
+    sourceUrl: "https://www.clevelandart.org/art/2008.71",
+    imageCredit: "Attributed to Pierre Guérin; The Cleveland Museum of Art, Bequest of Jacques de Caso in memory of Alice Cagliostro and Domenick Cagliostro, 2008.71. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-christ-with-joseph-of-arimathea-savoldo",
+    title: "Christ with Joseph of Arimathea",
+    artist: "Giovanni Girolamo Savoldo",
+    year: "c. 1525",
+    image: "/paintings/classical/classical-christ-with-joseph-of-arimathea-savoldo.jpg",
+    excerpt: `I asked for the body, and now the weight of that request rests against me.
+
+The cloudy sky offers no place to set it down.
+
+There are only two of us in this narrow world: the one who cannot feel the carrying, and the one who must remember it.
+
+I try to hold him without allowing my own fear to become another pressure.
+
+The tomb is mine.
+
+The absence will not belong to me alone.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1952.512",
+    imageCredit: "Giovanni Girolamo Savoldo; The Cleveland Museum of Art, Gift of the Hanna Fund, 1952.512. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-glaucus-and-nydia-alma-tadema",
+    title: "Glaucus and Nydia",
+    artist: "Lawrence Alma-Tadema",
+    year: "1867",
+    image: "/paintings/classical/classical-glaucus-and-nydia-alma-tadema.jpg",
+    excerpt: `I weave the roses carefully, giving my hands the confession my voice cannot risk.
+
+Glaucus is near enough for every ordinary sound to matter.
+
+I know the flowers by touch; I know my place in this house by everything nobody needs to say.
+
+A garland can be accepted without a question.
+
+That is its kindness and its cruelty.
+
+When I finish, he will hold something of mine without knowing how much I have given.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["longing","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1977.128",
+    imageCredit: "Lawrence Alma-Tadema; The Cleveland Museum of Art, Gift of Mr. and Mrs. Noah L. Butkin, 1977.128. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-mount-vesuvius-at-midnight-bierstadt",
+    title: "Mount Vesuvius at Midnight",
+    artist: "Albert Bierstadt",
+    year: "1868",
+    image: "/paintings/classical/classical-mount-vesuvius-at-midnight-bierstadt.jpg",
+    excerpt: `I thought midnight would conceal the mountain.
+
+Instead, it has given the fire a world of its own.
+
+The red wound opens above me and throws its answer into the sky; ash makes darkness visible in a way the moon never could.
+
+I stand before a landscape that has begun to move from within.
+
+Every solid thing I trusted has acquired a terrible possibility.
+
+Even the ground beneath my feet seems to be listening.`,
+    mood: "chaos",
+    collection: "classical",
+    rooms: ["nightmares","death"],
+    sourceUrl: "https://www.clevelandart.org/art/1949.541",
+    imageCredit: "Albert Bierstadt; The Cleveland Museum of Art, Gift of S. Livingstone Mather, Philip Richard Mather, Katherine Hoyt (Mather) Cross, Katherine Mather McLean and Constance Mather Bishop, 1949.541. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-revolt-at-cairo-girodet",
+    title: "Sketch for \"The Revolt at Cairo\"",
+    artist: "Anne-Louis Girodet de Roucy-Trioson",
+    year: "c. 1809",
+    image: "/paintings/classical/classical-revolt-at-cairo-girodet.jpg",
+    excerpt: `I cannot find a horizon between the bodies.
+
+A weapon rises where a hand was a moment ago; cloth twists through the crush as though color itself were being dragged into the fight.
+
+Someone will arrange this struggle into a campaign and give each side a name.
+
+From inside it, I can barely tell where my own fear ends.
+
+There is no grand view here.
+
+There is only the next blow and the person beneath it.`,
+    mood: "chaos",
+    collection: "classical",
+    rooms: ["war","sins"],
+    sourceUrl: "https://www.clevelandart.org/art/1965.310",
+    imageCredit: "Anne-Louis Girodet de Roucy-Trioson; The Cleveland Museum of Art, Gift of Eugene Victor Thaw, 1965.310. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-fall-of-simon-magus-batoni",
+    title: "The Fall of Simon Magus",
+    artist: "Studio of Pompeo Batoni",
+    year: "c. 1745–50",
+    image: "/paintings/classical/classical-fall-of-simon-magus-batoni.jpg",
+    excerpt: `I made the crowd look upward, and for a moment their belief felt like wings.
+
+Now the support beneath me has gone.
+
+The distance I used to measure my glory has become the distance of my fall.
+
+Below, raised hands belong to prayers I cannot interrupt.
+
+I claimed a height that would prove me more than human.
+
+My body is answering instead, terribly ordinary, with nothing left to persuade the air.`,
+    mood: "chaos",
+    collection: "classical",
+    rooms: ["sins","divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1983.217",
+    imageCredit: "Studio of Pompeo Batoni; The Cleveland Museum of Art, John L. Severance Fund, 1983.217. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-dead-christ-with-angels-bassano",
+    title: "The Dead Christ with Angels",
+    artist: "Leandro Bassano",
+    year: "c. 1580",
+    image: "/paintings/classical/classical-dead-christ-with-angels-bassano.jpg",
+    excerpt: `I have wings, and they are useless for this.
+
+Beside the other angel, I attend a body that will not become lighter because heaven has sent us.
+
+We can arrange our care around the wounds, but care cannot pretend they are not there.
+
+The silence between us is not the silence of certainty.
+
+It is the difficult hush of keeping watch when love has arrived with empty hands and nowhere else to go.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1916.806",
+    imageCredit: "Leandro Bassano; The Cleveland Museum of Art, Holden Collection, 1916.806. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-midnight-cazin",
+    title: "Midnight",
+    artist: "Jean-Charles Cazin",
+    year: "1891",
+    image: "/paintings/classical/classical-midnight-cazin.jpg",
+    excerpt: `I know this town in daylight, but midnight has taken away the evidence.
+
+The canal keeps its dark reflection close, and the buildings stand with the patience of things that do not need an answer.
+
+I listen for a window opening, a footstep, any small refusal of the stillness.
+
+Nothing comes.
+
+Perhaps everyone is asleep.
+
+Perhaps I am remembering a place that has continued without me and no longer knows how to let me in.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1923.602",
+    imageCredit: "Jean-Charles Cazin; The Cleveland Museum of Art, The Charles W. Harkness Gift, 1923.602. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-ruins-in-a-rocky-landscape-rosa",
+    title: "Ruins in a Rocky Landscape",
+    artist: "Salvator Rosa",
+    year: "c. 1640",
+    image: "/paintings/classical/classical-ruins-in-a-rocky-landscape-rosa.jpg",
+    excerpt: `I sit beneath the rocks while the old masonry catches its last share of light.
+
+The others can idle here as though a ruin were merely another kind of shelter.
+
+I keep thinking about the hands that fitted those stones together.
+
+They wanted something to remain.
+
+Now our afternoon passes through their intention without asking permission.
+
+The landscape is beautiful, and that troubles me: it has made such an easy place for their disappearance.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1958.472",
+    imageCredit: "Salvator Rosa; The Cleveland Museum of Art, Gift of Rosenberg & Stiebel, Inc., 1958.472. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-christ-on-the-cross-el-greco",
+    title: "Christ on the Cross",
+    artist: "El Greco",
+    year: "c. 1600–1610",
+    image: "/paintings/classical/classical-christ-on-the-cross-el-greco.jpg",
+    excerpt: `I stretch between the earth and a sky that will not take my weight.
+
+Blood gives the body a language the heavens do not answer aloud.
+
+You may let your eyes follow the long lines upward and call the movement spiritual.
+
+Stay with the flesh a moment longer.
+
+Before this can become a sign, it is a wound.
+
+Before you find a promise in it, someone has to remain here and suffer its length.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["death","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1952.222",
+    imageCredit: "El Greco; The Cleveland Museum of Art, Gift of the Hanna Fund, 1952.222. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-interior-gwen-john",
+    title: "Interior",
+    artist: "Gwen John",
+    year: "1915",
+    image: "/paintings/classical/classical-interior-gwen-john.jpg",
+    excerpt: `I left the cups where another afternoon could find them.
+
+The brown teapot sits with the composure of an object that has never needed company, while the room holds its pale light without complaint.
+
+Nothing insists that I should be lonely.
+
+That makes the feeling harder to explain.
+
+I can imagine a hand entering this small arrangement, lifting a cup, changing the silence.
+
+For now, even that imagined movement seems too loud.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1982.6",
+    imageCredit: "Gwen John; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1982.6. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-stag-at-sharkeys-bellows",
+    title: "Stag at Sharkey's",
+    artist: "George Bellows",
+    year: "1909",
+    image: "/paintings/classical/classical-stag-at-sharkeys-bellows.jpg",
+    excerpt: `I lean into the other body because distance would give the fist room to return.
+
+Around the ropes, mouths open in a darkness crowded with appetite.
+
+They can see the whole fight.
+
+I can see only the shoulder, the glare, the brief space in which I must breathe.
+
+Their excitement rises when my balance fails.
+
+It is strange to become entertainment at the exact moment every part of you is trying to remain intact.`,
+    mood: "chaos",
+    collection: "classical",
+    rooms: ["nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1922.1133",
+    imageCredit: "George Bellows; The Cleveland Museum of Art, Hinman B. Hurlbut Collection, 1922.1133. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-twilight-in-the-wilderness-church",
+    title: "Twilight in the Wilderness",
+    artist: "Frederic Edwin Church",
+    year: "1860",
+    image: "/paintings/classical/classical-twilight-in-the-wilderness-church.jpg",
+    excerpt: `I watch the sky turn red above water that has done nothing to deserve a warning.
+
+The dark trees make a border around the brightness, but they cannot contain it.
+
+This should be the hour when the world releases its demands.
+
+Instead, every cloud looks like news traveling toward me.
+
+I know that sunset is not a fire.
+
+I keep repeating that knowledge while the wilderness glows as though it has heard otherwise.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["solitude","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1965.233",
+    imageCredit: "Frederic Edwin Church; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1965.233. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-burning-of-parliament-turner",
+    title: "The Burning of the Houses of Lords and Commons, 16 October 1834",
+    artist: "Joseph Mallord William Turner",
+    year: "1835",
+    image: "/paintings/classical/classical-burning-of-parliament-turner.jpg",
+    excerpt: `I came to the river because everyone was coming, and now the water has become another surface for the burning.
+
+Boats press toward the blaze with a courage that looks very small from this bank.
+
+Above them, the buildings lose their edges inside the light.
+
+I cannot stop looking.
+
+That is the shame I carry away: while others struggled to save what remained, some part of me stood still before the terrible color.`,
+    mood: "chaos",
+    collection: "classical",
+    rooms: ["nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1942.647",
+    imageCredit: "Joseph Mallord William Turner; The Cleveland Museum of Art, Bequest of John L. Severance, 1942.647. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-tiger-and-buffalo-rousseau",
+    title: "Fight Between a Tiger and a Buffalo",
+    artist: "Henri Rousseau",
+    year: "1908",
+    image: "/paintings/classical/classical-tiger-and-buffalo-rousseau.jpg",
+    excerpt: `I thought the leaves would hide the movement.
+
+Their sharp green shapes crowd around us, immense and strangely calm, while the tiger closes the distance my body cannot afford.
+
+Nothing in this garden bends to make an escape.
+
+Fruit hangs above the struggle as though ripening were the only event worth noticing.
+
+I am not inside a peaceful wilderness.
+
+I am inside the instant when its beauty stops having anything to do with my survival.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["nightmares","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1949.186",
+    imageCredit: "Henri Rousseau; The Cleveland Museum of Art, Gift of the Hanna Fund, 1949.186. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-in-the-waves-gauguin",
+    title: "In the Waves (Dans les Vagues)",
+    artist: "Paul Gauguin",
+    year: "1889",
+    image: "/paintings/classical/classical-in-the-waves-gauguin.jpg",
+    excerpt: `I turn my face away from the shore and let the green water gather around my shoulders.
+
+Behind me, the orange earth is too vivid, too full of a life that has already decided what I should be.
+
+The waves do not know that version of me.
+
+They are cold and indifferent, not kind, but their indifference leaves room for a different breath.
+
+I want to return without returning to exactly the same self.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["longing","dreams"],
+    sourceUrl: "https://www.clevelandart.org/art/1978.63",
+    imageCredit: "Paul Gauguin; The Cleveland Museum of Art, Gift of Mr. and Mrs. William Powell Jones, 1978.63. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-morning-after-a-storm-homer",
+    title: "Early Morning After a Storm at Sea",
+    artist: "Winslow Homer",
+    year: "1900–1903",
+    image: "/paintings/classical/classical-morning-after-a-storm-homer.jpg",
+    excerpt: `I have survived the night, but the sea has not agreed to become gentle.
+
+Morning lays its light across water still breaking against the rocks, and the shore receives each blow without a witness.
+
+I listen for some announcement that the danger is over.
+
+There is only the next wave.
+
+Perhaps survival is this: standing before the same power that frightened you yesterday and learning that daylight changes the view, not the power.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1924.195",
+    imageCredit: "Winslow Homer; The Cleveland Museum of Art, Gift of J. H. Wade, 1924.195. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-christ-and-virgin-at-nazareth-zurbaran",
+    title: "Christ and the Virgin in the House at Nazareth",
+    artist: "Francisco de Zurbarán",
+    year: "c. 1640",
+    image: "/paintings/classical/classical-christ-and-virgin-at-nazareth-zurbaran.jpg",
+    excerpt: `I watch him pause over the thorn, and the room becomes larger than the afternoon can bear.
+
+There are books and fruit upon the table, ordinary things insisting that we are still at home.
+
+My tears have arrived before I can explain them.
+
+A small hurt should need only a mother and a moment of care.
+
+Yet I look at his hand and feel a future moving toward us that my own hands cannot stop.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["divine","death","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1960.117",
+    imageCredit: "Francisco de Zurbarán; The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund, 1960.117. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-waterfall-and-dead-beech-ruisdael",
+    title: "Low Waterfall in a Wooded Landscape with a Dead Beech Tree",
+    artist: "Jacob van Ruisdael",
+    year: "c. 1660–70",
+    image: "/paintings/classical/classical-waterfall-and-dead-beech-ruisdael.jpg",
+    excerpt: `I lie across the foreground with the pale exposure of something that once had leaves.
+
+Water keeps speaking below me; travelers follow the distant path toward a patch of sun.
+
+Nobody needs my shade anymore.
+
+Beyond the branches, an old building catches gold along its broken edge.
+
+We make a handsome pair, the ruin and I.
+
+It is possible to become part of a beautiful landscape precisely because you have stopped being alive.`,
+    mood: "melancholy",
+    collection: "classical",
+    rooms: ["death","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/1967.63",
+    imageCredit: "Jacob van Ruisdael; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund, 1967.63. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-point-judith-heade",
+    title: "Point Judith, Rhode Island",
+    artist: "Martin Johnson Heade",
+    year: "1867–68",
+    image: "/paintings/classical/classical-point-judith-heade.jpg",
+    excerpt: `I search the dark water for the sails, then lose them again in the moonlight.
+
+The shore has become a place without small details, only a low edge between two enormous silences.
+
+I had thought knowing the name of this coast would make it familiar.
+
+At night, names do not reach very far.
+
+Somewhere to the left, people are aboard those ships.
+
+I hold that fact like a faint light I cannot bring closer.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude","longing"],
+    sourceUrl: "https://www.clevelandart.org/art/1970.161",
+    imageCredit: "Martin Johnson Heade; The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund and Gift of Delbert Gutridge in memory of Orrel A. Parker by exchange, 1970.161. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-moonrise-at-the-priory-denis",
+    title: "Drying the Linen, or Moonrise at the Priory",
+    artist: "Maurice Denis",
+    year: "1894",
+    image: "/paintings/classical/classical-moonrise-at-the-priory-denis.jpg",
+    excerpt: `I hang the linen beneath the moon and watch an ordinary task acquire the stillness of a ceremony.
+
+My dark clothes disappear into the garden while the pale fabric takes what light remains.
+
+The walls keep the night close around me.
+
+Tomorrow these sheets will belong to daylight and familiar rooms.
+
+Tonight they move like thoughts I have not spoken, suspended between my hands and the strange gold above the priory.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["dreams","solitude"],
+    sourceUrl: "https://www.clevelandart.org/art/2020.109",
+    imageCredit: "Maurice Denis; The Cleveland Museum of Art, Nancy F. and Joseph P. Keithley Collection Gift, 2020.109. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-terminus-holbein",
+    title: "Terminus, the Device of Erasmus",
+    artist: "Hans Holbein the Younger",
+    year: "c. 1532",
+    image: "/paintings/classical/classical-terminus-holbein.jpg",
+    excerpt: `I am made to mark the place beyond which something must not pass.
+
+A human face has been given to my refusal, as though a boundary would be easier to understand if it could look back.
+
+I cannot step aside without ceasing to be myself.
+
+You may admire such steadfastness.
+
+From here, it feels very close to being unable to leave.
+
+Everything that travels past me has a freedom my permanence cannot purchase.`,
+    mood: "isolation",
+    collection: "classical",
+    rooms: ["solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1971.166",
+    imageCredit: "Hans Holbein the Younger; The Cleveland Museum of Art, Gift of Dr. and Mrs. Sherman E. Lee in memory of Milton S. Fox, 1971.166. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-saint-paul-the-hermit-preti",
+    title: "Saint Paul the Hermit",
+    artist: "Mattia Preti",
+    year: "c. 1662–1664",
+    image: "/paintings/classical/classical-saint-paul-the-hermit-preti.jpg",
+    excerpt: `I look upward before I notice how empty my hands have become.
+
+The rough cloth against my body has learned every shape of hunger.
+
+Somewhere above, the raven carries the small mercy on which another day depends.
+
+They will call this solitude a choice, and perhaps it began as one.
+
+But the desert has its own long hours.
+
+I am grateful for the bread, and ashamed of how much I also wait for the bird.`,
+    mood: "longing",
+    collection: "classical",
+    rooms: ["solitude","divine"],
+    sourceUrl: "https://www.clevelandart.org/art/1969.109",
+    imageCredit: "Mattia Preti; The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund, 1969.109. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-sacrifice-of-isaac-del-sarto",
+    title: "The Sacrifice of Isaac",
+    artist: "Andrea del Sarto",
+    year: "c. 1527",
+    image: "/paintings/classical/classical-sacrifice-of-isaac-del-sarto.jpg",
+    excerpt: `I know the hand above me.
+
+That is what makes the knife impossible to understand.
+
+My father has become a stranger without changing his face, and I cannot find the place where obedience ends and I begin.
+
+Then the angel interrupts the air.
+
+You see rescue entering the picture.
+
+I feel the moment before it, still lodged inside my body.
+
+Even if the blade never falls, I will remember having waited for it.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["divine","nightmares"],
+    sourceUrl: "https://www.clevelandart.org/art/1937.577",
+    imageCredit: "Andrea del Sarto; The Cleveland Museum of Art, Delia E. Holden and L. E. Holden Funds, 1937.577. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
+  },
+  {
+    slug: "classical-mass-of-saint-gregory-baldung",
+    title: "The Mass of Saint Gregory",
+    artist: "Hans Baldung",
+    year: "1511",
+    image: "/paintings/classical/classical-mass-of-saint-gregory-baldung.jpg",
+    excerpt: `I kneel at the altar and discover that an answer can be more frightening than a doubt.
+
+The wounded body stands where ritual had taught my eyes what to expect.
+
+Around me, the others stare; the instruments of suffering make belief terribly specific.
+
+I wanted certainty to bring us peace.
+
+Instead, the familiar room has opened upon pain that refuses to stay in the past.
+
+My prayer continues, but it no longer sounds the same.`,
+    mood: "dread",
+    collection: "classical",
+    rooms: ["divine","death"],
+    sourceUrl: "https://www.clevelandart.org/art/1952.112",
+    imageCredit: "Hans Baldung; The Cleveland Museum of Art, Gift of the Hanna Fund, 1952.112. Open Access image; resized from the museum's digital image.",
+    license: "CC0 1.0 Universal",
   },
 ];
