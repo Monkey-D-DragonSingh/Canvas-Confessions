@@ -12,13 +12,13 @@ export default function GalleryHomePage() {
   });
 
   return (
-    <main className="min-h-screen bg-gallery text-ivory flex flex-col justify-between selection:bg-brass selection:text-gallery overflow-hidden">
+    <main className="min-h-dvh bg-gallery text-ivory flex flex-col justify-between selection:bg-brass selection:text-gallery">
       {/* Background Decorative Ambient Glows */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brass/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="fixed bottom-0 right-0 w-[600px] h-[400px] bg-oxblood/20 rounded-full blur-[160px] pointer-events-none" />
 
       {/* Navigation Bar */}
-      <header className="gallery-page-header relative z-20 flex flex-wrap items-center justify-between gap-3 px-6 md:px-12 py-8 max-w-7xl mx-auto w-full">
+      <header className="gallery-page-header relative z-20 flex flex-wrap items-center justify-between gap-3 px-5 sm:px-8 md:px-12 py-6 md:py-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-3">
           <div className="w-2.5 h-2.5 rounded-full bg-brass animate-pulse" />
           <span className="font-label text-xs tracking-widest text-brass uppercase">
@@ -31,26 +31,43 @@ export default function GalleryHomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 px-6 md:px-12 pt-8 pb-16 max-w-7xl mx-auto w-full">
+      <section className="relative z-10 px-5 sm:px-8 md:px-12 pt-10 md:pt-16 pb-12 md:pb-20 max-w-7xl mx-auto w-full">
         <div className="max-w-3xl space-y-6">
-          <p className="font-label text-xs md:text-sm text-brass tracking-[0.2em] uppercase">
+          <p
+            className="font-label text-[10px] sm:text-xs md:text-sm text-brass tracking-[0.2em] uppercase reveal"
+            style={{ animationDelay: "0.05s" }}
+          >
             An Interactive Gallery Experience
           </p>
-          <h1 className="font-display italic text-5xl md:text-8xl text-ivory leading-[0.95]">
+          <h1
+            className="font-display italic text-[clamp(3rem,10vw,7.5rem)] text-ivory leading-[0.95] reveal"
+            style={{ animationDelay: "0.15s" }}
+          >
             Canvas <br />
             <span className="text-brass">Confessions</span>
           </h1>
-          <p className="text-lg md:text-2xl font-body text-ivory/80 font-light max-w-2xl leading-relaxed">
+          <p
+            className="text-base sm:text-lg md:text-2xl font-body text-ivory/80 font-light max-w-2xl leading-relaxed reveal"
+            style={{ animationDelay: "0.3s" }}
+          >
             Behind every layer of oil and pigment lies a secret frozen in time.
             Step into the darkness and let the paintings speak for themselves.
           </p>
+        </div>
+
+        {/* Scroll hint */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 pointer-events-none" aria-hidden="true">
+          <span className="font-label text-[10px] text-muted tracking-[0.3em] uppercase">Scroll</span>
+          <span className="w-px h-10 bg-brass/20 overflow-hidden">
+            <span className="scroll-hint block w-full h-full bg-brass" />
+          </span>
         </div>
       </section>
 
       {/* Featured Artwork Hero Showcase */}
       {featuredPainting && (
-        <section className="relative z-10 px-6 md:px-12 py-12 max-w-7xl mx-auto w-full">
-          <div className="flex items-center justify-between border-b border-brass/20 pb-4 mb-8">
+        <section className="relative z-10 px-6 md:px-12 py-10 md:py-12 max-w-7xl mx-auto w-full">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-brass/20 pb-4 mb-8 gap-2">
             <h2 className="font-label text-xs tracking-[0.2em] text-brass uppercase">
               Featured Exhibition
             </h2>
@@ -59,7 +76,7 @@ export default function GalleryHomePage() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface/40 border border-brass/20 rounded-sm p-6 md:p-10 backdrop-blur-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface/40 border border-brass/20 rounded-sm p-5 sm:p-8 md:p-10 backdrop-blur-sm">
             {/* Image Preview Column */}
             <div className="lg:col-span-5 relative aspect-[3/4] w-full rounded-sm overflow-hidden border border-brass/20 group">
               <PaintingImage
@@ -79,7 +96,7 @@ export default function GalleryHomePage() {
                 <span className="font-label text-xs text-brass tracking-widest uppercase">
                   {featuredPainting.artist} · {featuredPainting.year}
                 </span>
-                <h3 className="font-display italic text-4xl md:text-6xl text-ivory mt-2">
+                <h3 className="font-display italic text-[clamp(2.25rem,4.5vw,6rem)] text-ivory mt-2 leading-[1.05]">
                   {featuredPainting.title}
                 </h3>
               </div>
@@ -98,11 +115,11 @@ export default function GalleryHomePage() {
         </section>
       )}
 
-      <section id="rooms" aria-labelledby="rooms-title" className="relative z-10 px-6 md:px-12 py-16 max-w-7xl mx-auto w-full scroll-mt-8">
+      <section id="rooms" aria-labelledby="rooms-title" className="relative z-10 px-6 md:px-12 py-12 md:py-16 max-w-7xl mx-auto w-full scroll-mt-8">
         <div className="border-t border-brass/20 pt-8 mb-9 flex flex-col sm:flex-row sm:items-end justify-between gap-5">
           <div>
             <p className="font-label text-[10px] text-brass mb-4">The room directory / 01&ndash;10</p>
-            <h2 id="rooms-title" className="font-display italic text-4xl md:text-5xl">Follow what haunts you.</h2>
+            <h2 id="rooms-title" className="font-display italic text-[clamp(2.25rem,5vw,3.75rem)] text-ivory">Follow what haunts you.</h2>
           </div>
           <p className="text-sm text-ivory/60 max-w-xs leading-relaxed">Gods, desires, and the things we leave unsaid. Find a room that speaks to you.</p>
         </div>
@@ -111,7 +128,7 @@ export default function GalleryHomePage() {
             <Link key={room.slug} href={`/rooms/${room.slug}`} className="room-preview group relative overflow-hidden min-h-80 border border-brass/20 bg-surface">
               {room.preview && <PaintingImage src={room.preview.image} alt={room.preview.title} fill sizes="(min-width: 1280px) 382px, (min-width: 768px) calc((100vw - 136px) / 3), calc(100vw - 48px)" className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" />}
               <div className="absolute inset-0 bg-gradient-to-t from-gallery via-gallery/35 to-transparent" />
-              <div className="relative z-10 p-7 flex flex-col justify-between h-full min-h-80">
+              <div className="relative z-10 p-6 sm:p-7 flex flex-col justify-between h-full min-h-72 sm:min-h-80">
                 <span className="font-label text-[10px] text-ivory/85">{room.count} {room.count === 1 ? "artwork" : "artworks"}</span>
                 <div>
                   <p className="font-label text-[10px] text-brass mb-3">{room.eyebrow}</p>
@@ -134,7 +151,7 @@ export default function GalleryHomePage() {
       </section>
 
       {/* Gallery Grid Section */}
-      <section id="gallery" className="relative z-10 px-6 md:px-12 py-16 max-w-7xl mx-auto w-full">
+      <section id="gallery" className="relative z-10 px-6 md:px-12 py-12 md:py-16 max-w-7xl mx-auto w-full">
         <div className="border-b border-brass/20 pb-4 mb-10">
           <h2 className="font-label text-xs tracking-[0.2em] text-brass uppercase">
             All Masterpieces

@@ -51,7 +51,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
       />
 
       <motion.div
-        className="absolute top-24 left-6 right-6 md:left-10 md:right-10"
+        className="absolute top-20 left-5 right-5 sm:top-24 sm:left-10 sm:right-10"
         animate={{ opacity: open ? 0 : 1, y: open ? -8 : 0 }}
         transition={{ duration: FADE_DURATION, ease: CLOSE_EASE }}
       >
@@ -59,7 +59,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
         <p className="font-label text-xs text-brass">
           {painting.artist} · {painting.year}
         </p>
-        <h1 className="font-display italic text-2xl md:text-4xl text-ivory mt-2 max-w-4xl">
+        <h1 className="font-display italic text-2xl sm:text-3xl md:text-4xl text-ivory mt-2 max-w-4xl">
           {painting.title}
         </h1>
       </motion.div>
@@ -69,7 +69,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
         animate={{ opacity: open ? 0 : 1 }}
         transition={{ duration: FADE_DURATION, ease: CLOSE_EASE }}
         style={{ pointerEvents: open ? "none" : "auto" }}
-        className="absolute bottom-10 right-10 font-label text-xs text-brass border border-brass/50 px-4 py-2 rounded-full hover:bg-brass/10 transition-colors"
+        className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 font-label text-xs text-brass border border-brass/50 px-4 py-2 sm:px-5 sm:py-2 rounded-full hover:bg-brass/10 transition-colors"
       >
         Confession
       </motion.button>
@@ -82,7 +82,7 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
             exit={{ opacity: 0 }}
             transition={{ duration: FADE_DURATION, ease: CLOSE_EASE }}
             onClick={() => setOpen(false)}
-            className="absolute inset-0 z-20 flex items-center justify-center px-8"
+            className="absolute inset-0 z-20 flex items-center justify-center px-5 sm:px-8"
           >
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -93,9 +93,9 @@ export default function PaintingReveal({ painting }: { painting: Painting }) {
                 y: { duration: mood.textDuration, delay: textDelay, ease: mood.revealEase },
               }}
               onClick={(e) => e.stopPropagation()}
-              className="confession-scroll max-w-2xl max-h-[75vh] overflow-y-auto text-center px-2"
+              className="confession-scroll max-w-2xl max-h-[75dvh] overflow-y-auto overscroll-contain text-center px-3 sm:px-2"
             >
-              <p className="font-display italic text-xl md:text-3xl text-ivory leading-relaxed whitespace-pre-line">
+              <p className="font-display italic text-lg sm:text-xl md:text-3xl text-ivory leading-relaxed whitespace-pre-line">
                 &ldquo;{painting.excerpt}&rdquo;
               </p>
 

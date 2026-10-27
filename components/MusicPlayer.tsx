@@ -52,7 +52,7 @@ export default function MusicPlayer() {
 
       <button
         onClick={toggleMusic}
-        className="fixed bottom-6 left-6 z-50 font-label text-xs text-brass border border-brass/40 px-4 py-2 rounded-full hover:bg-brass/10 transition-colors backdrop-blur-sm bg-gallery/40"
+        className="music-player font-label text-xs text-brass border border-brass/40 px-4 py-2 rounded-full hover:bg-brass/10 transition-colors min-h-11 backdrop-blur-sm bg-gallery/40"
       >
         {playing ? "Ⅱ Pause" : "♪ Sound"}
       </button>

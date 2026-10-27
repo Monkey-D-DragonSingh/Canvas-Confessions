@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-gallery text-ivory">
         <SmoothScroll>{children}</SmoothScroll>
+        <div aria-hidden="true" className="grain" />
         <GalleryMenu
           total={paintings.length}
           rooms={rooms.map(({ slug, title }) => ({ slug, title, count: getRoomPaintings(slug).length }))}
